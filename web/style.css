@@ -142,9 +142,9 @@ body {
     user-select: none;
     z-index: 0;
     display: flex;
-    align-items: flex-start; /* Fixed towards the top of the page */
+    align-items: flex-end; /* Fixed towards the bottom of the frame */
     justify-content: center;
-    padding-top: 35px;
+    padding-bottom: 28px;
     overflow: hidden;
     padding-left: 20px;
     padding-right: 20px;
@@ -155,10 +155,10 @@ body {
     display: inline-flex;
     align-items: baseline;
     justify-content: center;
-    gap: 0.35em;
-    transform: rotate(-2.8deg);
-    transform-origin: center top;
-    line-height: 0.86;
+    gap: 0.32em;
+    transform: rotate(-2.5deg);
+    transform-origin: center bottom;
+    line-height: 0.88;
     letter-spacing: -0.02em;
     white-space: nowrap;
     text-align: center;
@@ -166,7 +166,7 @@ body {
 }
 
 .f-sig-prefix {
-    font-size: clamp(4.2rem, 8vw, 10rem);
+    font-size: clamp(3.8rem, 7.5vw, 9.2rem);
     font-weight: 600;
     color: rgba(15, 23, 42, 0.85);
     letter-spacing: 0.01em;
@@ -175,7 +175,7 @@ body {
 }
 
 .f-sig-name {
-    font-size: clamp(8.5rem, 17vw, 21rem);
+    font-size: clamp(7.5rem, 15vw, 18.5rem);
     font-weight: 700;
     /* Massive, high-contrast brand ink with flame/violet gradient */
     background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 24%, #4338ca 52%, #e11d48 82%, #ea580c 100%);
@@ -189,7 +189,7 @@ body {
 
 @media (max-width: 900px) {
     .fixed-signature-layer {
-        padding-top: 20px;
+        padding-bottom: 15px;
     }
     .fixed-signature-watermark {
         flex-direction: column;
@@ -197,10 +197,10 @@ body {
         transform: rotate(-2deg);
     }
     .f-sig-prefix {
-        font-size: 3.5rem;
+        font-size: 3.2rem;
     }
     .f-sig-name {
-        font-size: 6.8rem;
+        font-size: 6.2rem;
     }
 }
 
