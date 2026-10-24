@@ -1,51 +1,51 @@
 /* ==============================================================================
-   Heat To Load // Apple-Grade Light Glassmorphism Analytics Cockpit
-   Engineered from the 4 Reference Design Paradigms:
-   - Soft organic pastel aura canvas (lavender, powder blue, rose, mint, pearl)
-   - Master Frosted Glass Chassis with 28px squircle radius & 40px backdrop blur
-   - Elevated milky acrylic glass cards with 1px directional specular highlights
-   - The Obsidian Contrast Anchor on high-priority climate risk
-   - Apple segmented pill controls, fluid interactive sliders, and visionOS sheets
-   - High-contrast charcoal slate typography (#0f172a) for maximum readability
+   Heat To Load // Apple-Grade High-Fidelity Glassmorphism Analytics Cockpit
+   Engineered with Multi-Skill Rigor:
+   - emil-design-eng: tactile press physics, sub-pixel alignments, cubic-bezier curves
+   - apple-design: multi-layer light dispersion, 1:1 gesture feedback, double elevation shadows
+   - glassmorphism: specular 1px top-edge rims, optical bottom bevels, 180% saturation boost
+   - frontend-design & taste-skill: anti-slop typography, strict contrast ratios, zero template tells
    ============================================================================== */
 
 :root {
-    /* Atmospheric Light Canvas & Aura Gradients */
+    /* Atmospheric Ethereal Light Canvas & Aura Gradients */
     --bg-app: #f4f7fb;
     
-    /* Apple Frosted Glass Material System */
-    --bg-glass-chassis: rgba(255, 255, 255, 0.48);
-    --bg-glass-card: rgba(255, 255, 255, 0.68);
-    --bg-glass-card-hover: rgba(255, 255, 255, 0.84);
-    --bg-glass-subtle: rgba(248, 250, 252, 0.72);
-    --bg-glass-pill: rgba(255, 255, 255, 0.75);
+    /* Apple Frosted Acrylic Material Hierarchy */
+    --bg-glass-chassis: rgba(255, 255, 255, 0.52);
+    --bg-glass-card: rgba(255, 255, 255, 0.70);
+    --bg-glass-card-hover: rgba(255, 255, 255, 0.88);
+    --bg-glass-subtle: rgba(241, 245, 249, 0.68);
+    --bg-glass-pill: rgba(255, 255, 255, 0.78);
 
-    /* Specular Directional Highlights (1px rim catching light) */
-    --border-glass-specular: rgba(255, 255, 255, 0.90);
-    --border-glass-card: rgba(255, 255, 255, 0.82);
+    /* Specular Directional Highlights (1px physical light rim) */
+    --border-glass-specular: rgba(255, 255, 255, 0.95);
+    --border-glass-card: rgba(255, 255, 255, 0.88);
     --border-glass-subtle: rgba(15, 23, 42, 0.06);
-    --border-focus: rgba(2, 132, 199, 0.5);
+    --border-focus: rgba(2, 132, 199, 0.55);
 
-    /* Glass Physical Occlusion Shadows */
+    /* Physical Occlusion & Elevation Shadows */
     --shadow-chassis: 
-        0 24px 70px -12px rgba(15, 23, 42, 0.10),
-        0 8px 24px -4px rgba(15, 23, 42, 0.05),
-        inset 0 1px 2px 0 rgba(255, 255, 255, 0.95);
+        0 32px 84px -16px rgba(15, 23, 42, 0.12),
+        0 12px 28px -6px rgba(15, 23, 42, 0.05),
+        inset 0 2px 2px 0 rgba(255, 255, 255, 1),
+        inset 0 -1px 2px 0 rgba(15, 23, 42, 0.03);
         
     --shadow-card: 
-        0 10px 25px -5px rgba(15, 23, 42, 0.04),
+        0 12px 28px -5px rgba(15, 23, 42, 0.05),
         0 4px 10px -2px rgba(15, 23, 42, 0.02),
-        inset 0 1px 1px 0 rgba(255, 255, 255, 0.95);
+        inset 0 1px 1px 0 rgba(255, 255, 255, 1),
+        inset 0 -1px 1px 0 rgba(15, 23, 42, 0.03);
 
     --shadow-card-hover: 
-        0 18px 36px -5px rgba(15, 23, 42, 0.08),
-        0 6px 14px -2px rgba(15, 23, 42, 0.03),
+        0 20px 42px -6px rgba(15, 23, 42, 0.09),
+        0 8px 18px -3px rgba(15, 23, 42, 0.04),
         inset 0 1px 1px 0 rgba(255, 255, 255, 1);
 
     /* Apple Dispersion Physics Tokens */
-    --glass-blur-chassis: blur(40px) saturate(180%);
-    --glass-blur-card: blur(28px) saturate(170%);
-    --glass-blur-pill: blur(16px) saturate(160%);
+    --glass-blur-chassis: blur(48px) saturate(190%);
+    --glass-blur-card: blur(32px) saturate(180%);
+    --glass-blur-pill: blur(18px) saturate(170%);
 
     /* High-Contrast Humanistic Typography */
     --text-main: #0f172a;       /* Deep slate / charcoal */
@@ -62,13 +62,15 @@
     --radius-sm: 10px;
     --radius-md: 14px;
     --radius-lg: 20px;          /* Card squircle radius */
-    --radius-chassis: 28px;     /* Master window chassis radius */
+    --radius-chassis: 30px;     /* Master window chassis radius */
     --radius-pill: 9999px;      /* Pill radius for segmented controls & buttons */
     
     --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
     --font-mono: 'JetBrains Mono', monospace;
     
-    --transition-smooth: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+    /* Emil Kowalski: smooth natural cubic-bezier spring feel */
+    --spring-ease: cubic-bezier(0.16, 1, 0.3, 1);
+    --transition-smooth: all 0.22s var(--spring-ease);
 }
 
 * {
@@ -79,13 +81,13 @@
 
 body {
     background-color: var(--bg-app);
-    /* Ethereal pastel aura orbs (Lavender, sky blue, peach/gold, rose, mint) */
+    /* Multi-bloom pastel aurora canvas (Lavender, sky blue, warm peach, coral rose, mint) */
     background-image: 
-        radial-gradient(circle at 12% 16%, rgba(192, 132, 252, 0.28) 0%, transparent 45%),
-        radial-gradient(circle at 88% 14%, rgba(56, 189, 248, 0.32) 0%, transparent 48%),
-        radial-gradient(circle at 50% 50%, rgba(254, 215, 170, 0.22) 0%, transparent 50%),
-        radial-gradient(circle at 18% 85%, rgba(244, 114, 182, 0.22) 0%, transparent 45%),
-        radial-gradient(circle at 84% 82%, rgba(52, 211, 153, 0.20) 0%, transparent 42%);
+        radial-gradient(circle at 14% 14%, rgba(192, 132, 252, 0.30) 0%, transparent 46%),
+        radial-gradient(circle at 86% 12%, rgba(56, 189, 248, 0.34) 0%, transparent 48%),
+        radial-gradient(circle at 50% 48%, rgba(254, 215, 170, 0.24) 0%, transparent 52%),
+        radial-gradient(circle at 16% 86%, rgba(244, 114, 182, 0.24) 0%, transparent 46%),
+        radial-gradient(circle at 84% 84%, rgba(52, 211, 153, 0.22) 0%, transparent 44%);
     background-attachment: fixed;
     color: var(--text-main);
     font-family: var(--font-sans);
@@ -94,14 +96,14 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     min-height: 100vh;
-    padding: 24px 20px 40px;
+    padding: 24px 20px 48px;
 }
 
-/* Master Glass Chassis Window (Encloses the application like macOS / visionOS) */
+/* Master Glass Chassis Window (Apple macOS Sonoma / visionOS Master Shell) */
 .app-container {
     max-width: 1560px;
     margin: 0 auto;
-    padding: 28px 36px 44px;
+    padding: 30px 40px 48px;
     background: var(--bg-glass-chassis);
     backdrop-filter: var(--glass-blur-chassis);
     -webkit-backdrop-filter: var(--glass-blur-chassis);
@@ -117,7 +119,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 24px;
+    margin-bottom: 26px;
     padding-bottom: 20px;
     border-bottom: 1px solid var(--border-glass-subtle);
 }
@@ -183,7 +185,7 @@ body {
     backdrop-filter: var(--glass-blur-pill);
     -webkit-backdrop-filter: var(--glass-blur-pill);
     border: 1px solid var(--border-glass-specular);
-    padding: 7px 15px;
+    padding: 7px 16px;
     border-radius: var(--radius-pill);
     box-shadow: 0 2px 8px rgba(15, 23, 42, 0.04), inset 0 1px 1px #fff;
     letter-spacing: 0.2px;
@@ -202,6 +204,12 @@ body {
     transition: var(--transition-smooth);
 }
 
+/* Emil Kowalski: instant feedback on press */
+.btn:active, .filter-btn:active, .btn-inspect-state:active, .modal-close-btn:active {
+    transform: scale(0.97) !important;
+    transition: transform 90ms var(--spring-ease);
+}
+
 .btn-outline {
     background: var(--bg-glass-pill);
     backdrop-filter: var(--glass-blur-pill);
@@ -216,7 +224,7 @@ body {
     border-color: #ffffff;
     color: var(--accent);
     transform: translateY(-1px);
-    box-shadow: 0 4px 14px rgba(15, 23, 42, 0.08), inset 0 1px 1px #fff;
+    box-shadow: 0 6px 16px rgba(15, 23, 42, 0.08), inset 0 1px 1px #fff;
 }
 
 /* Header Search */
@@ -242,7 +250,7 @@ body {
 .search-bar-input:focus-within {
     border-color: var(--accent);
     background: #ffffff;
-    box-shadow: 0 0 0 3px rgba(2, 132, 199, 0.15), 0 4px 12px rgba(15, 23, 42, 0.06);
+    box-shadow: 0 0 0 3px rgba(2, 132, 199, 0.18), 0 4px 12px rgba(15, 23, 42, 0.06);
 }
 
 .search-bar-input .search-icon {
@@ -351,7 +359,7 @@ body {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 16px;
-    margin-bottom: 22px;
+    margin-bottom: 24px;
 }
 
 .kpi-card {
@@ -360,7 +368,7 @@ body {
     -webkit-backdrop-filter: var(--glass-blur-card);
     border: 1px solid var(--border-glass-card);
     border-radius: var(--radius-lg);
-    padding: 20px 22px;
+    padding: 20px 24px;
     box-shadow: var(--shadow-card);
     transition: var(--transition-smooth);
 }
@@ -373,13 +381,14 @@ body {
 
 /* The Obsidian Contrast Anchor (Reference 3 Design Pattern: Deep contrast focal point) */
 .kpi-card.kpi-risk-border {
-    background: linear-gradient(135deg, rgba(20, 24, 33, 0.94) 0%, rgba(15, 23, 42, 0.96) 100%);
-    border: 1px solid rgba(225, 29, 72, 0.35);
+    background: linear-gradient(145deg, #181c24 0%, #0f131a 100%);
+    border: 1px solid rgba(225, 29, 72, 0.40);
     color: #ffffff;
     box-shadow: 
-        0 16px 36px -4px rgba(225, 29, 72, 0.20),
-        0 6px 16px -2px rgba(0, 0, 0, 0.22),
-        inset 0 1px 1px 0 rgba(255, 255, 255, 0.20);
+        0 20px 42px -6px rgba(225, 29, 72, 0.25),
+        0 8px 18px -2px rgba(0, 0, 0, 0.35),
+        inset 0 1px 1px 0 rgba(255, 255, 255, 0.25),
+        inset 0 -1px 1px 0 rgba(0, 0, 0, 0.5);
 }
 
 .kpi-card.kpi-risk-border .kpi-label {
@@ -463,7 +472,7 @@ body {
     -webkit-backdrop-filter: var(--glass-blur-card);
     border: 1px solid var(--border-glass-card);
     border-radius: var(--radius-lg);
-    padding: 22px 24px;
+    padding: 22px 26px;
     box-shadow: var(--shadow-card);
     transition: var(--transition-smooth);
     contain: layout style;
@@ -507,11 +516,11 @@ body {
     align-items: center;
     gap: 3px;
     background: rgba(15, 23, 42, 0.06);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
     padding: 3px;
     border-radius: var(--radius-pill);
-    border: 1px solid rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.85);
     box-shadow: inset 0 1px 2px rgba(15, 23, 42, 0.05);
 }
 
@@ -525,7 +534,7 @@ body {
     font-family: var(--font-mono);
     border-radius: var(--radius-pill);
     cursor: pointer;
-    transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+    transition: all 0.2s var(--spring-ease);
 }
 
 .filter-btn:hover {
@@ -536,7 +545,7 @@ body {
     background: #ffffff;
     color: var(--text-main);
     border: 1px solid rgba(255, 255, 255, 0.95);
-    box-shadow: 0 2px 8px rgba(15, 23, 42, 0.08), 0 1px 2px rgba(15, 23, 42, 0.04);
+    box-shadow: 0 3px 10px rgba(15, 23, 42, 0.08), 0 1px 2px rgba(15, 23, 42, 0.04);
 }
 
 /* State Dropdown & Details Button */
@@ -570,7 +579,7 @@ body {
 
 .dropdown-select:focus {
     border-color: var(--accent);
-    box-shadow: 0 0 0 3px rgba(2, 132, 199, 0.15);
+    box-shadow: 0 0 0 3px rgba(2, 132, 199, 0.18);
 }
 
 .dropdown-select option {
@@ -602,7 +611,7 @@ body {
     border-color: var(--accent);
     color: #ffffff;
     transform: translateY(-1px);
-    box-shadow: 0 4px 14px rgba(2, 132, 199, 0.25);
+    box-shadow: 0 6px 16px rgba(2, 132, 199, 0.28);
 }
 
 /* Legend Pills (Frosted Glass Container) */
@@ -615,7 +624,7 @@ body {
     background: rgba(15, 23, 42, 0.04);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
-    border: 1px solid rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.85);
     border-radius: var(--radius-pill);
     padding: 5px 14px;
 }
@@ -641,12 +650,12 @@ body {
    4. Simulator Controls & Metrics (Frosted Apple Aesthetic)
    ============================================================================== */
 .slider-badge {
-    background: rgba(255, 255, 255, 0.90);
+    background: rgba(255, 255, 255, 0.92);
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
     color: var(--accent);
     border: 1px solid rgba(2, 132, 199, 0.35);
-    padding: 5px 15px;
+    padding: 5px 16px;
     font-size: 13px;
     font-weight: 700;
     border-radius: var(--radius-pill);
@@ -656,13 +665,13 @@ body {
 }
 
 .simulator-controls {
-    margin-bottom: 14px;
+    margin-bottom: 16px;
 }
 
 .slider-track-wrap {
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 16px;
 }
 
 .slider-min, .slider-max {
@@ -675,69 +684,72 @@ body {
 .custom-slider {
     flex: 1;
     -webkit-appearance: none;
-    height: 6px;
-    border-radius: 3px;
+    height: 7px;
+    border-radius: 4px;
     background: linear-gradient(90deg, #0284c7 0%, #d97706 50%, #e11d48 100%);
     outline: none;
     cursor: pointer;
+    box-shadow: inset 0 1px 2px rgba(15, 23, 42, 0.1);
 }
 
 .custom-slider::-webkit-slider-thumb {
     -webkit-appearance: none;
-    width: 20px;
-    height: 20px;
+    width: 22px;
+    height: 22px;
     border-radius: 50%;
     background: #ffffff;
-    box-shadow: 0 2px 8px rgba(15, 23, 42, 0.25);
+    box-shadow: 0 3px 10px rgba(15, 23, 42, 0.22), 0 1px 3px rgba(15, 23, 42, 0.1), inset 0 1px 1px #fff;
     cursor: pointer;
     border: 3px solid var(--slider-thumb-color, var(--accent));
-    transition: transform 0.12s ease, border-color 0.18s ease;
+    transition: transform 0.14s var(--spring-ease), box-shadow 0.14s var(--spring-ease), border-color 0.18s ease;
     will-change: transform;
 }
 
 .custom-slider::-webkit-slider-thumb:hover {
     transform: scale(1.18);
+    box-shadow: 0 5px 14px rgba(15, 23, 42, 0.28), 0 2px 4px rgba(15, 23, 42, 0.15), inset 0 1px 1px #fff;
 }
 
 .custom-slider::-moz-range-thumb {
-    width: 20px;
-    height: 20px;
+    width: 22px;
+    height: 22px;
     border-radius: 50%;
     background: #ffffff;
-    box-shadow: 0 2px 8px rgba(15, 23, 42, 0.25);
+    box-shadow: 0 3px 10px rgba(15, 23, 42, 0.22), 0 1px 3px rgba(15, 23, 42, 0.1), inset 0 1px 1px #fff;
     cursor: pointer;
     border: 3px solid var(--slider-thumb-color, var(--accent));
-    transition: transform 0.12s ease, border-color 0.18s ease;
+    transition: transform 0.14s var(--spring-ease), box-shadow 0.14s var(--spring-ease), border-color 0.18s ease;
 }
 
 .custom-slider::-moz-range-thumb:hover {
     transform: scale(1.18);
+    box-shadow: 0 5px 14px rgba(15, 23, 42, 0.28), 0 2px 4px rgba(15, 23, 42, 0.15), inset 0 1px 1px #fff;
 }
 
 .sim-metrics-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 12px;
-    margin-top: 16px;
+    margin-top: 18px;
 }
 
 .sim-metric-box {
     background: var(--bg-glass-subtle);
-    backdrop-filter: blur(14px);
-    -webkit-backdrop-filter: blur(14px);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
     border: 1px solid var(--border-glass-card);
     border-radius: var(--radius-md);
-    padding: 13px 15px;
+    padding: 14px 16px;
     display: flex;
     flex-direction: column;
-    box-shadow: inset 0 1px 2px rgba(15, 23, 42, 0.03), 0 2px 6px rgba(15, 23, 42, 0.02);
+    box-shadow: inset 0 2px 4px rgba(15, 23, 42, 0.04), 0 1px 2px rgba(255, 255, 255, 0.8);
     transition: var(--transition-smooth);
 }
 
 .sim-metric-box:hover {
     background: #ffffff;
     transform: translateY(-1px);
-    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.06);
+    box-shadow: 0 4px 14px rgba(15, 23, 42, 0.06);
 }
 
 .sim-label {
@@ -789,7 +801,7 @@ body {
 .table-search-input:focus {
     border-color: var(--accent);
     background: #ffffff;
-    box-shadow: 0 0 0 3px rgba(2, 132, 199, 0.15);
+    box-shadow: 0 0 0 3px rgba(2, 132, 199, 0.18);
 }
 
 .table-search-input::placeholder {
@@ -821,11 +833,12 @@ body {
 
 .styled-table tbody tr {
     cursor: pointer;
-    transition: background 0.14s ease;
+    transition: background 0.14s ease, box-shadow 0.14s ease;
 }
 
 .styled-table tbody tr:hover {
-    background: rgba(255, 255, 255, 0.90) !important;
+    background: rgba(255, 255, 255, 0.92) !important;
+    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.04);
 }
 
 .state-badge {
@@ -886,9 +899,9 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(15, 23, 42, 0.25);
-    backdrop-filter: blur(28px);
-    -webkit-backdrop-filter: blur(28px);
+    background: rgba(15, 23, 42, 0.28);
+    backdrop-filter: blur(32px);
+    -webkit-backdrop-filter: blur(32px);
 }
 
 .modal-card {
@@ -899,12 +912,12 @@ body {
     max-height: 90vh;
     overflow-y: auto;
     background: rgba(255, 255, 255, 0.92);
-    backdrop-filter: blur(44px) saturate(180%);
-    -webkit-backdrop-filter: blur(44px) saturate(180%);
+    backdrop-filter: blur(48px) saturate(190%);
+    -webkit-backdrop-filter: blur(48px) saturate(190%);
     border: 1px solid rgba(255, 255, 255, 0.95);
-    border-radius: 24px;
-    box-shadow: 0 30px 80px -15px rgba(15, 23, 42, 0.18), inset 0 1px 2px #fff;
-    padding: 28px 32px;
+    border-radius: 26px;
+    box-shadow: 0 32px 84px -15px rgba(15, 23, 42, 0.20), inset 0 2px 2px #fff;
+    padding: 30px 34px;
 }
 
 .modal-header {
@@ -980,7 +993,7 @@ body {
     border: 1px solid var(--border-glass-card);
     border-radius: var(--radius-md);
     padding: 13px 15px;
-    box-shadow: inset 0 1px 2px rgba(15, 23, 42, 0.03);
+    box-shadow: inset 0 2px 4px rgba(15, 23, 42, 0.03);
 }
 
 .m-card-label {
@@ -1064,6 +1077,7 @@ body {
     flex-direction: column;
     gap: 10px;
     margin-bottom: 16px;
+    box-shadow: inset 0 2px 4px rgba(15, 23, 42, 0.03);
 }
 
 .modal-mechanic-item {
@@ -1082,19 +1096,19 @@ body {
     background: var(--accent);
     border: 1px solid var(--accent);
     color: #ffffff;
-    padding: 9px 16px;
+    padding: 10px 18px;
     font-size: 12px;
     font-weight: 600;
     border-radius: var(--radius-pill);
     cursor: pointer;
-    box-shadow: 0 4px 14px rgba(2, 132, 199, 0.25);
+    box-shadow: 0 4px 14px rgba(2, 132, 199, 0.28);
     transition: var(--transition-smooth);
 }
 
 .btn-action-focus:hover {
     background: #0369a1;
     transform: translateY(-1px);
-    box-shadow: 0 6px 18px rgba(2, 132, 199, 0.35);
+    box-shadow: 0 6px 20px rgba(2, 132, 199, 0.38);
 }
 
 /* ==============================================================================
