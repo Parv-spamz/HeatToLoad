@@ -102,7 +102,7 @@ body {
     font-weight: 700;
     margin-left: -5px;
     margin-right: 0;
-    padding: 0;
+    padding: 2px 14px 2px 0;
     /* Morphs seamlessly from pure white where it touches HEAT into warm gold, amber, and coral fire */
     background: linear-gradient(90deg, #ffffff 0%, #fef08a 18%, #fbbf24 42%, #f97316 72%, #ef4444 100%);
     -webkit-background-clip: text;
