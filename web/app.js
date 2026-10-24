@@ -128,9 +128,8 @@ function initSensitivityChart(regionFilter = 'all') {
     const labels = filteredStates.map(s => s.state);
     const dataPct = filteredStates.map(s => s.pct_per_c);
 
-    // Purposeful semantic colors: Soft red strictly for top thermal stress >2.5%, neutral slate for others
-    const bgColors = dataPct.map(v => v >= 2.5 ? 'rgba(248, 113, 113, 0.75)' : 'rgba(56, 189, 248, 0.25)');
-    const borderColors = dataPct.map(v => v >= 2.5 ? COLORS.alertRed : COLORS.accent);
+    // Solid color fill using the accent and alert colors with no outline
+    const barColors = dataPct.map(v => v >= 2.5 ? COLORS.alertRed : COLORS.accent);
 
     if (charts.sensitivity) charts.sensitivity.destroy();
 
@@ -141,10 +140,9 @@ function initSensitivityChart(regionFilter = 'all') {
             datasets: [{
                 label: 'Sensitivity (%/°C)',
                 data: dataPct,
-                backgroundColor: bgColors,
-                borderColor: borderColors,
-                borderWidth: 1,
-                borderRadius: 3,
+                backgroundColor: barColors,
+                borderWidth: 0,
+                borderRadius: 4,
                 borderSkipped: false
             }]
         },
@@ -487,9 +485,8 @@ function initSHAPChart() {
             datasets: [{
                 label: 'Mean |SHAP| (MW)',
                 data: impacts,
-                backgroundColor: 'rgba(139, 92, 246, 0.85)',
-                borderColor: '#8b5cf6',
-                borderWidth: 1,
+                backgroundColor: '#8b5cf6',
+                borderWidth: 0,
                 borderRadius: 4
             }]
         },
