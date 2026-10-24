@@ -314,7 +314,7 @@ body {
     font-size: 28px;
     font-weight: 700;
     line-height: 1.15;
-    margin-bottom: 4px;
+    margin-bottom: 0;
     color: var(--text-main);
     font-variant-numeric: tabular-nums;
     font-feature-settings: "tnum" 1;
