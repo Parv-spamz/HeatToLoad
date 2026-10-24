@@ -346,37 +346,32 @@ function initSimulator() {
     const basePeak = appData.scenarios?.plus_1c?.all_india_coincident_baseline_peak_mw || 223421.1;
 
     function getTempStage(deltaT) {
-        if (deltaT <= 0.9) {
+        if (deltaT <= 1.2) {
             return {
-                bg: 'linear-gradient(135deg, #0284c7, #38bdf8)',
-                glow: 'rgba(56, 189, 248, 0.45)',
-                thumbColor: '#38bdf8',
+                color: COLORS.accent,
+                borderColor: 'rgba(56, 189, 248, 0.4)',
+                bg: 'rgba(56, 189, 248, 0.08)',
+                thumbColor: COLORS.accent,
                 riskText: 'MODERATE STRESS',
-                riskClass: 'sim-val text-cyan'
+                riskClass: 'sim-val text-sky'
             };
-        } else if (deltaT <= 1.6) {
+        } else if (deltaT <= 2.1) {
             return {
-                bg: 'linear-gradient(135deg, #0d9488, #fbbf24)',
-                glow: 'rgba(251, 191, 36, 0.45)',
-                thumbColor: '#fbbf24',
-                riskText: 'ELEVATED STRESS',
-                riskClass: 'sim-val text-amber'
-            };
-        } else if (deltaT <= 2.3) {
-            return {
-                bg: 'linear-gradient(135deg, #ea580c, #f97316)',
-                glow: 'rgba(249, 115, 22, 0.45)',
-                thumbColor: '#f97316',
+                color: COLORS.amber,
+                borderColor: 'rgba(251, 191, 36, 0.4)',
+                bg: 'rgba(251, 191, 36, 0.08)',
+                thumbColor: COLORS.amber,
                 riskText: 'HIGH CORRIDOR RISK',
-                riskClass: 'sim-val text-orange'
+                riskClass: 'sim-val text-amber'
             };
         } else {
             return {
-                bg: 'linear-gradient(135deg, #b91c1c, #ef4444)',
-                glow: 'rgba(239, 68, 68, 0.5)',
-                thumbColor: '#ef4444',
+                color: COLORS.alertRed,
+                borderColor: 'rgba(248, 113, 113, 0.45)',
+                bg: 'rgba(248, 113, 113, 0.08)',
+                thumbColor: COLORS.alertRed,
                 riskText: 'CRITICAL DEFICIT',
-                riskClass: 'sim-val text-rose'
+                riskClass: 'sim-val text-alert'
             };
         }
     }
@@ -386,8 +381,9 @@ function initSimulator() {
 
         if (badge) {
             badge.textContent = `+${deltaT.toFixed(1)}°C`;
-            badge.style.background = stage.bg;
-            badge.style.boxShadow = `0 0 14px ${stage.glow}`;
+            badge.style.color = stage.color;
+            badge.style.borderColor = stage.borderColor;
+            badge.style.backgroundColor = stage.bg;
         }
         
         if (slider) {
@@ -413,12 +409,20 @@ function initSimulator() {
     function updateSimChart(base, scen, deltaT) {
         const labels = ['Baseline (Observed)', `Simulated (+${deltaT.toFixed(1)}°C)`];
         const data = [base / 1000.0, scen / 1000.0];
-        const colors = ['#34495e', deltaT >= 2.0 ? '#f43f5e' : '#f59e0b'];
+        const colors = [
+            'rgba(56, 189, 248, 0.35)', 
+            deltaT >= 2.0 ? 'rgba(248, 113, 113, 0.85)' : 'rgba(251, 191, 36, 0.85)'
+        ];
+        const borderColors = [
+            COLORS.accent,
+            deltaT >= 2.0 ? COLORS.alertRed : COLORS.amber
+        ];
 
         if (charts.simCompare) {
             charts.simCompare.data.labels = labels;
             charts.simCompare.data.datasets[0].data = data;
             charts.simCompare.data.datasets[0].backgroundColor = colors;
+            charts.simCompare.data.datasets[0].borderColor = borderColors;
             charts.simCompare.update();
         } else {
             charts.simCompare = new Chart(ctx, {
@@ -429,6 +433,8 @@ function initSimulator() {
                         label: 'Coincident Peak (GW)',
                         data: data,
                         backgroundColor: colors,
+                        borderColor: borderColors,
+                        borderWidth: 1,
                         borderRadius: 6,
                         barThickness: 50
                     }]

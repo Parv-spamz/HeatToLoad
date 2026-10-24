@@ -343,19 +343,11 @@ body {
 }
 
 .text-amber {
-    color: #f59e0b !important;
+    color: var(--accent-amber) !important;
 }
 
-.text-rose {
-    color: #f43f5e !important;
-}
-
-.text-cyan {
-    color: #00f2fe !important;
-}
-
-.text-orange {
-    color: #fb923c !important;
+.text-sky {
+    color: var(--accent) !important;
 }
 
 /* ==============================================================================
@@ -525,16 +517,15 @@ body {
    4. Simulator Controls & Metrics
    ============================================================================== */
 .slider-badge {
-    background: linear-gradient(135deg, #0284c7, #38bdf8);
-    color: #ffffff;
-    border: none;
-    padding: 5px 14px;
+    background: rgba(255, 255, 255, 0.04);
+    color: var(--accent);
+    border: 1px solid rgba(56, 189, 248, 0.35);
+    padding: 4px 12px;
     font-size: 13px;
     font-weight: 700;
-    border-radius: 20px;
+    border-radius: var(--radius-sm);
     font-family: var(--font-mono);
-    box-shadow: 0 0 14px rgba(56, 189, 248, 0.4);
-    transition: background 0.3s ease, box-shadow 0.3s ease;
+    transition: color 0.18s ease, border-color 0.18s ease, background-color 0.18s ease;
 }
 
 .simulator-controls {
@@ -557,24 +548,24 @@ body {
 .custom-slider {
     flex: 1;
     -webkit-appearance: none;
-    height: 7px;
-    border-radius: 4px;
-    /* Harmonized temperature palette matching the dashboard theme */
-    background: linear-gradient(90deg, #38bdf8 0%, #2dd4bf 22%, #fbbf24 50%, #f97316 78%, #ef4444 100%);
+    height: 6px;
+    border-radius: 3px;
+    /* Exact 3-color palette of the dashboard: Sky (Demand) -> Amber (Temp) -> Red (Surge) */
+    background: linear-gradient(90deg, var(--accent) 0%, var(--accent-amber) 50%, var(--alert-red) 100%);
     outline: none;
     cursor: pointer;
 }
 
 .custom-slider::-webkit-slider-thumb {
     -webkit-appearance: none;
-    width: 20px;
-    height: 20px;
+    width: 18px;
+    height: 18px;
     border-radius: 50%;
-    background: #ffffff;
-    box-shadow: 0 0 12px var(--slider-thumb-color, rgba(56, 189, 248, 0.5)), 0 2px 6px rgba(0, 0, 0, 0.4);
+    background: var(--text-main);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
     cursor: pointer;
-    border: 2.5px solid var(--slider-thumb-color, #38bdf8);
-    transition: transform 0.12s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+    border: 2px solid var(--slider-thumb-color, var(--accent));
+    transition: transform 0.12s ease, border-color 0.18s ease;
 }
 
 .custom-slider::-webkit-slider-thumb:hover {
@@ -582,14 +573,14 @@ body {
 }
 
 .custom-slider::-moz-range-thumb {
-    width: 20px;
-    height: 20px;
+    width: 18px;
+    height: 18px;
     border-radius: 50%;
-    background: #ffffff;
-    box-shadow: 0 0 12px var(--slider-thumb-color, rgba(56, 189, 248, 0.5)), 0 2px 6px rgba(0, 0, 0, 0.4);
+    background: var(--text-main);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
     cursor: pointer;
-    border: 2.5px solid var(--slider-thumb-color, #38bdf8);
-    transition: transform 0.12s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+    border: 2px solid var(--slider-thumb-color, var(--accent));
+    transition: transform 0.12s ease, border-color 0.18s ease;
 }
 
 .custom-slider::-moz-range-thumb:hover {
@@ -604,39 +595,31 @@ body {
 }
 
 .sim-metric-box {
-    background: rgba(22, 27, 34, 0.7);
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: var(--bg-card-subtle);
+    border: 1px solid var(--border-card);
     border-radius: var(--radius-sm);
-    padding: 12px 14px;
+    padding: 11px 13px;
     display: flex;
     flex-direction: column;
 }
 
 .sim-label {
-    font-family: var(--font-sans);
-    font-size: 11px;
+    font-family: var(--font-mono);
+    font-size: 10px;
     font-weight: 600;
-    color: #cbd5e1; /* Crisp, easily readable silver-zinc heading */
+    color: var(--text-muted); /* Crisp, legible, completely consistent with KPI cards */
     letter-spacing: 0.5px;
     text-transform: uppercase;
-    margin-bottom: 6px;
+    margin-bottom: 5px;
 }
 
 .sim-val {
     font-family: var(--font-mono);
-    font-size: 17px;
+    font-size: 16px;
     font-weight: 700;
     color: var(--text-main);
     font-variant-numeric: tabular-nums;
     line-height: 1.2;
-}
-
-.sim-val-white {
-    color: #ffffff !important;
-}
-
-.sim-val-slate {
-    color: #cbd5e1 !important;
 }
 
 /* ==============================================================================
