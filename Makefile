@@ -40,5 +40,8 @@ test:
 verify:
 	python make.py verify
 
+serve:
+	python make.py serve
+
 all:
 	python make.py all

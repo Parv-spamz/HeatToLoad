@@ -78,6 +78,9 @@ def target_all():
     target_test()
     target_verify()
 
+def target_serve():
+    run_cmd([str(VENV_PY), "server.py"], "Launch Web Frontend Cockpit")
+
 TARGETS = {
     "setup": target_setup,
     "ingest": target_ingest,
@@ -90,6 +93,7 @@ TARGETS = {
     "report": target_report,
     "test": target_test,
     "verify": target_verify,
+    "serve": target_serve,
     "all": target_all,
 }
 
