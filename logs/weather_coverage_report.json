@@ -1,0 +1,98 @@
+{
+  "Delhi": {
+    "total_days": 1461,
+    "null_temp_count": 0,
+    "min_temp": 14.1,
+    "max_temp": 46.0
+  },
+  "Maharashtra": {
+    "total_days": 1461,
+    "null_temp_count": 0,
+    "min_temp": 23.4,
+    "max_temp": 41.3
+  },
+  "Gujarat": {
+    "total_days": 1461,
+    "null_temp_count": 0,
+    "min_temp": 20.4,
+    "max_temp": 46.5
+  },
+  "Tamil Nadu": {
+    "total_days": 1461,
+    "null_temp_count": 0,
+    "min_temp": 24.1,
+    "max_temp": 41.2
+  },
+  "Karnataka": {
+    "total_days": 1461,
+    "null_temp_count": 0,
+    "min_temp": 18.5,
+    "max_temp": 39.5
+  },
+  "Uttar Pradesh": {
+    "total_days": 1461,
+    "null_temp_count": 0,
+    "min_temp": 16.0,
+    "max_temp": 46.4
+  },
+  "Rajasthan": {
+    "total_days": 1461,
+    "null_temp_count": 0,
+    "min_temp": 15.2,
+    "max_temp": 46.6
+  },
+  "Punjab": {
+    "total_days": 1461,
+    "null_temp_count": 0,
+    "min_temp": 12.5,
+    "max_temp": 45.5
+  },
+  "Haryana": {
+    "total_days": 1461,
+    "null_temp_count": 0,
+    "min_temp": 13.8,
+    "max_temp": 45.6
+  },
+  "Madhya Pradesh": {
+    "total_days": 1461,
+    "null_temp_count": 0,
+    "min_temp": 17.9,
+    "max_temp": 45.6
+  },
+  "West Bengal": {
+    "total_days": 1461,
+    "null_temp_count": 0,
+    "min_temp": 19.6,
+    "max_temp": 43.9
+  },
+  "Telangana": {
+    "total_days": 1461,
+    "null_temp_count": 0,
+    "min_temp": 23.1,
+    "max_temp": 41.4
+  },
+  "Andhra Pradesh": {
+    "total_days": 1461,
+    "null_temp_count": 0,
+    "min_temp": 24.6,
+    "max_temp": 44.8
+  },
+  "Kerala": {
+    "total_days": 1461,
+    "null_temp_count": 0,
+    "min_temp": 25.0,
+    "max_temp": 35.1
+  },
+  "Bihar": {
+    "total_days": 1461,
+    "null_temp_count": 0,
+    "min_temp": 17.2,
+    "max_temp": 43.6
+  },
+  "Odisha": {
+    "total_days": 1461,
+    "null_temp_count": 0,
+    "min_temp": 21.1,
+    "max_temp": 42.7
+  }
+}

@@ -1,0 +1,353 @@
+Source URL: https://webcdn.grid-india.in/files/grdw/uploads/daily-reports/psp-reports/2023-2024/31.05.23_NLDC_PSP.pdf
+HTTP Status: 200
+Content-Length: 335043 bytes
+
+Total Pages: 3
+
+=== PAGE 1 ===
+--- Extracted Text ---
+National Load Despatch Centre
+राष्ट्रीय भार प्रेषण कें द्र
+GRID CONTROLLER OF INDIA LIMITED
+ग्रिड कं ट्रोलर ऑफ इंग्रडया ग्रलग्रिट्ेड
+(Government of India Enterprise/ भारत सरकार का उद्यि)
+B-9, QUTUB INSTITUTIONAL AREA, KATWARIA SARAI, NEW DELHI -110016
+बी-9, क़ुतुब इन्स्टीट्यूशनल एररया, कट्वाररया सराये, न्यू ग्रिल्ली-110016
+_____________________________________________________________________________________________________
+Ref: POSOCO/NLDC/SO/Daily PSP Report दिन ांक: 1st June 2023
+To,
+1. क र्यक री दनिेशक, पू .क्षे .भ .प्रे .के .,14 , गोल्फ क्लब रोड , कोलक त - 700033
+Executive Director, ERLDC, 14 Golf Club Road, Tollygunge, Kolkata, 700033
+2. क र्यक री दनिेशक, ऊ. क्षे. भ . प्रे. के ., 18/ ए , शहीि जीत द ांह न नव ल म गय, नई दिल्ली – 110016
+Executive Director, NRLDC, 18-A, Shaheed Jeet Singh Marg, Katwaria Sarai, New Delhi – 110016
+3. क र्यक री दनिेशक, प .क्षे .भ .प्रे .के ., एफ3-, एम आई डी ी क्षेत्र , अांधेरी, म ांबई –400093
+Executive Director, WRLDC, F-3, M.I.D.C. Area, Marol, Andheri (East), Mumbai-400093
+4. क र्यक री दनिेशक, ऊ. पू. क्षे. भ . प्रे. के ., डोगां दतएह, लोअर नोग्रां ह , ल पलांग, दशलोगां – 793006
+Executive Director, NERLDC, Dongteih, Lower Nongrah, Lapalang, Shillong - 793006, Meghalaya
+5. क र्यक री दनिेशक , ि .क्षे .भ .प्रे .के .,29 , रे को य क्रॉ रोड, बांगल रु –560009
+Executive Director, SRLDC, 29, Race Course Cross Road, Bangalore-560009
+Sub: Daily PSP Report for the date 31.05.2023.
+महोिर्/Dear Sir,
+आई०ई०जी० ी०-2010 की ध र .-5.5.1 के प्र वध न के अन र, दिन ांक 31- -2023 की अखिल भ रतीर् प्रण ली की
+मई
+िैदनक दग्रड दनष्प िन ररपोर्य र ०भ ०प्रे०के ० की वेब इर् पर उप्लब्ध है |
+As per article 5.5.1 of the Indian Electricity Grid Code, the daily report pertaining power supply position of All
+India Power System for the date 31st May 2023, is available at the NLDC website.
+धन्यव ि,
+
+--- Extracted Tables (1) ---
+Table 1 (rows: 1):
+['आई०ई०जी० ी०-2010 की ध र .-5.5.1 के प्र वध न के अन र, दिन ांक 31-', 'मई', '-2023 की अखिल भ रतीर् प्रण ली की']
+
+==================================================
+
+=== PAGE 2 ===
+--- Extracted Text ---
+Report for previous day Date of Reporting: 01-Jun-2023
+A. Power Supply Position at All India and Regional level
+NR WR SR ER NER TOTAL
+Demand Met during Evening Peak hrs(MW) (at
+54832 61074 47138 26131 3424 192599
+20:00 hrs; from RLDCs)
+Peak Shortage (MW) 0 0 0 214 24 238
+Energy Met (MU) 1186 1443 1135 610 67 4441
+Hydro Gen (MU) 251 52 57 61 11 431
+Wind Gen (MU) 14 106 53 - - 172
+Solar Gen (MU)* 136.68 68.20 123.51 2.85 1.37 333
+Energy Shortage (MU) 0.11 0.95 0.00 6.26 1.39 8.71
+Maximum Demand Met During the Day (MW)
+54939 66745 54138 27768 3452 201708
+(From NLDC SCADA)
+Time Of Maximum Demand Met 19:52 15:12 14:56 23:38 19:55 14:59
+B. Frequency Profile (%)
+Region FVI < 49.7 49.7 - 49.8 49.8 - 49.9 < 49.9 49.9 - 50.05 > 50.05
+All India 0.045 0.00 0.00 2.50 2.50 63.11 34.39
+C. Power Supply Position in States
+Max.Demand Shortage during Energy Met Drawal OD(+)/UD(-) Max OD Energy
+Region States Met during the maximum Schedule Shortage (MU)
+(MU) (MU) (MW)
+day (MW) Demand (MW) (MU)
+Punjab 6567 0 139.5 57.2 -2.0 237 0.00
+Haryana 6628 0 141.9 96.2 -7.3 197 0.00
+Rajasthan 10113 0 219.7 43.4 -5.1 385 0.00
+Delhi 4462 0 92.4 89.1 -2.9 53 0.00
+NR UP 22869 0 457.4 199.2 -0.1 252 0.00
+Uttarakhand 2076 0 46.5 25.8 -1.1 82 0.00
+HP 1434 12 27.3 0.1 0.3 191 0.11
+J&K(UT) & Ladakh(UT) 2659 0 53.0 29.2 0.8 280 0.00
+Chandigarh 219 0 4.4 4.7 -0.3 19 0.00
+Railways_NR ISTS 180 0 3.9 3.2 0.7 43 0.00
+Chhattisgarh 4845 0 109.7 48.7 -1.4 175 0.00
+Gujarat 19981 0 422.0 211.1 -0.1 1043 0.00
+MP 11279 0 239.3 128.0 -3.6 333 0.00
+WR Maharashtra 27694 0 600.3 225.2 -0.2 1073 0.95
+Goa 748 0 16.1 16.3 -0.2 54 0.00
+DNHDDPDCL 1226 0 25.0 28.7 -3.7 70 0.00
+AMNSIL 841 0 18.3 8.9 -0.1 265 0.00
+BALCO 520 0 12.4 12.5 -0.1 6 0.00
+Andhra Pradesh 10743 0 222.7 71.6 -0.4 713 0.00
+Telangana 9315 0 191.4 63.7 1.1 544 0.00
+SR Karnataka 12609 0 243.1 77.4 -2.1 866 0.00
+Kerala 4449 0 93.0 68.3 1.0 397 0.00
+Tamil Nadu 18427 0 374.6 215.3 -0.3 521 0.00
+Puducherry 483 0 10.0 10.1 -0.8 53 0.00
+Bihar 6334 0 137.7 126.3 -0.4 323 4.49
+DVC 3242 0 75.7 -38.8 1.5 322 0.00
+Jharkhand 1779 0 36.4 29.7 -1.1 229 1.77
+ER Odisha 6199 0 131.5 59.8 -2.1 309 0.00
+West Bengal 10902 0 227.1 113.4 -4.2 27 0.00
+Sikkim 98 0 2.0 1.5 0.5 47 0.00
+Railways_ER ISTS 13 0 0.1 0.2 -0.1 0 0.00
+Arunachal Pradesh 172 0 2.9 2.4 0.3 50 0.00
+Assam 2287 0 45.2 38.2 0.3 195 0.00
+Manipur 171 0 2.4 2.5 -0.1 22 0.00
+NER Meghalaya 341 24 5.2 3.7 0.0 64 1.39
+Mizoram 109 0 1.9 1.8 -0.2 13 0.00
+Nagaland 157 0 2.6 2.5 0.0 45 0.00
+Tripura 342 0 6.6 6.2 0.6 100 0.00
+D. Transnational Exchanges (MU) - Import(+ve)/Export(-ve)
+Bhutan Nepal Bangladesh Godda -> Bangladesh
+Actual (MU) 3.2 -6.8 -25.0 -21.2
+Day Peak (MW) 498.6 -461.3 -1103.0 -1001.9
+E. Import/Export by Regions (in MU) - Import(+ve)/Export(-ve); OD(+)/UD(-)
+NR WR SR ER NER TOTAL
+Schedule(MU) 116.7 -228.6 128.2 -32.3 16.2 0.2
+Actual(MU) 55.9 -212.8 154.7 -23.7 20.6 -5.3
+O/D/U/D(MU) -60.8 15.8 26.5 8.6 4.4 -5.5
+F. Generation Outage(MW)
+NR WR SR ER NER TOTAL % Share
+Central Sector 3537 10251 5578 930 434 20730 46
+State Sector 6770 13099 2578 2250 241 24938 54
+Total 10307 23350 8156 3180 675 45668 100
+G. Sourcewise generation (Gross) (MU)
+NR WR SR ER NER All India % Share
+Coal 716 1481 708 653 14 3571 74
+Lignite 18 16 44 0 0 78 2
+Hydro 251 52 57 61 11 431 9
+Nuclear 30 36 46 0 0 112 2
+Gas, Naptha & Diesel 31 23 6 0 28 88 2
+RES (Wind, Solar, Biomass & Others) 159 175 197 3 1 537 11
+Total 1206 1783 1058 717 54 4817 100
+Share of RES in total generation (%) 13.22 9.82 18.65 0.48 2.56 11.14
+Share of Non-fossil fuel (Hydro,Nuclear and RES)
+36.53 14.77 28.32 8.97 22.31 22.41
+in total generation(%)
+H. All India Demand Diversity Factor I. All India Peak Demand and shortage at Solar and Non-Solar Hour
+Based on Regional Max Demands 1.026 Max Demand Met(MW) Time Shortage(MW)
+Based on State Max Demands 1.053 Solar hr 201708 14:59 65
+Non-Solar hr 195968 22:54 1084
+Diversity factor = Sum of regional or state maximum demands / All India maximum demand
+**Note: All generation MU figures are gross
+***Godda (Jharkhand) -> Bangladesh power exchange is through the radial connection (isolated from Indian Grid)
+Solar Hours -> 06:00 to 18:00hrs and rest are Non-Solar Hours
+*Source: RLDCs for solar connected to ISTS; SLDCs for embedded solar. Limited visibility of embedded solar data.
+Executive Director-NLDC
+
+--- Extracted Tables (10) ---
+Table 1 (rows: 10):
+['', 'NR', 'WR', 'SR', 'ER', 'NER', 'TOTAL']
+['Demand Met during Evening Peak hrs(MW) (at\n20:00 hrs; from RLDCs)', '54832', '61074', '47138', '26131', '3424', '192599']
+['Peak Shortage (MW)', '0', '0', '0', '214', '24', '238']
+['Energy Met (MU)', '1186', '1443', '1135', '610', '67', '4441']
+['Hydro Gen (MU)', '251', '52', '57', '61', '11', '431']
+['Wind Gen (MU)', '14', '106', '53', '-', '-', '172']
+['Solar Gen (MU)*', '136.68', '68.20', '123.51', '2.85', '1.37', '333']
+['Energy Shortage (MU)', '0.11', '0.95', '0.00', '6.26', '1.39', '8.71']
+['Maximum Demand Met During the Day (MW)\n(From NLDC SCADA)', '54939', '66745', '54138', '27768', '3452', '201708']
+['Time Of Maximum Demand Met', '19:52', '15:12', '14:56', '23:38', '19:55', '14:59']
+Table 2 (rows: 2):
+['Region', 'FVI', '< 49.7', '49.7 - 49.8', '49.8 - 49.9', '< 49.9', '49.9 - 50.05', '> 50.05']
+['All India', '0.045', '0.00', '0.00', '2.50', '2.50', '63.11', '34.39']
+Table 3 (rows: 39):
+['Region', 'States', 'Max.Demand\nMet during the\nday (MW)', 'Shortage during\nmaximum\nDemand (MW)', 'Energy Met\n(MU)', 'Drawal\nSchedule\n(MU)', 'OD(+)/UD(-)\n(MU)', 'Max OD\n(MW)', 'Energy\nShortage (MU)']
+['NR', 'Punjab', '6567', '0', '139.5', '57.2', '-2.0', '237', '0.00']
+[None, 'Haryana', '6628', '0', '141.9', '96.2', '-7.3', '197', '0.00']
+[None, 'Rajasthan', '10113', '0', '219.7', '43.4', '-5.1', '385', '0.00']
+[None, 'Delhi', '4462', '0', '92.4', '89.1', '-2.9', '53', '0.00']
+[None, 'UP', '22869', '0', '457.4', '199.2', '-0.1', '252', '0.00']
+[None, 'Uttarakhand', '2076', '0', '46.5', '25.8', '-1.1', '82', '0.00']
+[None, 'HP', '1434', '12', '27.3', '0.1', '0.3', '191', '0.11']
+[None, 'J&K(UT) & Ladakh(UT)', '2659', '0', '53.0', '29.2', '0.8', '280', '0.00']
+[None, 'Chandigarh', '219', '0', '4.4', '4.7', '-0.3', '19', '0.00']
+[None, 'Railways_NR ISTS', '180', '0', '3.9', '3.2', '0.7', '43', '0.00']
+['WR', 'Chhattisgarh', '4845', '0', '109.7', '48.7', '-1.4', '175', '0.00']
+[None, 'Gujarat', '19981', '0', '422.0', '211.1', '-0.1', '1043', '0.00']
+[None, 'MP', '11279', '0', '239.3', '128.0', '-3.6', '333', '0.00']
+[None, 'Maharashtra', '27694', '0', '600.3', '225.2', '-0.2', '1073', '0.95']
+... 24 more rows ...
+Table 4 (rows: 3):
+['', 'Bhutan', 'Nepal', 'Bangladesh', 'Godda -> Bangladesh']
+['Actual (MU)', '3.2', '-6.8', '-25.0', '-21.2']
+['Day Peak (MW)', '498.6', '-461.3', '-1103.0', '-1001.9']
+Table 5 (rows: 4):
+['', 'NR', 'WR', 'SR', 'ER', 'NER', 'TOTAL']
+['Schedule(MU)', '116.7', '-228.6', '128.2', '-32.3', '16.2', '0.2']
+['Actual(MU)', '55.9', '-212.8', '154.7', '-23.7', '20.6', '-5.3']
+['O/D/U/D(MU)', '-60.8', '15.8', '26.5', '8.6', '4.4', '-5.5']
+Table 6 (rows: 4):
+['', 'NR', 'WR', 'SR', 'ER', 'NER', 'TOTAL', '% Share']
+['Central Sector', '3537', '10251', '5578', '930', '434', '20730', '46']
+['State Sector', '6770', '13099', '2578', '2250', '241', '24938', '54']
+['Total', '10307', '23350', '8156', '3180', '675', '45668', '100']
+Table 7 (rows: 8):
+['', 'NR', 'WR', 'SR', 'ER', 'NER', 'All India', '% Share']
+['Coal', '716', '1481', '708', '653', '14', '3571', '74']
+['Lignite', '18', '16', '44', '0', '0', '78', '2']
+['Hydro', '251', '52', '57', '61', '11', '431', '9']
+['Nuclear', '30', '36', '46', '0', '0', '112', '2']
+['Gas, Naptha & Diesel', '31', '23', '6', '0', '28', '88', '2']
+['RES (Wind, Solar, Biomass & Others)', '159', '175', '197', '3', '1', '537', '11']
+['Total', '1206', '1783', '1058', '717', '54', '4817', '100']
+Table 8 (rows: 2):
+['Share of RES in total generation (%)', '13.22', '9.82', '18.65', '0.48', '2.56', '11.14']
+['Share of Non-fossil fuel (Hydro,Nuclear and RES)\nin total generation(%)', '36.53', '14.77', '28.32', '8.97', '22.31', '22.41']
+Table 9 (rows: 2):
+['Based on Regional Max Demands', '1.026']
+['Based on State Max Demands', '1.053']
+Table 10 (rows: 3):
+['', 'Max Demand Met(MW)', 'Time', 'Shortage(MW)']
+['Solar hr', '201708', '14:59', '65']
+['Non-Solar hr', '195968', '22:54', '1084']
+
+==================================================
+
+=== PAGE 3 ===
+--- Extracted Text ---
+INTER-REGIONAL EXCHANGES
+Import=(+ve) /Export =(-ve) for NET (MU)
+Date of Reporting: 01-Jun-2023
+Sl No Voltage Level Line Details No. of Circuit Max Import (MW) Max Export (MW) Import (MU) Export (MU) NET (MU)
+Import/Export of ER (With NR)
+1 HVDC ALIPURDUAR-AGRA 2 0 0 0.0 0.0 0.0
+2 HVDC PUSAULI B/B - 0 97 0.0 2.4 -2.4
+3 765 kV GAYA-VARANASI 2 1285 0 13.6 0.0 13.6
+4 765 kV SASARAM-FATEHPUR 1 446 67 2.5 0.0 2.5
+5 765 kV GAYA-BALIA 1 0 532 0.0 8.5 -8.5
+6 400 kV PUSAULI-VARANASI 1 0 146 0.0 1.7 -1.7
+7 400 kV PUSAULI -ALLAHABAD 1 40 68 0.0 0.6 -0.6
+8 400 kV MUZAFFARPUR-GORAKHPUR 2 505 345 0.0 0.1 -0.1
+9 400 kV PATNA-BALIA 2 153 384 0.0 4.1 -4.1
+10 400 kV NAUBATPUR-BALIA 2 219 392 0.0 4.1 -4.1
+11 400 kV BIHARSHARIFF-BALIA 2 358 125 1.5 0.0 1.5
+12 400 kV MOTIHARI-GORAKHPUR 2 241 258 0.0 1.4 -1.4
+13 400 kV BIHARSHARIFF-VARANASI 2 507 17 4.0 0.0 4.0
+14 220 kV SAHUPURI-KARAMNASA 1 0 170 0.0 2.3 -2.3
+15 132 kV NAGAR UNTARI-RIHAND 1 0 0 0.0 0.0 0.0
+16 132 kV GARWAH-RIHAND 1 25 0 0.8 0.0 0.8
+17 132 kV KARMANASA-SAHUPURI 1 0 64 0.0 0.0 0.0
+18 132 kV KARMANASA-CHANDAULI 1 0 0 0.0 0.0 0.0
+ER-NR 22.5 25.3 -2.8
+Import/Export of ER (With WR)
+1 765 kV JHARSUGUDA-DHARAMJAIGARH 4 1572 0 20.6 0.0 20.6
+2 765 kV NEW RANCHI-DHARAMJAIGARH 2 1899 0 26.9 0.0 26.9
+3 765 kV JHARSUGUDA-DURG 2 0 422 0.0 7.1 -7.1
+4 400 kV JHARSUGUDA-RAIGARH 4 146 343 0.0 3.7 -3.7
+5 400 kV RANCHI-SIPAT 2 435 0 4.5 0.0 4.5
+6 220 kV BUDHIPADAR-RAIGARH 1 0 60 0.0 1.8 -1.8
+7 220 kV BUDHIPADAR-KORBA 2 187 0 3.5 0.0 3.5
+ER-WR 55.6 12.5 43.1
+Import/Export of ER (With SR)
+1 HVDC JEYPORE-GAZUWAKA B/B 2 0 541 0.0 12.7 -12.7
+2 HVDC TALCHER-KOLAR BIPOLE 2 0 1609 0.0 38.5 -38.5
+3 765 kV ANGUL-SRIKAKULAM 2 0 2840 0.0 48.5 -48.5
+4 400 kV TALCHER-I/C 2 315 109 5.8 0.0 5.8
+5 220 kV BALIMELA-UPPER-SILERRU 1 0 0 0.0 0.0 0.0
+ER-SR 0.0 99.7 -99.7
+Import/Export of ER (With NER)
+1 400 kV BINAGURI-BONGAIGAON 2 0 209 0.0 2.6 -2.6
+2 400 kV ALIPURDUAR-BONGAIGAON 2 0 491 0.0 5.9 -5.9
+3 220 kV ALIPURDUAR-SALAKATI 2 14 105 0.0 1.2 -1.2
+ER-NER 0.0 9.7 -9.7
+Import/Export of NER (With NR)
+1 HVDC BISWANATH CHARIALI-AGRA 2 679 0 9.3 0.0 9.3
+NER-NR 9.3 0.0 9.3
+Import/Export of WR (With NR)
+1 HVDC CHAMPA-KURUKSHETRA 2 0 3020 0.0 37.2 -37.2
+2 HVDC VINDHYACHAL B/B - 451 0 12.2 0.0 12.2
+3 HVDC MUNDRA-MOHINDERGARH 2 0 978 0.0 15.5 -15.5
+4 765 kV GWALIOR-AGRA 2 0 1359 0.0 20.7 -20.7
+5 765 kV GWALIOR-PHAGI 2 1272 880 0.0 3.8 -3.8
+6 765 kV JABALPUR-ORAI 2 143 634 0.0 12.4 -12.4
+7 765 kV GWALIOR-ORAI 1 724 0 11.4 0.0 11.4
+8 765 kV SATNA-ORAI 1 0 854 0.0 16.3 -16.3
+9 765 kV BANASKANTHA-CHITORGARH 2 2097 0 31.4 0.0 31.4
+10 765 kV VINDHYACHAL-VARANASI 2 0 3343 0.0 60.9 -60.9
+11 400 kV ZERDA-KANKROLI 1 374 0 6.0 0.0 6.0
+12 400 kV ZERDA -BHINMAL 1 682 0 9.7 0.0 9.7
+13 400 kV VINDHYACHAL -RIHAND 1 956 0 21.8 0.0 21.8
+14 400 kV RAPP-SHUJALPUR 2 734 94 6.6 0.0 6.6
+15 220 kV BHANPURA-RANPUR 1 0 0 0.0 0.0 0.0
+16 220 kV BHANPURA-MORAK 1 0 30 0.0 1.7 -1.7
+17 220 kV MEHGAON-AURAIYA 1 89 0 1.1 0.0 1.1
+18 220 kV MALANPUR-AURAIYA 1 71 5 0.8 0.0 0.8
+19 132 kV GWALIOR-SAWAI MADHOPUR 1 0 0 0.0 0.0 0.0
+20 132 kV RAJGHAT-LALITPUR 2 0 0 0.0 0.0 0.0
+WR-NR 101.0 168.4 -67.4
+Import/Export of WR (With SR)
+1 HVDC BHADRAWATI B/B - 0 1005 0.0 24.0 -24.0
+2 HVDC RAIGARH-PUGALUR 2 0 3006 0.0 68.9 -68.9
+3 765 kV SOLAPUR-RAICHUR 2 766 1376 0.0 4.4 -4.4
+4 765 kV WARDHA-NIZAMABAD 2 0 2202 0.0 29.1 -29.1
+5 400 kV KOLHAPUR-KUDGI 2 1277 0 21.5 0.0 21.5
+6 220 kV KOLHAPUR-CHIKODI 2 0 0 0.0 0.0 0.0
+7 220 kV PONDA-AMBEWADI 1 2 0 0.0 0.0 0.0
+8 220 kV XELDEM-AMBEWADI 1 0 134 2.6 0.0 2.6
+WR-SR 24.2 126.4 -102.2
+INTERNATIONAL EXCHANGES Import(+ve)/Export(-ve)
+Energy Exchange
+State Region Line Name Max (MW) Min (MW) Avg (MW)
+(MU)
+400kV MANGDECHHU-ALIPURDUAR 1,2&3 i.e.
+ER ALIPURDUAR RECEIPT (from MANGDECHU 287 35 163 3.92
+HEP 4*180MW)
+400kV TALA-BINAGURI 1,2,4 (& 400kV
+ER MALBASE - BINAGURI) i.e. BINAGURI 181 115 151 3.61
+RECEIPT (from TALA HEP 6*170MW)
+220kV CHUKHA-BIRPARA 1&2 (& 220kV
+BHUTAN ER MALBASE - BIRPARA) i.e. BIRPARA RECEIPT -100 23 -235 -5.64
+(from CHUKHA HEP 4*84MW)
+NER 132kV GELEPHU-SALAKATI 16 5 8 0.20
+NER 132kV MOTANGA-RANGIA 57 37 47 1.12
+NR 132kV MAHENDRANAGAR-TANAKPUR(NHPC) -71 0 -55 -1.32
+NEPAL ER NEPAL IMPORT (FROM BIHAR) -86 -19 -45 -1.07
+ER 400kV DHALKEBAR-MUZAFFARPUR 1&2 -304 -14 -182 -4.36
+ER BHERAMARA B/B HVDC (B'DESH) -928 -777 -892 -21.40
+ER
+BANGLADESH 400kV GODDA_TPS-RAHANPUR (B'DESH) D/C -1002 -695 -884 -21.22
+(Isolated from Indian Grid)
+NER 132kV COMILLA-SURAJMANI NAGAR 1&2 -175 0 -149 -3.58
+
+--- Extracted Tables (2) ---
+Table 1 (rows: 77):
+['Sl No', 'Voltage Level', 'Line Details', 'No. of Circuit', 'Max Import (MW)', 'Max Export (MW)', 'Import (MU)', 'Export (MU)', 'NET (MU)']
+['Import/Export of ER (With NR)', None, None, None, None, None, None, None, None]
+['1', 'HVDC', 'ALIPURDUAR-AGRA', '2', '0', '0', '0.0', '0.0', '0.0']
+['2', 'HVDC', 'PUSAULI B/B', '-', '0', '97', '0.0', '2.4', '-2.4']
+['3', '765 kV', 'GAYA-VARANASI', '2', '1285', '0', '13.6', '0.0', '13.6']
+['4', '765 kV', 'SASARAM-FATEHPUR', '1', '446', '67', '2.5', '0.0', '2.5']
+['5', '765 kV', 'GAYA-BALIA', '1', '0', '532', '0.0', '8.5', '-8.5']
+['6', '400 kV', 'PUSAULI-VARANASI', '1', '0', '146', '0.0', '1.7', '-1.7']
+['7', '400 kV', 'PUSAULI -ALLAHABAD', '1', '40', '68', '0.0', '0.6', '-0.6']
+['8', '400 kV', 'MUZAFFARPUR-GORAKHPUR', '2', '505', '345', '0.0', '0.1', '-0.1']
+['9', '400 kV', 'PATNA-BALIA', '2', '153', '384', '0.0', '4.1', '-4.1']
+['10', '400 kV', 'NAUBATPUR-BALIA', '2', '219', '392', '0.0', '4.1', '-4.1']
+['11', '400 kV', 'BIHARSHARIFF-BALIA', '2', '358', '125', '1.5', '0.0', '1.5']
+['12', '400 kV', 'MOTIHARI-GORAKHPUR', '2', '241', '258', '0.0', '1.4', '-1.4']
+['13', '400 kV', 'BIHARSHARIFF-VARANASI', '2', '507', '17', '4.0', '0.0', '4.0']
+... 62 more rows ...
+Table 2 (rows: 13):
+['INTERNATIONAL EXCHANGES Import(+ve)/Export(-ve)', None, None, None, None, None, None]
+['State', 'Region', 'Line Name', 'Max (MW)', 'Min (MW)', 'Avg (MW)', 'Energy Exchange\n(MU)']
+['BHUTAN', 'ER', '400kV MANGDECHHU-ALIPURDUAR 1,2&3 i.e.\nALIPURDUAR RECEIPT (from MANGDECHU\nHEP 4*180MW)', '287', '35', '163', '3.92']
+[None, 'ER', '400kV TALA-BINAGURI 1,2,4 (& 400kV\nMALBASE - BINAGURI) i.e. BINAGURI\nRECEIPT (from TALA HEP 6*170MW)', '181', '115', '151', '3.61']
+[None, 'ER', '220kV CHUKHA-BIRPARA 1&2 (& 220kV\nMALBASE - BIRPARA) i.e. BIRPARA RECEIPT\n(from CHUKHA HEP 4*84MW)', '-100', '23', '-235', '-5.64']
+[None, 'NER', '132kV GELEPHU-SALAKATI', '16', '5', '8', '0.20']
+[None, 'NER', '132kV MOTANGA-RANGIA', '57', '37', '47', '1.12']
+['NEPAL', 'NR', '132kV MAHENDRANAGAR-TANAKPUR(NHPC)', '-71', '0', '-55', '-1.32']
+[None, 'ER', 'NEPAL IMPORT (FROM BIHAR)', '-86', '-19', '-45', '-1.07']
+[None, 'ER', '400kV DHALKEBAR-MUZAFFARPUR 1&2', '-304', '-14', '-182', '-4.36']
+['BANGLADESH', 'ER', "BHERAMARA B/B HVDC (B'DESH)", '-928', '-777', '-892', '-21.40']
+[None, 'ER\n(Isolated from Indian Grid)', "400kV GODDA_TPS-RAHANPUR (B'DESH) D/C", '-1002', '-695', '-884', '-21.22']
+[None, 'NER', '132kV COMILLA-SURAJMANI NAGAR 1&2', '-175', '0', '-149', '-3.58']
+
+==================================================

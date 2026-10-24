@@ -1,0 +1,168 @@
+project:
+  name: "heat-to-load"
+  description: "Temperature Sensitivity of Peak Electricity Demand Across Indian States"
+  random_seed: 42
+
+paths:
+  raw_dir: "data/raw"
+  raw_demand_dir: "data/raw/demand"
+  raw_weather_dir: "data/raw/weather"
+  interim_dir: "data/interim"
+  processed_dir: "data/processed"
+  database_path: "data/processed/heat_to_load.db"
+  manifest_path: "data/MANIFEST.csv"
+  results_path: "reports/results.json"
+  tableau_dir: "tableau"
+  logs_dir: "logs"
+
+modeling:
+  # Holdout period defined before modeling (Peak summer 2024)
+  holdout_start: "2024-04-01"
+  holdout_end: "2024-09-30"
+  # Fixed reference period for monthly 95th percentile temperature heatwave baseline
+  heatwave_reference_start: "2023-04-01"
+  heatwave_reference_end: "2024-03-31"
+  # CV configuration
+  n_cv_splits: 4
+  cv_window_type: "expanding" # rolling-origin / expanding window
+
+weather:
+  api_endpoint: "https://archive-api.open-meteo.com/v1/archive"
+  variables:
+    - "temperature_2m_max"
+    - "temperature_2m_min"
+    - "temperature_2m_mean"
+    - "apparent_temperature_max"
+    - "relative_humidity_2m_mean"
+    - "precipitation_sum"
+  attribution: "Weather data provided by Open-Meteo.com under Non-Commercial / Attribution terms (ERA5 reanalysis)."
+
+states:
+  Delhi:
+    code: "DL"
+    region: "NR"
+    city: "New Delhi"
+    lat: 28.6139
+    lon: 77.2090
+    coord_source: "Survey of India / WGS84 Capital coordinates"
+    demand_bounds_mw: [500, 10000]
+  Maharashtra:
+    code: "MH"
+    region: "WR"
+    city: "Mumbai"
+    lat: 19.0760
+    lon: 72.8777
+    coord_source: "Survey of India / WGS84 Capital coordinates"
+    demand_bounds_mw: [5000, 35000]
+  Gujarat:
+    code: "GJ"
+    region: "WR"
+    city: "Ahmedabad"
+    lat: 23.0225
+    lon: 72.5714
+    coord_source: "Census of India / Largest urban load centre"
+    demand_bounds_mw: [4000, 28000]
+  Tamil Nadu:
+    code: "TN"
+    region: "SR"
+    city: "Chennai"
+    lat: 13.0827
+    lon: 80.2707
+    coord_source: "Survey of India / WGS84 Capital coordinates"
+    demand_bounds_mw: [4000, 25000]
+  Karnataka:
+    code: "KA"
+    region: "SR"
+    city: "Bengaluru"
+    lat: 12.9716
+    lon: 77.5946
+    coord_source: "Survey of India / WGS84 Capital coordinates"
+    demand_bounds_mw: [3000, 22000]
+  Uttar Pradesh:
+    code: "UP"
+    region: "NR"
+    city: "Lucknow"
+    lat: 26.8467
+    lon: 80.9462
+    coord_source: "Survey of India / WGS84 Capital coordinates"
+    demand_bounds_mw: [5000, 35000]
+  Rajasthan:
+    code: "RJ"
+    region: "NR"
+    city: "Jaipur"
+    lat: 26.9124
+    lon: 75.7873
+    coord_source: "Survey of India / WGS84 Capital coordinates"
+    demand_bounds_mw: [3000, 22000]
+  Punjab:
+    code: "PB"
+    region: "NR"
+    city: "Ludhiana"
+    lat: 30.9010
+    lon: 75.8573
+    coord_source: "Census of India / Major load centre"
+    demand_bounds_mw: [2000, 18000]
+  Haryana:
+    code: "HR"
+    region: "NR"
+    city: "Gurugram"
+    lat: 28.4595
+    lon: 77.0266
+    coord_source: "Census of India / Major load centre"
+    demand_bounds_mw: [2000, 16000]
+  Madhya Pradesh:
+    code: "MP"
+    region: "WR"
+    city: "Bhopal"
+    lat: 23.2599
+    lon: 77.4126
+    coord_source: "Survey of India / WGS84 Capital coordinates"
+    demand_bounds_mw: [3000, 20000]
+  West Bengal:
+    code: "WB"
+    region: "ER"
+    city: "Kolkata"
+    lat: 22.5726
+    lon: 88.3639
+    coord_source: "Survey of India / WGS84 Capital coordinates"
+    demand_bounds_mw: [2000, 15000]
+  Telangana:
+    code: "TG"
+    region: "SR"
+    city: "Hyderabad"
+    lat: 17.3850
+    lon: 78.4867
+    coord_source: "Survey of India / WGS84 Capital coordinates"
+    demand_bounds_mw: [3000, 20000]
+  Andhra Pradesh:
+    code: "AP"
+    region: "SR"
+    city: "Vijayawada"
+    lat: 16.5062
+    lon: 80.6480
+    coord_source: "Survey of India / WGS84 Major centre"
+    demand_bounds_mw: [3000, 18000]
+  Kerala:
+    code: "KL"
+    region: "SR"
+    city: "Kochi"
+    lat: 9.9312
+    lon: 76.2673
+    coord_source: "Census of India / Major load centre"
+    demand_bounds_mw: [1000, 8000]
+  Bihar:
+    code: "BR"
+    region: "ER"
+    city: "Patna"
+    lat: 25.5941
+    lon: 85.1376
+    coord_source: "Survey of India / WGS84 Capital coordinates"
+    demand_bounds_mw: [1000, 10000]
+  Odisha:
+    code: "OR"
+    region: "ER"
+    city: "Bhubaneswar"
+    lat: 20.2961
+    lon: 85.8245
+    coord_source: "Survey of India / WGS84 Capital coordinates"
+    demand_bounds_mw: [1000, 8000]

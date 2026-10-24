@@ -1,0 +1,1891 @@
+{
+  "files_grdw_2025_05_30.05.25_NLDC_PSP_667.pdf": {
+    "states_found_count": 16,
+    "states": {
+      "Punjab": {
+        "demand_mw": 11384.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 229.5,
+        "page": 2
+      },
+      "Haryana": {
+        "demand_mw": 10151.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 211.0,
+        "page": 2
+      },
+      "Rajasthan": {
+        "demand_mw": 15771.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 328.1,
+        "page": 2
+      },
+      "Delhi": {
+        "demand_mw": 6289.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 129.8,
+        "page": 2
+      },
+      "UP": {
+        "demand_mw": 28020.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 553.4,
+        "page": 2
+      },
+      "Gujarat": {
+        "demand_mw": 21871.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 458.8,
+        "page": 2
+      },
+      "MP": {
+        "demand_mw": 11892.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 265.3,
+        "page": 2
+      },
+      "Maharashtra": {
+        "demand_mw": 24740.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 527.6,
+        "page": 2
+      },
+      "Andhra Pradesh": {
+        "demand_mw": 9152.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 201.9,
+        "page": 2
+      },
+      "Telangana": {
+        "demand_mw": 8862.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 189.7,
+        "page": 2
+      },
+      "Karnataka": {
+        "demand_mw": 10002.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 196.0,
+        "page": 2
+      },
+      "Kerala": {
+        "demand_mw": 3677.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 72.3,
+        "page": 2
+      },
+      "Tamil Nadu": {
+        "demand_mw": 16504.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 354.4,
+        "page": 2
+      },
+      "Bihar": {
+        "demand_mw": 7612.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 157.1,
+        "page": 2
+      },
+      "Odisha": {
+        "demand_mw": 6475.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 127.7,
+        "page": 2
+      },
+      "West Bengal": {
+        "demand_mw": 10949.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 208.8,
+        "page": 2
+      }
+    }
+  },
+  "files_grdw_2025_06_31.05.25_NLDC_PSP_336.pdf": {
+    "states_found_count": 16,
+    "states": {
+      "Punjab": {
+        "demand_mw": 11877.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 231.7,
+        "page": 2
+      },
+      "Haryana": {
+        "demand_mw": 9777.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 202.5,
+        "page": 2
+      },
+      "Rajasthan": {
+        "demand_mw": 15331.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 332.6,
+        "page": 2
+      },
+      "Delhi": {
+        "demand_mw": 6268.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 126.2,
+        "page": 2
+      },
+      "UP": {
+        "demand_mw": 27536.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 555.4,
+        "page": 2
+      },
+      "Gujarat": {
+        "demand_mw": 21193.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 461.1,
+        "page": 2
+      },
+      "MP": {
+        "demand_mw": 11920.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 261.5,
+        "page": 2
+      },
+      "Maharashtra": {
+        "demand_mw": 24841.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 529.6,
+        "page": 2
+      },
+      "Andhra Pradesh": {
+        "demand_mw": 9544.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 199.1,
+        "page": 2
+      },
+      "Telangana": {
+        "demand_mw": 8886.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 188.2,
+        "page": 2
+      },
+      "Karnataka": {
+        "demand_mw": 9730.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 198.6,
+        "page": 2
+      },
+      "Kerala": {
+        "demand_mw": 3919.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 75.5,
+        "page": 2
+      },
+      "Tamil Nadu": {
+        "demand_mw": 17145.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 358.4,
+        "page": 2
+      },
+      "Bihar": {
+        "demand_mw": 7488.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 160.5,
+        "page": 2
+      },
+      "Odisha": {
+        "demand_mw": 6644.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 131.1,
+        "page": 2
+      },
+      "West Bengal": {
+        "demand_mw": 11292.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 233.6,
+        "page": 2
+      }
+    }
+  },
+  "files_grdw_uploads_daily-reports_psp-reports_2023-2024_30.05.23_NLDC_PSP.pdf": {
+    "states_found_count": 16,
+    "states": {
+      "Punjab": {
+        "demand_mw": 7177.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 152.1,
+        "page": 2
+      },
+      "Haryana": {
+        "demand_mw": 7415.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 146.0,
+        "page": 2
+      },
+      "Rajasthan": {
+        "demand_mw": 9308.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 205.2,
+        "page": 2
+      },
+      "Delhi": {
+        "demand_mw": 4871.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 97.7,
+        "page": 2
+      },
+      "UP": {
+        "demand_mw": 22203.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 438.7,
+        "page": 2
+      },
+      "Gujarat": {
+        "demand_mw": 18941.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 397.0,
+        "page": 2
+      },
+      "MP": {
+        "demand_mw": 10801.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 237.0,
+        "page": 2
+      },
+      "Maharashtra": {
+        "demand_mw": 27226.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 594.1,
+        "page": 2
+      },
+      "Andhra Pradesh": {
+        "demand_mw": 10528.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 219.5,
+        "page": 2
+      },
+      "Telangana": {
+        "demand_mw": 8624.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 185.6,
+        "page": 2
+      },
+      "Karnataka": {
+        "demand_mw": 13020.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 245.3,
+        "page": 2
+      },
+      "Kerala": {
+        "demand_mw": 4515.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 93.4,
+        "page": 2
+      },
+      "Tamil Nadu": {
+        "demand_mw": 18141.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 380.3,
+        "page": 2
+      },
+      "Bihar": {
+        "demand_mw": 6338.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 131.4,
+        "page": 2
+      },
+      "Odisha": {
+        "demand_mw": 6058.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 123.1,
+        "page": 2
+      },
+      "West Bengal": {
+        "demand_mw": 10741.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 223.0,
+        "page": 2
+      }
+    }
+  },
+  "files_grdw_uploads_daily-reports_psp-reports_2023-2024_31.05.23_NLDC_PSP.pdf": {
+    "states_found_count": 16,
+    "states": {
+      "Punjab": {
+        "demand_mw": 6567.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 139.5,
+        "page": 2
+      },
+      "Haryana": {
+        "demand_mw": 6628.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 141.9,
+        "page": 2
+      },
+      "Rajasthan": {
+        "demand_mw": 10113.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 219.7,
+        "page": 2
+      },
+      "Delhi": {
+        "demand_mw": 4462.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 92.4,
+        "page": 2
+      },
+      "UP": {
+        "demand_mw": 22869.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 457.4,
+        "page": 2
+      },
+      "Gujarat": {
+        "demand_mw": 19981.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 422.0,
+        "page": 2
+      },
+      "MP": {
+        "demand_mw": 11279.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 239.3,
+        "page": 2
+      },
+      "Maharashtra": {
+        "demand_mw": 27694.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 600.3,
+        "page": 2
+      },
+      "Andhra Pradesh": {
+        "demand_mw": 10743.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 222.7,
+        "page": 2
+      },
+      "Telangana": {
+        "demand_mw": 9315.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 191.4,
+        "page": 2
+      },
+      "Karnataka": {
+        "demand_mw": 12609.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 243.1,
+        "page": 2
+      },
+      "Kerala": {
+        "demand_mw": 4449.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 93.0,
+        "page": 2
+      },
+      "Tamil Nadu": {
+        "demand_mw": 18427.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 374.6,
+        "page": 2
+      },
+      "Bihar": {
+        "demand_mw": 6334.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 137.7,
+        "page": 2
+      },
+      "Odisha": {
+        "demand_mw": 6199.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 131.5,
+        "page": 2
+      },
+      "West Bengal": {
+        "demand_mw": 10902.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 227.1,
+        "page": 2
+      }
+    }
+  },
+  "files_grdw_uploads_daily-reports_psp-reports_2024-2025_30.05.24_NLDC_PSP.pdf": {
+    "states_found_count": 16,
+    "states": {
+      "Punjab": {
+        "demand_mw": 13905.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 279.6,
+        "page": 2
+      },
+      "Haryana": {
+        "demand_mw": 12164.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 259.3,
+        "page": 2
+      },
+      "Rajasthan": {
+        "demand_mw": 17460.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 379.1,
+        "page": 2
+      },
+      "Delhi": {
+        "demand_mw": 8017.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 162.7,
+        "page": 2
+      },
+      "UP": {
+        "demand_mw": 28584.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 629.7,
+        "page": 2
+      },
+      "Gujarat": {
+        "demand_mw": 24208.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 497.2,
+        "page": 2
+      },
+      "MP": {
+        "demand_mw": 14309.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 310.4,
+        "page": 2
+      },
+      "Maharashtra": {
+        "demand_mw": 28024.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 635.3,
+        "page": 2
+      },
+      "Andhra Pradesh": {
+        "demand_mw": 13231.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 258.3,
+        "page": 2
+      },
+      "Telangana": {
+        "demand_mw": 11041.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 225.6,
+        "page": 2
+      },
+      "Karnataka": {
+        "demand_mw": 13099.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 253.1,
+        "page": 2
+      },
+      "Kerala": {
+        "demand_mw": 3969.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 80.4,
+        "page": 2
+      },
+      "Tamil Nadu": {
+        "demand_mw": 19299.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 403.6,
+        "page": 2
+      },
+      "Bihar": {
+        "demand_mw": 7298.0,
+        "shortage_mw": 157.0,
+        "energy_mu": 156.0,
+        "page": 2
+      },
+      "Odisha": {
+        "demand_mw": 6969.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 147.1,
+        "page": 2
+      },
+      "West Bengal": {
+        "demand_mw": 11524.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 234.8,
+        "page": 2
+      }
+    }
+  },
+  "files_grdw_uploads_daily-reports_psp-reports_2024-2025_31.05.24_NLDC_PSP.pdf": {
+    "states_found_count": 16,
+    "states": {
+      "Punjab": {
+        "demand_mw": 14350.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 283.9,
+        "page": 2
+      },
+      "Haryana": {
+        "demand_mw": 12110.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 259.6,
+        "page": 2
+      },
+      "Rajasthan": {
+        "demand_mw": 16912.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 368.4,
+        "page": 2
+      },
+      "Delhi": {
+        "demand_mw": 7925.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 163.8,
+        "page": 2
+      },
+      "UP": {
+        "demand_mw": 29219.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 632.0,
+        "page": 2
+      },
+      "Gujarat": {
+        "demand_mw": 23879.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 498.4,
+        "page": 2
+      },
+      "MP": {
+        "demand_mw": 14170.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 309.0,
+        "page": 2
+      },
+      "Maharashtra": {
+        "demand_mw": 27950.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 632.4,
+        "page": 2
+      },
+      "Andhra Pradesh": {
+        "demand_mw": 13708.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 262.4,
+        "page": 2
+      },
+      "Telangana": {
+        "demand_mw": 11257.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 231.2,
+        "page": 2
+      },
+      "Karnataka": {
+        "demand_mw": 14094.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 268.7,
+        "page": 2
+      },
+      "Kerala": {
+        "demand_mw": 4180.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 83.7,
+        "page": 2
+      },
+      "Tamil Nadu": {
+        "demand_mw": 20140.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 419.2,
+        "page": 2
+      },
+      "Bihar": {
+        "demand_mw": 6831.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 125.1,
+        "page": 2
+      },
+      "Odisha": {
+        "demand_mw": 6745.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 140.8,
+        "page": 2
+      },
+      "West Bengal": {
+        "demand_mw": 9267.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 182.6,
+        "page": 2
+      }
+    }
+  },
+  "files_grdw_uploads_download-manager-files_29.05.20_NLDC_PSP.pdf": {
+    "states_found_count": 16,
+    "states": {
+      "Punjab": {
+        "demand_mw": 7548.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 150.3,
+        "page": 2
+      },
+      "Haryana": {
+        "demand_mw": 7015.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 139.3,
+        "page": 2
+      },
+      "Rajasthan": {
+        "demand_mw": 11745.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 249.4,
+        "page": 2
+      },
+      "Delhi": {
+        "demand_mw": 5403.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 105.6,
+        "page": 2
+      },
+      "UP": {
+        "demand_mw": 17432.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 350.0,
+        "page": 2
+      },
+      "Gujarat": {
+        "demand_mw": 15264.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 321.5,
+        "page": 2
+      },
+      "MP": {
+        "demand_mw": 9660.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 210.9,
+        "page": 2
+      },
+      "Maharashtra": {
+        "demand_mw": 21288.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 457.3,
+        "page": 2
+      },
+      "Andhra Pradesh": {
+        "demand_mw": 10062.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 195.4,
+        "page": 2
+      },
+      "Telangana": {
+        "demand_mw": 8752.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 180.5,
+        "page": 2
+      },
+      "Karnataka": {
+        "demand_mw": 9672.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 192.1,
+        "page": 2
+      },
+      "Kerala": {
+        "demand_mw": 3419.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 74.3,
+        "page": 2
+      },
+      "Tamil Nadu": {
+        "demand_mw": 13876.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 307.0,
+        "page": 2
+      },
+      "Bihar": {
+        "demand_mw": 4812.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 79.0,
+        "page": 2
+      },
+      "Odisha": {
+        "demand_mw": 4035.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 79.3,
+        "page": 2
+      },
+      "West Bengal": {
+        "demand_mw": 4921.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 89.8,
+        "page": 2
+      }
+    }
+  },
+  "files_grdw_uploads_download-manager-files_30.05.14_NLDC_PSP.pdf": {
+    "states_found_count": 15,
+    "states": {
+      "Punjab": {
+        "demand_mw": 6422.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 143.7,
+        "page": 1
+      },
+      "Haryana": {
+        "demand_mw": 6434.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 139.3,
+        "page": 1
+      },
+      "Rajasthan": {
+        "demand_mw": 8418.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 188.6,
+        "page": 1
+      },
+      "Delhi": {
+        "demand_mw": 4936.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 104.3,
+        "page": 1
+      },
+      "UP": {
+        "demand_mw": 11916.0,
+        "shortage_mw": 2030.0,
+        "energy_mu": 262.9,
+        "page": 1
+      },
+      "Gujarat": {
+        "demand_mw": 12726.0,
+        "shortage_mw": 79.0,
+        "energy_mu": 287.4,
+        "page": 1
+      },
+      "MP": {
+        "demand_mw": 6778.0,
+        "shortage_mw": 352.0,
+        "energy_mu": 148.8,
+        "page": 1
+      },
+      "Maharashtra": {
+        "demand_mw": 18838.0,
+        "shortage_mw": 538.0,
+        "energy_mu": 403.3,
+        "page": 1
+      },
+      "Andhra Pradesh": {
+        "demand_mw": 10186.0,
+        "shortage_mw": 1500.0,
+        "energy_mu": 236.5,
+        "page": 1
+      },
+      "Karnataka": {
+        "demand_mw": 7502.0,
+        "shortage_mw": 300.0,
+        "energy_mu": 158.0,
+        "page": 1
+      },
+      "Kerala": {
+        "demand_mw": 3186.0,
+        "shortage_mw": 300.0,
+        "energy_mu": 60.5,
+        "page": 1
+      },
+      "Tamil Nadu": {
+        "demand_mw": 11665.0,
+        "shortage_mw": 660.0,
+        "energy_mu": 264.2,
+        "page": 1
+      },
+      "Bihar": {
+        "demand_mw": 2376.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 44.1,
+        "page": 1
+      },
+      "Odisha": {
+        "demand_mw": 3836.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 78.7,
+        "page": 1
+      },
+      "West Bengal": {
+        "demand_mw": 7008.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 127.6,
+        "page": 1
+      }
+    }
+  },
+  "files_grdw_uploads_download-manager-files_30.05.16_NLDC_PSP.pdf": {
+    "states_found_count": 16,
+    "states": {
+      "Punjab": {
+        "demand_mw": 6214.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 131.3,
+        "page": 2
+      },
+      "Haryana": {
+        "demand_mw": 5210.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 95.9,
+        "page": 2
+      },
+      "Rajasthan": {
+        "demand_mw": 9224.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 196.4,
+        "page": 2
+      },
+      "Delhi": {
+        "demand_mw": 4594.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 93.8,
+        "page": 2
+      },
+      "UP": {
+        "demand_mw": 10703.0,
+        "shortage_mw": 740.0,
+        "energy_mu": 202.8,
+        "page": 2
+      },
+      "Gujarat": {
+        "demand_mw": 13740.0,
+        "shortage_mw": 14.0,
+        "energy_mu": 304.5,
+        "page": 2
+      },
+      "MP": {
+        "demand_mw": 6773.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 148.9,
+        "page": 2
+      },
+      "Maharashtra": {
+        "demand_mw": 18319.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 419.9,
+        "page": 2
+      },
+      "Andhra Pradesh": {
+        "demand_mw": 6308.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 133.3,
+        "page": 2
+      },
+      "Telangana": {
+        "demand_mw": 5618.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 127.3,
+        "page": 2
+      },
+      "Karnataka": {
+        "demand_mw": 7283.0,
+        "shortage_mw": 200.0,
+        "energy_mu": 166.1,
+        "page": 2
+      },
+      "Kerala": {
+        "demand_mw": 3228.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 74.3,
+        "page": 2
+      },
+      "Tamil Nadu": {
+        "demand_mw": 12703.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 280.1,
+        "page": 2
+      },
+      "Bihar": {
+        "demand_mw": 3113.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 50.9,
+        "page": 2
+      },
+      "Odisha": {
+        "demand_mw": 4215.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 77.9,
+        "page": 2
+      },
+      "West Bengal": {
+        "demand_mw": 7156.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 137.9,
+        "page": 2
+      }
+    }
+  },
+  "files_grdw_uploads_download-manager-files_30.05.18_NLDC_PSP.pdf": {
+    "states_found_count": 16,
+    "states": {
+      "Punjab": {
+        "demand_mw": 8395.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 189.2,
+        "page": 2
+      },
+      "Haryana": {
+        "demand_mw": 8112.0,
+        "shortage_mw": 63.0,
+        "energy_mu": 180.9,
+        "page": 2
+      },
+      "Rajasthan": {
+        "demand_mw": 11120.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 242.6,
+        "page": 2
+      },
+      "Delhi": {
+        "demand_mw": 6254.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 128.4,
+        "page": 2
+      },
+      "UP": {
+        "demand_mw": 18419.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 403.5,
+        "page": 2
+      },
+      "Gujarat": {
+        "demand_mw": 16548.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 364.2,
+        "page": 2
+      },
+      "MP": {
+        "demand_mw": 9058.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 201.6,
+        "page": 2
+      },
+      "Maharashtra": {
+        "demand_mw": 23264.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 511.6,
+        "page": 2
+      },
+      "Andhra Pradesh": {
+        "demand_mw": 9249.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 188.6,
+        "page": 2
+      },
+      "Telangana": {
+        "demand_mw": 7565.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 163.6,
+        "page": 2
+      },
+      "Karnataka": {
+        "demand_mw": 7635.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 170.2,
+        "page": 2
+      },
+      "Kerala": {
+        "demand_mw": 3267.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 63.1,
+        "page": 2
+      },
+      "Tamil Nadu": {
+        "demand_mw": 14984.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 315.3,
+        "page": 2
+      },
+      "Bihar": {
+        "demand_mw": 4624.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 79.4,
+        "page": 2
+      },
+      "Odisha": {
+        "demand_mw": 4418.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 92.1,
+        "page": 2
+      },
+      "West Bengal": {
+        "demand_mw": 8265.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 164.7,
+        "page": 2
+      }
+    }
+  },
+  "files_grdw_uploads_download-manager-files_30.05.19_NLDC_PSP.pdf": {
+    "states_found_count": 16,
+    "states": {
+      "Punjab": {
+        "demand_mw": 7858.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 175.9,
+        "page": 2
+      },
+      "Haryana": {
+        "demand_mw": 8286.0,
+        "shortage_mw": 350.0,
+        "energy_mu": 179.3,
+        "page": 2
+      },
+      "Rajasthan": {
+        "demand_mw": 11634.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 256.2,
+        "page": 2
+      },
+      "Delhi": {
+        "demand_mw": 5966.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 121.6,
+        "page": 2
+      },
+      "UP": {
+        "demand_mw": 20989.0,
+        "shortage_mw": 710.0,
+        "energy_mu": 444.4,
+        "page": 2
+      },
+      "Gujarat": {
+        "demand_mw": 17725.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 389.9,
+        "page": 2
+      },
+      "MP": {
+        "demand_mw": 9827.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 226.3,
+        "page": 2
+      },
+      "Maharashtra": {
+        "demand_mw": 23134.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 515.8,
+        "page": 2
+      },
+      "Andhra Pradesh": {
+        "demand_mw": 9622.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 197.1,
+        "page": 2
+      },
+      "Telangana": {
+        "demand_mw": 8684.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 186.6,
+        "page": 2
+      },
+      "Karnataka": {
+        "demand_mw": 10135.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 206.3,
+        "page": 2
+      },
+      "Kerala": {
+        "demand_mw": 4091.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 79.6,
+        "page": 2
+      },
+      "Tamil Nadu": {
+        "demand_mw": 15328.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 345.2,
+        "page": 2
+      },
+      "Bihar": {
+        "demand_mw": 5291.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 107.7,
+        "page": 2
+      },
+      "Odisha": {
+        "demand_mw": 4395.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 86.6,
+        "page": 2
+      },
+      "West Bengal": {
+        "demand_mw": 9458.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 198.1,
+        "page": 2
+      }
+    }
+  },
+  "files_grdw_uploads_download-manager-files_30.05.20_NLDC_PSP.pdf": {
+    "states_found_count": 16,
+    "states": {
+      "Punjab": {
+        "demand_mw": 6508.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 143.9,
+        "page": 2
+      },
+      "Haryana": {
+        "demand_mw": 5668.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 119.6,
+        "page": 2
+      },
+      "Rajasthan": {
+        "demand_mw": 10488.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 197.7,
+        "page": 2
+      },
+      "Delhi": {
+        "demand_mw": 4075.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 81.8,
+        "page": 2
+      },
+      "UP": {
+        "demand_mw": 15513.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 311.1,
+        "page": 2
+      },
+      "Gujarat": {
+        "demand_mw": 15578.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 326.6,
+        "page": 2
+      },
+      "MP": {
+        "demand_mw": 9314.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 206.1,
+        "page": 2
+      },
+      "Maharashtra": {
+        "demand_mw": 20844.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 461.3,
+        "page": 2
+      },
+      "Andhra Pradesh": {
+        "demand_mw": 9188.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 186.4,
+        "page": 2
+      },
+      "Telangana": {
+        "demand_mw": 7876.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 164.0,
+        "page": 2
+      },
+      "Karnataka": {
+        "demand_mw": 9292.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 183.5,
+        "page": 2
+      },
+      "Kerala": {
+        "demand_mw": 3197.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 70.5,
+        "page": 2
+      },
+      "Tamil Nadu": {
+        "demand_mw": 13611.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 306.6,
+        "page": 2
+      },
+      "Bihar": {
+        "demand_mw": 4826.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 91.0,
+        "page": 2
+      },
+      "Odisha": {
+        "demand_mw": 3929.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 75.1,
+        "page": 2
+      },
+      "West Bengal": {
+        "demand_mw": 6222.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 129.5,
+        "page": 2
+      }
+    }
+  },
+  "files_grdw_uploads_download-manager-files_30.05.21_NLDC_PSP.pdf": {
+    "states_found_count": 16,
+    "states": {
+      "Punjab": {
+        "demand_mw": 7854.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 167.8,
+        "page": 2
+      },
+      "Haryana": {
+        "demand_mw": 6474.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 127.6,
+        "page": 2
+      },
+      "Rajasthan": {
+        "demand_mw": 10930.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 230.8,
+        "page": 2
+      },
+      "Delhi": {
+        "demand_mw": 4500.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 83.7,
+        "page": 2
+      },
+      "UP": {
+        "demand_mw": 19376.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 353.5,
+        "page": 2
+      },
+      "Gujarat": {
+        "demand_mw": 15487.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 339.6,
+        "page": 2
+      },
+      "MP": {
+        "demand_mw": 9313.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 208.2,
+        "page": 2
+      },
+      "Maharashtra": {
+        "demand_mw": 20133.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 451.9,
+        "page": 2
+      },
+      "Andhra Pradesh": {
+        "demand_mw": 10092.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 201.6,
+        "page": 2
+      },
+      "Telangana": {
+        "demand_mw": 7364.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 155.2,
+        "page": 2
+      },
+      "Karnataka": {
+        "demand_mw": 10127.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 192.6,
+        "page": 2
+      },
+      "Kerala": {
+        "demand_mw": 3206.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 63.4,
+        "page": 2
+      },
+      "Tamil Nadu": {
+        "demand_mw": 12050.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 278.6,
+        "page": 2
+      },
+      "Bihar": {
+        "demand_mw": 5529.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 95.4,
+        "page": 2
+      },
+      "Odisha": {
+        "demand_mw": 5090.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 108.8,
+        "page": 2
+      },
+      "West Bengal": {
+        "demand_mw": 7876.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 159.8,
+        "page": 2
+      }
+    }
+  },
+  "files_grdw_uploads_download-manager-files_30.05.22_NLDC_PSP.pdf": {
+    "states_found_count": 16,
+    "states": {
+      "Punjab": {
+        "demand_mw": 8892.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 186.5,
+        "page": 2
+      },
+      "Haryana": {
+        "demand_mw": 8488.0,
+        "shortage_mw": 100.0,
+        "energy_mu": 173.2,
+        "page": 2
+      },
+      "Rajasthan": {
+        "demand_mw": 14592.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 298.5,
+        "page": 2
+      },
+      "Delhi": {
+        "demand_mw": 6357.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 120.6,
+        "page": 2
+      },
+      "UP": {
+        "demand_mw": 22863.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 465.8,
+        "page": 2
+      },
+      "Gujarat": {
+        "demand_mw": 19008.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 412.7,
+        "page": 2
+      },
+      "MP": {
+        "demand_mw": 11169.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 251.8,
+        "page": 2
+      },
+      "Maharashtra": {
+        "demand_mw": 26709.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 587.4,
+        "page": 2
+      },
+      "Andhra Pradesh": {
+        "demand_mw": 11218.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 222.3,
+        "page": 2
+      },
+      "Telangana": {
+        "demand_mw": 9265.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 185.4,
+        "page": 2
+      },
+      "Karnataka": {
+        "demand_mw": 11911.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 230.8,
+        "page": 2
+      },
+      "Kerala": {
+        "demand_mw": 3838.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 77.9,
+        "page": 2
+      },
+      "Tamil Nadu": {
+        "demand_mw": 16401.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 355.7,
+        "page": 2
+      },
+      "Bihar": {
+        "demand_mw": 6072.0,
+        "shortage_mw": 850.0,
+        "energy_mu": 116.8,
+        "page": 2
+      },
+      "Odisha": {
+        "demand_mw": 5847.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 123.6,
+        "page": 2
+      },
+      "West Bengal": {
+        "demand_mw": 9215.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 186.1,
+        "page": 2
+      }
+    }
+  },
+  "files_grdw_uploads_download-manager-files_31.05.14_NLDC_PSP.pdf": {
+    "states_found_count": 15,
+    "states": {
+      "Punjab": {
+        "demand_mw": 6256.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 129.5,
+        "page": 1
+      },
+      "Haryana": {
+        "demand_mw": 6339.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 123.9,
+        "page": 1
+      },
+      "Rajasthan": {
+        "demand_mw": 8507.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 189.1,
+        "page": 1
+      },
+      "Delhi": {
+        "demand_mw": 5321.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 90.8,
+        "page": 1
+      },
+      "UP": {
+        "demand_mw": 11962.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 264.5,
+        "page": 1
+      },
+      "Gujarat": {
+        "demand_mw": 13076.0,
+        "shortage_mw": 4.0,
+        "energy_mu": 287.4,
+        "page": 1
+      },
+      "MP": {
+        "demand_mw": 6993.0,
+        "shortage_mw": 2.0,
+        "energy_mu": 150.6,
+        "page": 1
+      },
+      "Maharashtra": {
+        "demand_mw": 18056.0,
+        "shortage_mw": 403.0,
+        "energy_mu": 404.1,
+        "page": 1
+      },
+      "Andhra Pradesh": {
+        "demand_mw": 11060.0,
+        "shortage_mw": 1000.0,
+        "energy_mu": 243.1,
+        "page": 1
+      },
+      "Karnataka": {
+        "demand_mw": 7538.0,
+        "shortage_mw": 300.0,
+        "energy_mu": 158.7,
+        "page": 1
+      },
+      "Kerala": {
+        "demand_mw": 3305.0,
+        "shortage_mw": 250.0,
+        "energy_mu": 62.9,
+        "page": 1
+      },
+      "Tamil Nadu": {
+        "demand_mw": 12000.0,
+        "shortage_mw": 670.0,
+        "energy_mu": 275.6,
+        "page": 1
+      },
+      "Bihar": {
+        "demand_mw": 2408.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 46.7,
+        "page": 1
+      },
+      "Odisha": {
+        "demand_mw": 3823.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 81.5,
+        "page": 1
+      },
+      "West Bengal": {
+        "demand_mw": 6932.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 140.4,
+        "page": 1
+      }
+    }
+  },
+  "files_grdw_uploads_download-manager-files_31.05.16_NLDC_PSP.pdf": {
+    "states_found_count": 16,
+    "states": {
+      "Punjab": {
+        "demand_mw": 5824.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 114.3,
+        "page": 2
+      },
+      "Haryana": {
+        "demand_mw": 5624.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 84.3,
+        "page": 2
+      },
+      "Rajasthan": {
+        "demand_mw": 9418.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 194.1,
+        "page": 2
+      },
+      "Delhi": {
+        "demand_mw": 4192.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 88.9,
+        "page": 2
+      },
+      "UP": {
+        "demand_mw": 12067.0,
+        "shortage_mw": 1120.0,
+        "energy_mu": 247.0,
+        "page": 2
+      },
+      "Gujarat": {
+        "demand_mw": 14658.0,
+        "shortage_mw": 5.0,
+        "energy_mu": 318.0,
+        "page": 2
+      },
+      "MP": {
+        "demand_mw": 7100.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 150.4,
+        "page": 2
+      },
+      "Maharashtra": {
+        "demand_mw": 20451.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 440.0,
+        "page": 2
+      },
+      "Andhra Pradesh": {
+        "demand_mw": 6558.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 151.3,
+        "page": 2
+      },
+      "Telangana": {
+        "demand_mw": 5939.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 134.5,
+        "page": 2
+      },
+      "Karnataka": {
+        "demand_mw": 8012.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 177.8,
+        "page": 2
+      },
+      "Kerala": {
+        "demand_mw": 3360.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 64.9,
+        "page": 2
+      },
+      "Tamil Nadu": {
+        "demand_mw": 13469.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 298.3,
+        "page": 2
+      },
+      "Bihar": {
+        "demand_mw": 3329.0,
+        "shortage_mw": 150.0,
+        "energy_mu": 61.2,
+        "page": 2
+      },
+      "Odisha": {
+        "demand_mw": 4031.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 83.8,
+        "page": 2
+      },
+      "West Bengal": {
+        "demand_mw": 6838.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 141.8,
+        "page": 2
+      }
+    }
+  },
+  "files_grdw_uploads_download-manager-files_31.05.18_NLDC_PSP.pdf": {
+    "states_found_count": 16,
+    "states": {
+      "Punjab": {
+        "demand_mw": 8726.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 189.6,
+        "page": 2
+      },
+      "Haryana": {
+        "demand_mw": 8153.0,
+        "shortage_mw": 330.0,
+        "energy_mu": 174.2,
+        "page": 2
+      },
+      "Rajasthan": {
+        "demand_mw": 10877.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 230.2,
+        "page": 2
+      },
+      "Delhi": {
+        "demand_mw": 6343.0,
+        "shortage_mw": 10.0,
+        "energy_mu": 128.5,
+        "page": 2
+      },
+      "UP": {
+        "demand_mw": 18846.0,
+        "shortage_mw": 370.0,
+        "energy_mu": 382.2,
+        "page": 2
+      },
+      "Gujarat": {
+        "demand_mw": 16427.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 360.3,
+        "page": 2
+      },
+      "MP": {
+        "demand_mw": 8757.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 200.0,
+        "page": 2
+      },
+      "Maharashtra": {
+        "demand_mw": 23755.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 517.3,
+        "page": 2
+      },
+      "Andhra Pradesh": {
+        "demand_mw": 9185.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 188.2,
+        "page": 2
+      },
+      "Telangana": {
+        "demand_mw": 7752.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 162.7,
+        "page": 2
+      },
+      "Karnataka": {
+        "demand_mw": 8075.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 172.7,
+        "page": 2
+      },
+      "Kerala": {
+        "demand_mw": 3469.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 67.0,
+        "page": 2
+      },
+      "Tamil Nadu": {
+        "demand_mw": 15089.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 328.1,
+        "page": 2
+      },
+      "Bihar": {
+        "demand_mw": 4848.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 86.8,
+        "page": 2
+      },
+      "Odisha": {
+        "demand_mw": 4739.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 95.4,
+        "page": 2
+      },
+      "West Bengal": {
+        "demand_mw": 8676.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 177.3,
+        "page": 2
+      }
+    }
+  },
+  "files_grdw_uploads_download-manager-files_31.05.21_NLDC_PSP.pdf": {
+    "states_found_count": 13,
+    "states": {
+      "Punjab": {
+        "demand_mw": 8054.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 159.8,
+        "page": 2
+      },
+      "Haryana": {
+        "demand_mw": 6789.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 144.4,
+        "page": 2
+      },
+      "Rajasthan": {
+        "demand_mw": 11347.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 242.7,
+        "page": 2
+      },
+      "Delhi": {
+        "demand_mw": 4882.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 90.0,
+        "page": 2
+      },
+      "UP": {
+        "demand_mw": 20604.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 402.6,
+        "page": 2
+      },
+      "Gujarat": {
+        "demand_mw": 16355.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 349.4,
+        "page": 2
+      },
+      "MP": {
+        "demand_mw": 9494.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 207.9,
+        "page": 2
+      },
+      "Maharashtra": {
+        "demand_mw": 21415.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 471.1,
+        "page": 2
+      },
+      "Telangana": {
+        "demand_mw": 7692.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 160.4,
+        "page": 2
+      },
+      "Karnataka": {
+        "demand_mw": 10707.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 205.9,
+        "page": 2
+      },
+      "Kerala": {
+        "demand_mw": 3263.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 68.1,
+        "page": 2
+      },
+      "Bihar": {
+        "demand_mw": 5790.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 108.4,
+        "page": 2
+      },
+      "Odisha": {
+        "demand_mw": 5204.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 111.4,
+        "page": 2
+      }
+    }
+  },
+  "files_grdw_uploads_download-manager-files_31.05.22_NLDC_PSP.pdf": {
+    "states_found_count": 16,
+    "states": {
+      "Punjab": {
+        "demand_mw": 9290.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 197.0,
+        "page": 2
+      },
+      "Haryana": {
+        "demand_mw": 8707.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 186.5,
+        "page": 2
+      },
+      "Rajasthan": {
+        "demand_mw": 15075.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 305.0,
+        "page": 2
+      },
+      "Delhi": {
+        "demand_mw": 6115.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 120.0,
+        "page": 2
+      },
+      "UP": {
+        "demand_mw": 24458.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 490.1,
+        "page": 2
+      },
+      "Gujarat": {
+        "demand_mw": 20062.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 432.0,
+        "page": 2
+      },
+      "MP": {
+        "demand_mw": 11288.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 258.7,
+        "page": 2
+      },
+      "Maharashtra": {
+        "demand_mw": 26420.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 585.3,
+        "page": 2
+      },
+      "Andhra Pradesh": {
+        "demand_mw": 10952.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 222.9,
+        "page": 2
+      },
+      "Telangana": {
+        "demand_mw": 9257.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 183.0,
+        "page": 2
+      },
+      "Karnataka": {
+        "demand_mw": 11715.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 225.2,
+        "page": 2
+      },
+      "Kerala": {
+        "demand_mw": 3812.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 78.7,
+        "page": 2
+      },
+      "Tamil Nadu": {
+        "demand_mw": 16604.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 362.4,
+        "page": 2
+      },
+      "Bihar": {
+        "demand_mw": 6059.0,
+        "shortage_mw": 460.0,
+        "energy_mu": 126.1,
+        "page": 2
+      },
+      "Odisha": {
+        "demand_mw": 5922.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 124.7,
+        "page": 2
+      },
+      "West Bengal": {
+        "demand_mw": 9207.0,
+        "shortage_mw": 0.0,
+        "energy_mu": 190.1,
+        "page": 2
+      }
+    }
+  }
+}

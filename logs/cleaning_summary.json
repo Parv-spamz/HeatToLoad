@@ -1,0 +1,17 @@
+{
+  "analysis_start": "2023-04-01",
+  "analysis_end": "2025-03-31",
+  "total_state_day_records": 11696,
+  "target_states_count": 16,
+  "flag_distribution": {
+    "ok": 11625,
+    "excluded": 34,
+    "weather_interpolated": 32,
+    "outlier_review": 5
+  },
+  "dedup_demand_records_removed": 64,
+  "dedup_weather_records_removed": 0,
+  "weather_interpolated_records_count": 192,
+  "excluded_count": 34,
+  "usable_modeling_records": 11662
+}

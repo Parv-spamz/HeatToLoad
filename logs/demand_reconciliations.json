@@ -1,0 +1,1501 @@
+[
+  {
+    "report_date": "2024-02-01",
+    "parsed_states_count": 16,
+    "state_sum_mw": 199833.0,
+    "regional_max_demands": {
+      "NR": 57339.0,
+      "WR": 73753.0,
+      "SR": 61371.0,
+      "ER": 21908.0,
+      "NER": 2675.0,
+      "TOTAL": 211794.0
+    },
+    "all_india_total_mw": 211794.0,
+    "reconciliation_diff_mw": -11961.0
+  },
+  {
+    "report_date": "2024-01-01",
+    "parsed_states_count": 16,
+    "state_sum_mw": 194326.0,
+    "regional_max_demands": {
+      "NR": 61335.0,
+      "WR": 70372.0,
+      "SR": 56770.0,
+      "ER": 20430.0,
+      "NER": 2434.0,
+      "TOTAL": 207953.0
+    },
+    "all_india_total_mw": 207953.0,
+    "reconciliation_diff_mw": -13627.0
+  },
+  {
+    "report_date": "2023-04-01",
+    "parsed_states_count": 16,
+    "state_sum_mw": 172214.0,
+    "regional_max_demands": {
+      "NR": 45142.0,
+      "WR": 59789.0,
+      "SR": 60780.0,
+      "ER": 20186.0,
+      "NER": 2557.0,
+      "TOTAL": 180284.0
+    },
+    "all_india_total_mw": 180284.0,
+    "reconciliation_diff_mw": -8070.0
+  },
+  {
+    "report_date": "2024-03-01",
+    "parsed_states_count": 16,
+    "state_sum_mw": 200132.0,
+    "regional_max_demands": {
+      "NR": 60366.0,
+      "WR": 70750.0,
+      "SR": 66439.0,
+      "ER": 22539.0,
+      "NER": 2743.0,
+      "TOTAL": 219075.0
+    },
+    "all_india_total_mw": 219075.0,
+    "reconciliation_diff_mw": -18943.0
+  },
+  {
+    "report_date": "2023-05-01",
+    "parsed_states_count": 16,
+    "state_sum_mw": 149061.0,
+    "regional_max_demands": {
+      "NR": 45847.0,
+      "WR": 52166.0,
+      "SR": 42168.0,
+      "ER": 21134.0,
+      "NER": 2644.0,
+      "TOTAL": 159720.0
+    },
+    "all_india_total_mw": 159720.0,
+    "reconciliation_diff_mw": -10659.0
+  },
+  {
+    "report_date": "2023-06-01",
+    "parsed_states_count": 16,
+    "state_sum_mw": 189837.0,
+    "regional_max_demands": {
+      "NR": 55724.0,
+      "WR": 67044.0,
+      "SR": 54171.0,
+      "ER": 28345.0,
+      "NER": 3399.0,
+      "TOTAL": 199477.0
+    },
+    "all_india_total_mw": 199477.0,
+    "reconciliation_diff_mw": -9640.0
+  },
+  {
+    "report_date": "2023-07-01",
+    "parsed_states_count": 16,
+    "state_sum_mw": 187238.0,
+    "regional_max_demands": {
+      "NR": 68504.0,
+      "WR": 54047.0,
+      "SR": 53428.0,
+      "ER": 25625.0,
+      "NER": 3151.0,
+      "TOTAL": 196142.0
+    },
+    "all_india_total_mw": 196142.0,
+    "reconciliation_diff_mw": -8904.0
+  },
+  {
+    "report_date": "2023-08-01",
+    "parsed_states_count": 16,
+    "state_sum_mw": 199501.0,
+    "regional_max_demands": {
+      "NR": 76438.0,
+      "WR": 56283.0,
+      "SR": 51185.0,
+      "ER": 28282.0,
+      "NER": 3392.0,
+      "TOTAL": 206579.0
+    },
+    "all_india_total_mw": 206579.0,
+    "reconciliation_diff_mw": -7078.0
+  },
+  {
+    "report_date": "2023-09-01",
+    "parsed_states_count": 16,
+    "state_sum_mw": 224484.0,
+    "regional_max_demands": {
+      "NR": 77621.0,
+      "WR": 74035.0,
+      "SR": 60813.0,
+      "ER": 27431.0,
+      "NER": 3251.0,
+      "TOTAL": 239978.0
+    },
+    "all_india_total_mw": 239978.0,
+    "reconciliation_diff_mw": -15494.0
+  },
+  {
+    "report_date": "2023-10-01",
+    "parsed_states_count": 16,
+    "state_sum_mw": 171620.0,
+    "regional_max_demands": {
+      "NR": 64756.0,
+      "WR": 59083.0,
+      "SR": 49128.0,
+      "ER": 23664.0,
+      "NER": 3266.0,
+      "TOTAL": 191315.0
+    },
+    "all_india_total_mw": 191315.0,
+    "reconciliation_diff_mw": -19695.0
+  },
+  {
+    "report_date": "2023-12-01",
+    "parsed_states_count": 16,
+    "state_sum_mw": 168150.0,
+    "regional_max_demands": {
+      "NR": 54327.0,
+      "WR": 56715.0,
+      "SR": 50450.0,
+      "ER": 20966.0,
+      "NER": 2778.0,
+      "TOTAL": 181216.0
+    },
+    "all_india_total_mw": 181216.0,
+    "reconciliation_diff_mw": -13066.0
+  },
+  {
+    "report_date": "2023-11-01",
+    "parsed_states_count": 16,
+    "state_sum_mw": 192253.0,
+    "regional_max_demands": {
+      "NR": 55485.0,
+      "WR": 70714.0,
+      "SR": 56593.0,
+      "ER": 22723.0,
+      "NER": 3022.0,
+      "TOTAL": 203839.0
+    },
+    "all_india_total_mw": 203839.0,
+    "reconciliation_diff_mw": -11586.0
+  },
+  {
+    "report_date": "2024-01-02",
+    "parsed_states_count": 16,
+    "state_sum_mw": 195103.0,
+    "regional_max_demands": {
+      "NR": 60422.0,
+      "WR": 72624.0,
+      "SR": 57505.0,
+      "ER": 20947.0,
+      "NER": 2647.0,
+      "TOTAL": 209524.0
+    },
+    "all_india_total_mw": 209524.0,
+    "reconciliation_diff_mw": -14421.0
+  },
+  {
+    "report_date": "2024-02-02",
+    "parsed_states_count": 16,
+    "state_sum_mw": 203580.0,
+    "regional_max_demands": {
+      "NR": 62054.0,
+      "WR": 73376.0,
+      "SR": 61170.0,
+      "ER": 21834.0,
+      "NER": 2587.0,
+      "TOTAL": 218600.0
+    },
+    "all_india_total_mw": 218600.0,
+    "reconciliation_diff_mw": -15020.0
+  },
+  {
+    "report_date": "2023-04-02",
+    "parsed_states_count": 16,
+    "state_sum_mw": 168475.0,
+    "regional_max_demands": {
+      "NR": 44928.0,
+      "WR": 59392.0,
+      "SR": 55930.0,
+      "ER": 21113.0,
+      "NER": 2370.0,
+      "TOTAL": 174691.0
+    },
+    "all_india_total_mw": 174691.0,
+    "reconciliation_diff_mw": -6216.0
+  },
+  {
+    "report_date": "2024-03-02",
+    "parsed_states_count": 16,
+    "state_sum_mw": 188152.0,
+    "regional_max_demands": {
+      "NR": 50376.0,
+      "WR": 67447.0,
+      "SR": 65164.0,
+      "ER": 22928.0,
+      "NER": 2797.0,
+      "TOTAL": 203128.0
+    },
+    "all_india_total_mw": 203128.0,
+    "reconciliation_diff_mw": -14976.0
+  },
+  {
+    "report_date": "2023-06-02",
+    "parsed_states_count": 16,
+    "state_sum_mw": 194299.0,
+    "regional_max_demands": {
+      "NR": 58521.0,
+      "WR": 68043.0,
+      "SR": 55616.0,
+      "ER": 28146.0,
+      "NER": 3401.0,
+      "TOTAL": 206375.0
+    },
+    "all_india_total_mw": 206375.0,
+    "reconciliation_diff_mw": -12076.0
+  },
+  {
+    "report_date": "2023-05-02",
+    "parsed_states_count": 16,
+    "state_sum_mw": 160430.0,
+    "regional_max_demands": {
+      "NR": 48236.0,
+      "WR": 56712.0,
+      "SR": 45503.0,
+      "ER": 22958.0,
+      "NER": 2597.0,
+      "TOTAL": 173208.0
+    },
+    "all_india_total_mw": 173208.0,
+    "reconciliation_diff_mw": -12778.0
+  },
+  {
+    "report_date": "2023-07-02",
+    "parsed_states_count": 16,
+    "state_sum_mw": 184998.0,
+    "regional_max_demands": {
+      "NR": 69384.0,
+      "WR": 53575.0,
+      "SR": 50039.0,
+      "ER": 26290.0,
+      "NER": 3098.0,
+      "TOTAL": 194770.0
+    },
+    "all_india_total_mw": 194770.0,
+    "reconciliation_diff_mw": -9772.0
+  },
+  {
+    "report_date": "2023-08-02",
+    "parsed_states_count": 16,
+    "state_sum_mw": 197968.0,
+    "regional_max_demands": {
+      "NR": 74638.0,
+      "WR": 54623.0,
+      "SR": 53049.0,
+      "ER": 24825.0,
+      "NER": 3257.0,
+      "TOTAL": 202247.0
+    },
+    "all_india_total_mw": 202247.0,
+    "reconciliation_diff_mw": -4279.0
+  },
+  {
+    "report_date": "2023-09-02",
+    "parsed_states_count": 16,
+    "state_sum_mw": 222591.0,
+    "regional_max_demands": {
+      "NR": 79177.0,
+      "WR": 73903.0,
+      "SR": 58271.0,
+      "ER": 27397.0,
+      "NER": 3145.0,
+      "TOTAL": 238620.0
+    },
+    "all_india_total_mw": 238620.0,
+    "reconciliation_diff_mw": -16029.0
+  },
+  {
+    "report_date": "2023-10-02",
+    "parsed_states_count": 16,
+    "state_sum_mw": 182754.0,
+    "regional_max_demands": {
+      "NR": 60720.0,
+      "WR": 61007.0,
+      "SR": 49868.0,
+      "ER": 23870.0,
+      "NER": 3276.0,
+      "TOTAL": 190972.0
+    },
+    "all_india_total_mw": 190972.0,
+    "reconciliation_diff_mw": -8218.0
+  },
+  {
+    "report_date": "2023-12-02",
+    "parsed_states_count": 16,
+    "state_sum_mw": 168293.0,
+    "regional_max_demands": {
+      "NR": 53511.0,
+      "WR": 57942.0,
+      "SR": 48917.0,
+      "ER": 21330.0,
+      "NER": 2730.0,
+      "TOTAL": 180646.0
+    },
+    "all_india_total_mw": 180646.0,
+    "reconciliation_diff_mw": -12353.0
+  },
+  {
+    "report_date": "2023-11-02",
+    "parsed_states_count": 16,
+    "state_sum_mw": 193416.0,
+    "regional_max_demands": {
+      "NR": 55278.0,
+      "WR": 71251.0,
+      "SR": 56948.0,
+      "ER": 23216.0,
+      "NER": 3014.0,
+      "TOTAL": 203068.0
+    },
+    "all_india_total_mw": 203068.0,
+    "reconciliation_diff_mw": -9652.0
+  },
+  {
+    "report_date": "2024-01-03",
+    "parsed_states_count": 16,
+    "state_sum_mw": 198299.0,
+    "regional_max_demands": {
+      "NR": 62059.0,
+      "WR": 72003.0,
+      "SR": 57623.0,
+      "ER": 20325.0,
+      "NER": 2739.0,
+      "TOTAL": 210785.0
+    },
+    "all_india_total_mw": 210785.0,
+    "reconciliation_diff_mw": -12486.0
+  },
+  {
+    "report_date": "2023-04-03",
+    "parsed_states_count": 16,
+    "state_sum_mw": 180507.0,
+    "regional_max_demands": {
+      "NR": 48037.0,
+      "WR": 63829.0,
+      "SR": 61219.0,
+      "ER": 22752.0,
+      "NER": 2570.0,
+      "TOTAL": 187729.0
+    },
+    "all_india_total_mw": 187729.0,
+    "reconciliation_diff_mw": -7222.0
+  },
+  {
+    "report_date": "2024-02-03",
+    "parsed_states_count": 16,
+    "state_sum_mw": 201375.0,
+    "regional_max_demands": {
+      "NR": 59214.0,
+      "WR": 74014.0,
+      "SR": 60021.0,
+      "ER": 22068.0,
+      "NER": 2649.0,
+      "TOTAL": 214106.0
+    },
+    "all_india_total_mw": 214106.0,
+    "reconciliation_diff_mw": -12731.0
+  },
+  {
+    "report_date": "2024-03-03",
+    "parsed_states_count": 16,
+    "state_sum_mw": 179975.0,
+    "regional_max_demands": {
+      "NR": 49395.0,
+      "WR": 61979.0,
+      "SR": 62119.0,
+      "ER": 21622.0,
+      "NER": 2566.0,
+      "TOTAL": 193298.0
+    },
+    "all_india_total_mw": 193298.0,
+    "reconciliation_diff_mw": -13323.0
+  },
+  {
+    "report_date": "2023-05-03",
+    "parsed_states_count": 16,
+    "state_sum_mw": 160411.0,
+    "regional_max_demands": {
+      "NR": 47159.0,
+      "WR": 56477.0,
+      "SR": 45760.0,
+      "ER": 22642.0,
+      "NER": 2712.0,
+      "TOTAL": 172050.0
+    },
+    "all_india_total_mw": 172050.0,
+    "reconciliation_diff_mw": -11639.0
+  },
+  {
+    "report_date": "2023-06-03",
+    "parsed_states_count": 16,
+    "state_sum_mw": 200554.0,
+    "regional_max_demands": {
+      "NR": 59470.0,
+      "WR": 68736.0,
+      "SR": 56532.0,
+      "ER": 28224.0,
+      "NER": 3474.0,
+      "TOTAL": 211608.0
+    },
+    "all_india_total_mw": 211608.0,
+    "reconciliation_diff_mw": -11054.0
+  },
+  {
+    "report_date": "2023-07-03",
+    "parsed_states_count": 16,
+    "state_sum_mw": 197350.0,
+    "regional_max_demands": {
+      "NR": 73223.0,
+      "WR": 57484.0,
+      "SR": 53546.0,
+      "ER": 27086.0,
+      "NER": 3156.0,
+      "TOTAL": 207982.0
+    },
+    "all_india_total_mw": 207982.0,
+    "reconciliation_diff_mw": -10632.0
+  },
+  {
+    "report_date": "2023-08-03",
+    "parsed_states_count": 16,
+    "state_sum_mw": 199013.0,
+    "regional_max_demands": {
+      "NR": 75245.0,
+      "WR": 53886.0,
+      "SR": 54431.0,
+      "ER": 27865.0,
+      "NER": 3398.0,
+      "TOTAL": 205393.0
+    },
+    "all_india_total_mw": 205393.0,
+    "reconciliation_diff_mw": -6380.0
+  },
+  {
+    "report_date": "2023-09-03",
+    "parsed_states_count": 16,
+    "state_sum_mw": 211217.0,
+    "regional_max_demands": {
+      "NR": 79130.0,
+      "WR": 71716.0,
+      "SR": 46962.0,
+      "ER": 26217.0,
+      "NER": 3480.0,
+      "TOTAL": 223121.0
+    },
+    "all_india_total_mw": 223121.0,
+    "reconciliation_diff_mw": -11904.0
+  },
+  {
+    "report_date": "2023-10-03",
+    "parsed_states_count": 16,
+    "state_sum_mw": 193876.0,
+    "regional_max_demands": {
+      "NR": 63124.0,
+      "WR": 63244.0,
+      "SR": 56019.0,
+      "ER": 23042.0,
+      "NER": 3420.0,
+      "TOTAL": 201337.0
+    },
+    "all_india_total_mw": 201337.0,
+    "reconciliation_diff_mw": -7461.0
+  },
+  {
+    "report_date": "2023-11-03",
+    "parsed_states_count": 16,
+    "state_sum_mw": 192432.0,
+    "regional_max_demands": {
+      "NR": 55361.0,
+      "WR": 71160.0,
+      "SR": 56756.0,
+      "ER": 22831.0,
+      "NER": 3021.0,
+      "TOTAL": 204605.0
+    },
+    "all_india_total_mw": 204605.0,
+    "reconciliation_diff_mw": -12173.0
+  },
+  {
+    "report_date": "2023-12-03",
+    "parsed_states_count": 16,
+    "state_sum_mw": 161211.0,
+    "regional_max_demands": {
+      "NR": 52410.0,
+      "WR": 56413.0,
+      "SR": 46014.0,
+      "ER": 20413.0,
+      "NER": 2620.0,
+      "TOTAL": 174165.0
+    },
+    "all_india_total_mw": 174165.0,
+    "reconciliation_diff_mw": -12954.0
+  },
+  {
+    "report_date": "2024-01-04",
+    "parsed_states_count": 16,
+    "state_sum_mw": 197421.0,
+    "regional_max_demands": {
+      "NR": 61670.0,
+      "WR": 72155.0,
+      "SR": 57476.0,
+      "ER": 20659.0,
+      "NER": 2707.0,
+      "TOTAL": 208037.0
+    },
+    "all_india_total_mw": 208037.0,
+    "reconciliation_diff_mw": -10616.0
+  },
+  {
+    "report_date": "2023-04-04",
+    "parsed_states_count": 16,
+    "state_sum_mw": 182595.0,
+    "regional_max_demands": {
+      "NR": 50179.0,
+      "WR": 64099.0,
+      "SR": 60798.0,
+      "ER": 23809.0,
+      "NER": 2596.0,
+      "TOTAL": 189684.0
+    },
+    "all_india_total_mw": 189684.0,
+    "reconciliation_diff_mw": -7089.0
+  },
+  {
+    "report_date": "2024-02-04",
+    "parsed_states_count": 16,
+    "state_sum_mw": 182640.0,
+    "regional_max_demands": {
+      "NR": 56729.0,
+      "WR": 73410.0,
+      "SR": 57136.0,
+      "ER": 21660.0,
+      "NER": 2640.0,
+      "TOTAL": 206344.0
+    },
+    "all_india_total_mw": 206344.0,
+    "reconciliation_diff_mw": -23704.0
+  },
+  {
+    "report_date": "2023-05-04",
+    "parsed_states_count": 16,
+    "state_sum_mw": 166203.0,
+    "regional_max_demands": {
+      "NR": 51290.0,
+      "WR": 57574.0,
+      "SR": 47616.0,
+      "ER": 23080.0,
+      "NER": 2717.0,
+      "TOTAL": 178915.0
+    },
+    "all_india_total_mw": 178915.0,
+    "reconciliation_diff_mw": -12712.0
+  },
+  {
+    "report_date": "2023-06-04",
+    "parsed_states_count": 16,
+    "state_sum_mw": 186001.0,
+    "regional_max_demands": {
+      "NR": 58812.0,
+      "WR": 63987.0,
+      "SR": 50553.0,
+      "ER": 28132.0,
+      "NER": 3276.0,
+      "TOTAL": 199064.0
+    },
+    "all_india_total_mw": 199064.0,
+    "reconciliation_diff_mw": -13063.0
+  },
+  {
+    "report_date": "2024-03-04",
+    "parsed_states_count": 16,
+    "state_sum_mw": 191950.0,
+    "regional_max_demands": {
+      "NR": 54491.0,
+      "WR": 65877.0,
+      "SR": 65958.0,
+      "ER": 22462.0,
+      "NER": 2760.0,
+      "TOTAL": 206560.0
+    },
+    "all_india_total_mw": 206560.0,
+    "reconciliation_diff_mw": -14610.0
+  },
+  {
+    "report_date": "2023-07-04",
+    "parsed_states_count": 16,
+    "state_sum_mw": 199037.0,
+    "regional_max_demands": {
+      "NR": 73465.0,
+      "WR": 59049.0,
+      "SR": 51050.0,
+      "ER": 27611.0,
+      "NER": 3166.0,
+      "TOTAL": 206300.0
+    },
+    "all_india_total_mw": 206300.0,
+    "reconciliation_diff_mw": -7263.0
+  },
+  {
+    "report_date": "2023-08-04",
+    "parsed_states_count": 16,
+    "state_sum_mw": 200161.0,
+    "regional_max_demands": {
+      "NR": 72355.0,
+      "WR": 55371.0,
+      "SR": 57212.0,
+      "ER": 27845.0,
+      "NER": 3271.0,
+      "TOTAL": 206265.0
+    },
+    "all_india_total_mw": 206265.0,
+    "reconciliation_diff_mw": -6104.0
+  },
+  {
+    "report_date": "2023-09-04",
+    "parsed_states_count": 16,
+    "state_sum_mw": 215240.0,
+    "regional_max_demands": {
+      "NR": 81220.0,
+      "WR": 72487.0,
+      "SR": 48844.0,
+      "ER": 26171.0,
+      "NER": 3712.0,
+      "TOTAL": 226227.0
+    },
+    "all_india_total_mw": 226227.0,
+    "reconciliation_diff_mw": -10987.0
+  },
+  {
+    "report_date": "2023-10-04",
+    "parsed_states_count": 16,
+    "state_sum_mw": 196623.0,
+    "regional_max_demands": {
+      "NR": 63430.0,
+      "WR": 63870.0,
+      "SR": 58834.0,
+      "ER": 23277.0,
+      "NER": 3267.0,
+      "TOTAL": 203442.0
+    },
+    "all_india_total_mw": 203442.0,
+    "reconciliation_diff_mw": -6819.0
+  },
+  {
+    "report_date": "2023-12-04",
+    "parsed_states_count": 16,
+    "state_sum_mw": 164002.0,
+    "regional_max_demands": {
+      "NR": 51885.0,
+      "WR": 58964.0,
+      "SR": 44938.0,
+      "ER": 20964.0,
+      "NER": 2745.0,
+      "TOTAL": 175512.0
+    },
+    "all_india_total_mw": 175512.0,
+    "reconciliation_diff_mw": -11510.0
+  },
+  {
+    "report_date": "2023-11-04",
+    "parsed_states_count": 16,
+    "state_sum_mw": 191630.0,
+    "regional_max_demands": {
+      "NR": 56533.0,
+      "WR": 72377.0,
+      "SR": 54239.0,
+      "ER": 23110.0,
+      "NER": 2936.0,
+      "TOTAL": 201946.0
+    },
+    "all_india_total_mw": 201946.0,
+    "reconciliation_diff_mw": -10316.0
+  },
+  {
+    "report_date": "2024-01-05",
+    "parsed_states_count": 16,
+    "state_sum_mw": 197444.0,
+    "regional_max_demands": {
+      "NR": 62979.0,
+      "WR": 72523.0,
+      "SR": 56332.0,
+      "ER": 21033.0,
+      "NER": 2685.0,
+      "TOTAL": 210777.0
+    },
+    "all_india_total_mw": 210777.0,
+    "reconciliation_diff_mw": -13333.0
+  },
+  {
+    "report_date": "2023-04-05",
+    "parsed_states_count": 16,
+    "state_sum_mw": 184857.0,
+    "regional_max_demands": {
+      "NR": 50374.0,
+      "WR": 63992.0,
+      "SR": 60779.0,
+      "ER": 23773.0,
+      "NER": 2704.0,
+      "TOTAL": 189003.0
+    },
+    "all_india_total_mw": 189003.0,
+    "reconciliation_diff_mw": -4146.0
+  },
+  {
+    "report_date": "2023-05-05",
+    "parsed_states_count": 16,
+    "state_sum_mw": 171958.0,
+    "regional_max_demands": {
+      "NR": 53612.0,
+      "WR": 59283.0,
+      "SR": 48257.0,
+      "ER": 24480.0,
+      "NER": 2854.0,
+      "TOTAL": 184356.0
+    },
+    "all_india_total_mw": 184356.0,
+    "reconciliation_diff_mw": -12398.0
+  },
+  {
+    "report_date": "2024-02-05",
+    "parsed_states_count": 16,
+    "state_sum_mw": 199763.0,
+    "regional_max_demands": {
+      "NR": 58420.0,
+      "WR": 74114.0,
+      "SR": 60649.0,
+      "ER": 21988.0,
+      "NER": 2589.0,
+      "TOTAL": 214108.0
+    },
+    "all_india_total_mw": 214108.0,
+    "reconciliation_diff_mw": -14345.0
+  },
+  {
+    "report_date": "2024-03-05",
+    "parsed_states_count": 16,
+    "state_sum_mw": 195598.0,
+    "regional_max_demands": {
+      "NR": 56675.0,
+      "WR": 67235.0,
+      "SR": 66832.0,
+      "ER": 22755.0,
+      "NER": 2709.0,
+      "TOTAL": 211528.0
+    },
+    "all_india_total_mw": 211528.0,
+    "reconciliation_diff_mw": -15930.0
+  },
+  {
+    "report_date": "2023-06-05",
+    "parsed_states_count": 16,
+    "state_sum_mw": 199916.0,
+    "regional_max_demands": {
+      "NR": 62895.0,
+      "WR": 67041.0,
+      "SR": 56144.0,
+      "ER": 28776.0,
+      "NER": 3488.0,
+      "TOTAL": 213982.0
+    },
+    "all_india_total_mw": 213982.0,
+    "reconciliation_diff_mw": -14066.0
+  },
+  {
+    "report_date": "2023-07-05",
+    "parsed_states_count": 16,
+    "state_sum_mw": 193917.0,
+    "regional_max_demands": {
+      "NR": 71326.0,
+      "WR": 58280.0,
+      "SR": 49273.0,
+      "ER": 27394.0,
+      "NER": 3380.0,
+      "TOTAL": 198089.0
+    },
+    "all_india_total_mw": 198089.0,
+    "reconciliation_diff_mw": -4172.0
+  },
+  {
+    "report_date": "2023-08-05",
+    "parsed_states_count": 16,
+    "state_sum_mw": 200604.0,
+    "regional_max_demands": {
+      "NR": 72353.0,
+      "WR": 55849.0,
+      "SR": 56403.0,
+      "ER": 27842.0,
+      "NER": 3357.0,
+      "TOTAL": 207385.0
+    },
+    "all_india_total_mw": 207385.0,
+    "reconciliation_diff_mw": -6781.0
+  },
+  {
+    "report_date": "2023-09-05",
+    "parsed_states_count": 16,
+    "state_sum_mw": 211575.0,
+    "regional_max_demands": {
+      "NR": 80005.0,
+      "WR": 71098.0,
+      "SR": 47319.0,
+      "ER": 26398.0,
+      "NER": 3258.0,
+      "TOTAL": 222695.0
+    },
+    "all_india_total_mw": 222695.0,
+    "reconciliation_diff_mw": -11120.0
+  },
+  {
+    "report_date": "2023-10-05",
+    "parsed_states_count": 16,
+    "state_sum_mw": 199426.0,
+    "regional_max_demands": {
+      "NR": 63263.0,
+      "WR": 65413.0,
+      "SR": 59561.0,
+      "ER": 23991.0,
+      "NER": 3162.0,
+      "TOTAL": 207184.0
+    },
+    "all_india_total_mw": 207184.0,
+    "reconciliation_diff_mw": -7758.0
+  },
+  {
+    "report_date": "2023-11-05",
+    "parsed_states_count": 16,
+    "state_sum_mw": 181414.0,
+    "regional_max_demands": {
+      "NR": 52703.0,
+      "WR": 71147.0,
+      "SR": 49356.0,
+      "ER": 22201.0,
+      "NER": 2695.0,
+      "TOTAL": 192944.0
+    },
+    "all_india_total_mw": 192944.0,
+    "reconciliation_diff_mw": -11530.0
+  },
+  {
+    "report_date": "2023-12-05",
+    "parsed_states_count": 16,
+    "state_sum_mw": 165281.0,
+    "regional_max_demands": {
+      "NR": 53064.0,
+      "WR": 59915.0,
+      "SR": 43051.0,
+      "ER": 20771.0,
+      "NER": 2727.0,
+      "TOTAL": 176479.0
+    },
+    "all_india_total_mw": 176479.0,
+    "reconciliation_diff_mw": -11198.0
+  },
+  {
+    "report_date": "2024-01-06",
+    "parsed_states_count": 16,
+    "state_sum_mw": 195696.0,
+    "regional_max_demands": {
+      "NR": 63598.0,
+      "WR": 71282.0,
+      "SR": 56505.0,
+      "ER": 20879.0,
+      "NER": 2732.0,
+      "TOTAL": 211224.0
+    },
+    "all_india_total_mw": 211224.0,
+    "reconciliation_diff_mw": -15528.0
+  },
+  {
+    "report_date": "2024-02-06",
+    "parsed_states_count": 16,
+    "state_sum_mw": 202011.0,
+    "regional_max_demands": {
+      "NR": 59499.0,
+      "WR": 73757.0,
+      "SR": 61097.0,
+      "ER": 22024.0,
+      "NER": 2696.0,
+      "TOTAL": 215684.0
+    },
+    "all_india_total_mw": 215684.0,
+    "reconciliation_diff_mw": -13673.0
+  },
+  {
+    "report_date": "2023-04-06",
+    "parsed_states_count": 16,
+    "state_sum_mw": 186679.0,
+    "regional_max_demands": {
+      "NR": 51324.0,
+      "WR": 64374.0,
+      "SR": 62404.0,
+      "ER": 23633.0,
+      "NER": 2752.0,
+      "TOTAL": 192061.0
+    },
+    "all_india_total_mw": 192061.0,
+    "reconciliation_diff_mw": -5382.0
+  },
+  {
+    "report_date": "2023-05-06",
+    "parsed_states_count": 16,
+    "state_sum_mw": 175016.0,
+    "regional_max_demands": {
+      "NR": 53891.0,
+      "WR": 60710.0,
+      "SR": 47187.0,
+      "ER": 25193.0,
+      "NER": 2981.0,
+      "TOTAL": 185602.0
+    },
+    "all_india_total_mw": 185602.0,
+    "reconciliation_diff_mw": -10586.0
+  },
+  {
+    "report_date": "2023-06-06",
+    "parsed_states_count": 16,
+    "state_sum_mw": 203577.0,
+    "regional_max_demands": {
+      "NR": 63638.0,
+      "WR": 67777.0,
+      "SR": 56642.0,
+      "ER": 29020.0,
+      "NER": 3504.0,
+      "TOTAL": 217259.0
+    },
+    "all_india_total_mw": 217259.0,
+    "reconciliation_diff_mw": -13682.0
+  },
+  {
+    "report_date": "2024-03-06",
+    "parsed_states_count": 16,
+    "state_sum_mw": 196171.0,
+    "regional_max_demands": {
+      "NR": 56946.0,
+      "WR": 67412.0,
+      "SR": 66821.0,
+      "ER": 23031.0,
+      "NER": 2770.0,
+      "TOTAL": 213020.0
+    },
+    "all_india_total_mw": 213020.0,
+    "reconciliation_diff_mw": -16849.0
+  },
+  {
+    "report_date": "2023-07-06",
+    "parsed_states_count": 16,
+    "state_sum_mw": 186000.0,
+    "regional_max_demands": {
+      "NR": 65536.0,
+      "WR": 56085.0,
+      "SR": 49122.0,
+      "ER": 27142.0,
+      "NER": 3354.0,
+      "TOTAL": 193038.0
+    },
+    "all_india_total_mw": 193038.0,
+    "reconciliation_diff_mw": -7038.0
+  },
+  {
+    "report_date": "2023-08-06",
+    "parsed_states_count": 16,
+    "state_sum_mw": 193883.0,
+    "regional_max_demands": {
+      "NR": 71452.0,
+      "WR": 54214.0,
+      "SR": 54523.0,
+      "ER": 27495.0,
+      "NER": 3076.0,
+      "TOTAL": 198671.0
+    },
+    "all_india_total_mw": 198671.0,
+    "reconciliation_diff_mw": -4788.0
+  },
+  {
+    "report_date": "2023-09-06",
+    "parsed_states_count": 16,
+    "state_sum_mw": 208392.0,
+    "regional_max_demands": {
+      "NR": 78332.0,
+      "WR": 67542.0,
+      "SR": 48486.0,
+      "ER": 26407.0,
+      "NER": 3259.0,
+      "TOTAL": 219272.0
+    },
+    "all_india_total_mw": 219272.0,
+    "reconciliation_diff_mw": -10880.0
+  },
+  {
+    "report_date": "2023-10-06",
+    "parsed_states_count": 16,
+    "state_sum_mw": 201377.0,
+    "regional_max_demands": {
+      "NR": 63937.0,
+      "WR": 65975.0,
+      "SR": 60444.0,
+      "ER": 24613.0,
+      "NER": 3009.0,
+      "TOTAL": 211251.0
+    },
+    "all_india_total_mw": 211251.0,
+    "reconciliation_diff_mw": -9874.0
+  },
+  {
+    "report_date": "2023-11-06",
+    "parsed_states_count": 16,
+    "state_sum_mw": 188363.0,
+    "regional_max_demands": {
+      "NR": 56254.0,
+      "WR": 73028.0,
+      "SR": 50212.0,
+      "ER": 22991.0,
+      "NER": 2838.0,
+      "TOTAL": 198571.0
+    },
+    "all_india_total_mw": 198571.0,
+    "reconciliation_diff_mw": -10208.0
+  },
+  {
+    "report_date": "2023-12-06",
+    "parsed_states_count": 16,
+    "state_sum_mw": 169829.0,
+    "regional_max_demands": {
+      "NR": 55036.0,
+      "WR": 61054.0,
+      "SR": 45987.0,
+      "ER": 19301.0,
+      "NER": 2781.0,
+      "TOTAL": 182116.0
+    },
+    "all_india_total_mw": 182116.0,
+    "reconciliation_diff_mw": -12287.0
+  },
+  {
+    "report_date": "2024-01-07",
+    "parsed_states_count": 16,
+    "state_sum_mw": 188521.0,
+    "regional_max_demands": {
+      "NR": 61095.0,
+      "WR": 69772.0,
+      "SR": 52344.0,
+      "ER": 20676.0,
+      "NER": 2583.0,
+      "TOTAL": 203047.0
+    },
+    "all_india_total_mw": 203047.0,
+    "reconciliation_diff_mw": -14526.0
+  },
+  {
+    "report_date": "2023-04-07",
+    "parsed_states_count": 16,
+    "state_sum_mw": 186464.0,
+    "regional_max_demands": {
+      "NR": 52050.0,
+      "WR": 65159.0,
+      "SR": 60428.0,
+      "ER": 24428.0,
+      "NER": 2779.0,
+      "TOTAL": 193282.0
+    },
+    "all_india_total_mw": 193282.0,
+    "reconciliation_diff_mw": -6818.0
+  },
+  {
+    "report_date": "2024-02-07",
+    "parsed_states_count": 16,
+    "state_sum_mw": 202718.0,
+    "regional_max_demands": {
+      "NR": 59668.0,
+      "WR": 74453.0,
+      "SR": 61627.0,
+      "ER": 21737.0,
+      "NER": 2711.0,
+      "TOTAL": 216413.0
+    },
+    "all_india_total_mw": 216413.0,
+    "reconciliation_diff_mw": -13695.0
+  },
+  {
+    "report_date": "2023-05-07",
+    "parsed_states_count": 16,
+    "state_sum_mw": 167517.0,
+    "regional_max_demands": {
+      "NR": 53111.0,
+      "WR": 58842.0,
+      "SR": 41849.0,
+      "ER": 26218.0,
+      "NER": 2957.0,
+      "TOTAL": 180377.0
+    },
+    "all_india_total_mw": 180377.0,
+    "reconciliation_diff_mw": -12860.0
+  },
+  {
+    "report_date": "2024-03-07",
+    "parsed_states_count": 16,
+    "state_sum_mw": 197450.0,
+    "regional_max_demands": {
+      "NR": 57479.0,
+      "WR": 68110.0,
+      "SR": 67290.0,
+      "ER": 23215.0,
+      "NER": 2713.0,
+      "TOTAL": 214946.0
+    },
+    "all_india_total_mw": 214946.0,
+    "reconciliation_diff_mw": -17496.0
+  },
+  {
+    "report_date": "2023-06-07",
+    "parsed_states_count": 16,
+    "state_sum_mw": 203396.0,
+    "regional_max_demands": {
+      "NR": 66257.0,
+      "WR": 68483.0,
+      "SR": 56684.0,
+      "ER": 29277.0,
+      "NER": 3437.0,
+      "TOTAL": 217843.0
+    },
+    "all_india_total_mw": 217843.0,
+    "reconciliation_diff_mw": -14447.0
+  },
+  {
+    "report_date": "2023-07-07",
+    "parsed_states_count": 16,
+    "state_sum_mw": 187515.0,
+    "regional_max_demands": {
+      "NR": 67568.0,
+      "WR": 55561.0,
+      "SR": 50534.0,
+      "ER": 26573.0,
+      "NER": 3365.0,
+      "TOTAL": 193700.0
+    },
+    "all_india_total_mw": 193700.0,
+    "reconciliation_diff_mw": -6185.0
+  },
+  {
+    "report_date": "2023-08-07",
+    "parsed_states_count": 16,
+    "state_sum_mw": 203660.0,
+    "regional_max_demands": {
+      "NR": 73586.0,
+      "WR": 58394.0,
+      "SR": 58606.0,
+      "ER": 26231.0,
+      "NER": 3230.0,
+      "TOTAL": 209855.0
+    },
+    "all_india_total_mw": 209855.0,
+    "reconciliation_diff_mw": -6195.0
+  },
+  {
+    "report_date": "2023-09-07",
+    "parsed_states_count": 16,
+    "state_sum_mw": 199100.0,
+    "regional_max_demands": {
+      "NR": 80494.0,
+      "WR": 61407.0,
+      "SR": 48930.0,
+      "ER": 25848.0,
+      "NER": 3124.0,
+      "TOTAL": 213344.0
+    },
+    "all_india_total_mw": 213344.0,
+    "reconciliation_diff_mw": -14244.0
+  },
+  {
+    "report_date": "2023-10-07",
+    "parsed_states_count": 16,
+    "state_sum_mw": 201376.0,
+    "regional_max_demands": {
+      "NR": 64234.0,
+      "WR": 66079.0,
+      "SR": 60748.0,
+      "ER": 24928.0,
+      "NER": 3041.0,
+      "TOTAL": 211534.0
+    },
+    "all_india_total_mw": 211534.0,
+    "reconciliation_diff_mw": -10158.0
+  },
+  {
+    "report_date": "2023-12-07",
+    "parsed_states_count": 16,
+    "state_sum_mw": 170979.0,
+    "regional_max_demands": {
+      "NR": 53465.0,
+      "WR": 61008.0,
+      "SR": 48604.0,
+      "ER": 19482.0,
+      "NER": 2628.0,
+      "TOTAL": 181948.0
+    },
+    "all_india_total_mw": 181948.0,
+    "reconciliation_diff_mw": -10969.0
+  },
+  {
+    "report_date": "2023-11-07",
+    "parsed_states_count": 16,
+    "state_sum_mw": 185910.0,
+    "regional_max_demands": {
+      "NR": 56782.0,
+      "WR": 72848.0,
+      "SR": 48891.0,
+      "ER": 21898.0,
+      "NER": 2886.0,
+      "TOTAL": 196615.0
+    },
+    "all_india_total_mw": 196615.0,
+    "reconciliation_diff_mw": -10705.0
+  },
+  {
+    "report_date": "2024-01-08",
+    "parsed_states_count": 16,
+    "state_sum_mw": 194867.0,
+    "regional_max_demands": {
+      "NR": 63734.0,
+      "WR": 70962.0,
+      "SR": 53548.0,
+      "ER": 21713.0,
+      "NER": 2711.0,
+      "TOTAL": 204828.0
+    },
+    "all_india_total_mw": 204828.0,
+    "reconciliation_diff_mw": -9961.0
+  },
+  {
+    "report_date": "2023-04-08",
+    "parsed_states_count": 16,
+    "state_sum_mw": 184689.0,
+    "regional_max_demands": {
+      "NR": 52309.0,
+      "WR": 63430.0,
+      "SR": 58886.0,
+      "ER": 24396.0,
+      "NER": 2863.0,
+      "TOTAL": 189327.0
+    },
+    "all_india_total_mw": 189327.0,
+    "reconciliation_diff_mw": -4638.0
+  },
+  {
+    "report_date": "2024-03-08",
+    "parsed_states_count": 16,
+    "state_sum_mw": 199244.0,
+    "regional_max_demands": {
+      "NR": 59333.0,
+      "WR": 68648.0,
+      "SR": 68084.0,
+      "ER": 22395.0,
+      "NER": 2715.0,
+      "TOTAL": 219016.0
+    },
+    "all_india_total_mw": 219016.0,
+    "reconciliation_diff_mw": -19772.0
+  },
+  {
+    "report_date": "2024-02-08",
+    "parsed_states_count": 16,
+    "state_sum_mw": 201781.0,
+    "regional_max_demands": {
+      "NR": 60756.0,
+      "WR": 73726.0,
+      "SR": 62404.0,
+      "ER": 21785.0,
+      "NER": 2814.0,
+      "TOTAL": 217272.0
+    },
+    "all_india_total_mw": 217272.0,
+    "reconciliation_diff_mw": -15491.0
+  },
+  {
+    "report_date": "2023-05-08",
+    "parsed_states_count": 16,
+    "state_sum_mw": 182276.0,
+    "regional_max_demands": {
+      "WR": 56138.0,
+      "SR": 64448.0,
+      "ER": 47857.0,
+      "NER": 26581.0,
+      "TOTAL": 2992.0
+    },
+    "all_india_total_mw": 2992.0,
+    "reconciliation_diff_mw": 179284.0
+  },
+  {
+    "report_date": "2023-06-08",
+    "parsed_states_count": 16,
+    "state_sum_mw": 208284.0,
+    "regional_max_demands": {
+      "NR": 68134.0,
+      "WR": 69491.0,
+      "SR": 56452.0,
+      "ER": 29137.0,
+      "NER": 3400.0,
+      "TOTAL": 222920.0
+    },
+    "all_india_total_mw": 222920.0,
+    "reconciliation_diff_mw": -14636.0
+  },
+  {
+    "report_date": "2023-07-08",
+    "parsed_states_count": 16,
+    "state_sum_mw": 181919.0,
+    "regional_max_demands": {
+      "NR": 64235.0,
+      "WR": 55931.0,
+      "SR": 50720.0,
+      "ER": 26653.0,
+      "NER": 3309.0,
+      "TOTAL": 185373.0
+    },
+    "all_india_total_mw": 185373.0,
+    "reconciliation_diff_mw": -3454.0
+  },
+  {
+    "report_date": "2023-08-08",
+    "parsed_states_count": 16,
+    "state_sum_mw": 207191.0,
+    "regional_max_demands": {
+      "NR": 74123.0,
+      "WR": 60042.0,
+      "SR": 59440.0,
+      "ER": 26093.0,
+      "NER": 3257.0,
+      "TOTAL": 215457.0
+    },
+    "all_india_total_mw": 215457.0,
+    "reconciliation_diff_mw": -8266.0
+  },
+  {
+    "report_date": "2023-12-08",
+    "parsed_states_count": 16,
+    "state_sum_mw": 173304.0,
+    "regional_max_demands": {
+      "NR": 56079.0,
+      "WR": 61746.0,
+      "SR": 49250.0,
+      "ER": 19941.0,
+      "NER": 2652.0,
+      "TOTAL": 187684.0
+    },
+    "all_india_total_mw": 187684.0,
+    "reconciliation_diff_mw": -14380.0
+  },
+  {
+    "report_date": "2023-10-08",
+    "parsed_states_count": 16,
+    "state_sum_mw": 198558.0,
+    "regional_max_demands": {
+      "NR": 64949.0,
+      "WR": 64400.0,
+      "SR": 58210.0,
+      "ER": 25109.0,
+      "NER": 3062.0,
+      "TOTAL": 210077.0
+    },
+    "all_india_total_mw": 210077.0,
+    "reconciliation_diff_mw": -11519.0
+  },
+  {
+    "report_date": "2023-09-08",
+    "parsed_states_count": 16,
+    "state_sum_mw": 198451.0,
+    "regional_max_demands": {
+      "NR": 75699.0,
+      "WR": 60285.0,
+      "SR": 50684.0,
+      "ER": 25517.0,
+      "NER": 3415.0,
+      "TOTAL": 209280.0
+    },
+    "all_india_total_mw": 209280.0,
+    "reconciliation_diff_mw": -10829.0
+  },
+  {
+    "report_date": "2023-11-08",
+    "parsed_states_count": 16,
+    "state_sum_mw": 186309.0,
+    "regional_max_demands": {
+      "NR": 56849.0,
+      "WR": 72868.0,
+      "SR": 48786.0,
+      "ER": 22663.0,
+      "NER": 2901.0,
+      "TOTAL": 197001.0
+    },
+    "all_india_total_mw": 197001.0,
+    "reconciliation_diff_mw": -10692.0
+  },
+  {
+    "report_date": "2024-01-09",
+    "parsed_states_count": 16,
+    "state_sum_mw": 197047.0,
+    "regional_max_demands": {
+      "NR": 63796.0,
+      "WR": 71834.0,
+      "SR": 53984.0,
+      "ER": 21453.0,
+      "NER": 2742.0,
+      "TOTAL": 207039.0
+    },
+    "all_india_total_mw": 207039.0,
+    "reconciliation_diff_mw": -9992.0
+  },
+  {
+    "report_date": "2023-04-09",
+    "parsed_states_count": 16,
+    "state_sum_mw": 178399.0,
+    "regional_max_demands": {
+      "NR": 50128.0,
+      "WR": 61900.0,
+      "SR": 55426.0,
+      "ER": 24839.0,
+      "NER": 2727.0,
+      "TOTAL": 182654.0
+    },
+    "all_india_total_mw": 182654.0,
+    "reconciliation_diff_mw": -4255.0
+  },
+  {
+    "report_date": "2023-05-09",
+    "parsed_states_count": 16,
+    "state_sum_mw": 186288.0,
+    "regional_max_demands": {
+      "NR": 57874.0,
+      "WR": 64677.0,
+      "SR": 48390.0,
+      "ER": 27163.0,
+      "NER": 3197.0,
+      "TOTAL": 196276.0
+    },
+    "all_india_total_mw": 196276.0,
+    "reconciliation_diff_mw": -9988.0
+  },
+  {
+    "report_date": "2024-02-09",
+    "parsed_states_count": 16,
+    "state_sum_mw": 202629.0,
+    "regional_max_demands": {
+      "NR": 62185.0,
+      "WR": 73074.0,
+      "SR": 62941.0,
+      "ER": 21643.0,
+      "NER": 2696.0,
+      "TOTAL": 220140.0
+    },
+    "all_india_total_mw": 220140.0,
+    "reconciliation_diff_mw": -17511.0
+  }
+]

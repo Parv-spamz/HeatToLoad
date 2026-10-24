@@ -1,0 +1,588 @@
+[
+  {
+    "period": "2014-15",
+    "title": "31.05.14_NLDC_PSP",
+    "date_field": "31-05-2014",
+    "mime_type": "attachment/pdf",
+    "url": "https://webcdn.grid-india.in/files/grdw/uploads/download-manager-files/31.05.14_NLDC_PSP.pdf",
+    "local_path": "data\\raw\\samples\\files_grdw_uploads_download-manager-files_31.05.14_NLDC_PSP.pdf",
+    "size_bytes": 81207,
+    "sha256": "8a031598f141f13afae92f1b6a1631101abf46106f9ae1fc862717e7829b013c",
+    "status": 200,
+    "page_count": 2,
+    "has_state_table": true,
+    "sample_states": [
+      "Punjab",
+      "Haryana",
+      "Rajasthan",
+      "Delhi",
+      "Gujarat",
+      "Maharashtra",
+      "Karnataka",
+      "Tamil Nadu"
+    ],
+    "tables_found": [
+      "Page 1: A. Maximum Demand",
+      "Page 1: Region | <49.2 | <49.7 | 49.7-49.8 | 49.8-49.9 | <49.9 | 49.9-50.05 | > 50.05",
+      "Page 1: C.Power Supply Position in States",
+      "Page 1: D. Transnational Exchanges (MU) - Import(+ve)/Export(-ve)",
+      "Page 1: E. Import/export By Regions(in MU) - Import(+ve)/Export(-ve); OD(+)/UD(-)"
+    ]
+  },
+  {
+    "period": "2014-15",
+    "title": "30.05.14_NLDC_PSP",
+    "date_field": "30-05-2014",
+    "mime_type": "attachment/pdf",
+    "url": "https://webcdn.grid-india.in/files/grdw/uploads/download-manager-files/30.05.14_NLDC_PSP.pdf",
+    "local_path": "data\\raw\\samples\\files_grdw_uploads_download-manager-files_30.05.14_NLDC_PSP.pdf",
+    "size_bytes": 93715,
+    "sha256": "d77798a1d46eda291787be8555f0a2134a64339dac4b698ab4fc852c3c84e3cb",
+    "status": 200,
+    "page_count": 2,
+    "has_state_table": true,
+    "sample_states": [
+      "Punjab",
+      "Haryana",
+      "Rajasthan",
+      "Delhi",
+      "Gujarat",
+      "Maharashtra",
+      "Karnataka",
+      "Tamil Nadu"
+    ],
+    "tables_found": [
+      "Page 1: A. Maximum Demand",
+      "Page 1: Region | <49.2 | <49.7 | 49.7-49.8 | 49.8-49.9 | <49.9 | 49.9-50.05 | > 50.05",
+      "Page 1: C.Power Supply Position in States",
+      "Page 1: D. Transnational Exchanges (MU) - Import(+ve)/Export(-ve)",
+      "Page 1: E. Import/export By Regions(in MU) - Import(+ve)/Export(-ve); OD(+)/UD(-)"
+    ]
+  },
+  {
+    "period": "2016-17",
+    "title": "31.05.16_NLDC_PSP",
+    "date_field": "31-05-2016",
+    "mime_type": "attachment/pdf",
+    "url": "https://webcdn.grid-india.in/files/grdw/uploads/download-manager-files/31.05.16_NLDC_PSP.pdf",
+    "local_path": "data\\raw\\samples\\files_grdw_uploads_download-manager-files_31.05.16_NLDC_PSP.pdf",
+    "size_bytes": 933712,
+    "sha256": "530f37485ee12698bd358d1827c192924a2e472b452ecac8ef1c83fc1f27d711",
+    "status": 200,
+    "page_count": 3,
+    "has_state_table": true,
+    "sample_states": [
+      "Punjab",
+      "Haryana",
+      "Rajasthan",
+      "Delhi",
+      "Gujarat",
+      "Maharashtra",
+      "Karnataka",
+      "Tamil Nadu"
+    ],
+    "tables_found": [
+      "Page 2: A. Maximum Demand",
+      "Page 2: Region | <49.2 | <49.7 | 49.7-49.8 | 49.8-49.9 | <49.9 | 49.9-50.05 | > 50.05",
+      "Page 2: C.Power Supply Position in States",
+      "Page 2: D. Transnational Exchanges (MU) - Import(+ve)/Export(-ve)",
+      "Page 2: E. Import/export By Regions(in MU) - Import(+ve)/Export(-ve); OD(+)/UD(-)"
+    ]
+  },
+  {
+    "period": "2016-17",
+    "title": "30.05.16_NLDC_PSP",
+    "date_field": "30-05-2016",
+    "mime_type": "attachment/pdf",
+    "url": "https://webcdn.grid-india.in/files/grdw/uploads/download-manager-files/30.05.16_NLDC_PSP.pdf",
+    "local_path": "data\\raw\\samples\\files_grdw_uploads_download-manager-files_30.05.16_NLDC_PSP.pdf",
+    "size_bytes": 392465,
+    "sha256": "fc3c2c2c701fb2130e3a43ccee45e1b9d037a3e02adb35f6584803f613bb68d6",
+    "status": 200,
+    "page_count": 3,
+    "has_state_table": true,
+    "sample_states": [
+      "Punjab",
+      "Haryana",
+      "Rajasthan",
+      "Delhi",
+      "Gujarat",
+      "Maharashtra",
+      "Karnataka",
+      "Tamil Nadu"
+    ],
+    "tables_found": [
+      "Page 2: A. Maximum Demand",
+      "Page 2: Region | <49.2 | <49.7 | 49.7-49.8 | 49.8-49.9 | <49.9 | 49.9-50.05 | > 50.05",
+      "Page 2: C.Power Supply Position in States",
+      "Page 2: D. Transnational Exchanges (MU) - Import(+ve)/Export(-ve)",
+      "Page 2: E. Import/export By Regions(in MU) - Import(+ve)/Export(-ve); OD(+)/UD(-)"
+    ]
+  },
+  {
+    "period": "2018-19",
+    "title": "31.05.18_NLDC_PSP",
+    "date_field": "31-05-2018",
+    "mime_type": "attachment/pdf",
+    "url": "https://webcdn.grid-india.in/files/grdw/uploads/download-manager-files/31.05.18_NLDC_PSP.pdf",
+    "local_path": "data\\raw\\samples\\files_grdw_uploads_download-manager-files_31.05.18_NLDC_PSP.pdf",
+    "size_bytes": 1604166,
+    "sha256": "a07548c9908502f711787544675f2a2a9de4f0b6f98036ed16265bc953660cc4",
+    "status": 200,
+    "page_count": 3,
+    "has_state_table": true,
+    "sample_states": [
+      "Punjab",
+      "Haryana",
+      "Rajasthan",
+      "Delhi",
+      "Gujarat",
+      "Maharashtra",
+      "Karnataka",
+      "Tamil Nadu"
+    ],
+    "tables_found": [
+      "Page 1: \u0906\u0908\u0966\u0908\u0966\u091c\u0940\u0966\u0938\u0940\u0966-2010 \u0915\u0940 \u0927\u093e\u0930\u093e \u0938.-5.5.1 \u0915\u0947 \u092a\u094d\u0930\u093e\u0935\u0927\u093e\u0928 \u0915\u0947 \u0905\u0928 \u0938\u093e\u0930, \u0926\u0926\u0928\u093e\u0902\u0915 30-\u092e\u0908 2018 \u0915\u0940 \u0905\u0916\u093f\u0932",
+      "Page 2: \u092a\u0949\u0935\u0930 \u091a\u0938\u0938\u094d\u091f\u092e \u0911\u092a\u0930\u0947\u0936\u093f \u0915\u091c\u0930\u092a\u094b\u0930\u0947\u0936\u093f \u091a\u093f\u091a\u092e\u091f\u0947\u0921\n\u0930\u091c\u0937\u094d\u091f\u094d\u0930\u0940\u092f \u093f\u091c\u0930 \u092a\u094d\u0930\u0947\u0937\u0923 \u0915\u0947\u0902\u0926\u094d\u0930, \u093f\u0908 \u091a\u0926\u0932\u094d\u0932\u0940\nReport for previous day Date of Reporting 31",
+      "Page 2: NR | WR | SR | ER | NER | Total",
+      "Page 2: Region | FVI | <49.7 | 49.7-49.8 | 49.8-49.9 | <49.9 | 49.9-50.05 | > 50.05",
+      "Page 2: Bhutan | Nepal | Bangladesh"
+    ]
+  },
+  {
+    "period": "2018-19",
+    "title": "30.05.18_NLDC_PSP",
+    "date_field": "30-05-2018",
+    "mime_type": "attachment/pdf",
+    "url": "https://webcdn.grid-india.in/files/grdw/uploads/download-manager-files/30.05.18_NLDC_PSP.pdf",
+    "local_path": "data\\raw\\samples\\files_grdw_uploads_download-manager-files_30.05.18_NLDC_PSP.pdf",
+    "size_bytes": 1695505,
+    "sha256": "b08e8add2377c9afb472ad32b6cd7be48fcfe2f73288b029e47aa1f2c758b2d0",
+    "status": 200,
+    "page_count": 3,
+    "has_state_table": true,
+    "sample_states": [
+      "Punjab",
+      "Haryana",
+      "Rajasthan",
+      "Delhi",
+      "Gujarat",
+      "Maharashtra",
+      "Karnataka",
+      "Tamil Nadu"
+    ],
+    "tables_found": [
+      "Page 1: \u0906\u0908\u0966\u0908\u0966\u091c\u0940\u0966\u0938\u0940\u0966-2010 \u0915\u0940 \u0927\u093e\u0930\u093e \u0938.-5.5.1 \u0915\u0947 \u092a\u094d\u0930\u093e\u0935\u0927\u093e\u0928 \u0915\u0947 \u0905\u0928 \u0938\u093e\u0930, \u0926\u0926\u0928\u093e\u0902\u0915 29-\u092e\u0908 2018 \u0915\u0940 \u0905\u0916\u093f\u0932",
+      "Page 2: \u092a\u0949\u0935\u0930 \u091a\u0938\u0938\u094d\u091f\u092e \u0911\u092a\u0930\u0947\u0936\u093f \u0915\u091c\u0930\u092a\u094b\u0930\u0947\u0936\u093f \u091a\u093f\u091a\u092e\u091f\u0947\u0921\n\u0930\u091c\u0937\u094d\u091f\u094d\u0930\u0940\u092f \u093f\u091c\u0930 \u092a\u094d\u0930\u0947\u0937\u0923 \u0915\u0947\u0902 \u0926\u094d\u0930, \u093f\u0908 \u091a\u0926\u0932\u094d\u093f\u0940\nReport for previous day Date of Reporting 3",
+      "Page 2: NR | WR | SR | ER | NER | Total",
+      "Page 2: Region | FVI | <49.7 | 49.7-49.8 | 49.8-49.9 | <49.9 | 49.9-50.05 | > 50.05",
+      "Page 2: Bhutan | Nepal | Bangladesh"
+    ]
+  },
+  {
+    "period": "2019-20",
+    "title": "31.05.19_NLDC_PSP",
+    "date_field": "31-05-2019",
+    "mime_type": "attachment/pdf",
+    "url": "https://webcdn.grid-india.in/files/grdw/uploads/download-manager-files/upload.pdf",
+    "local_path": "data\\raw\\samples\\files_grdw_uploads_download-manager-files_upload.pdf",
+    "size_bytes": 191,
+    "sha256": "f9f886775de80da945d9d35a85e9c4f265c5dbf0039c656d3b601ce2daf0ee51",
+    "status": 404,
+    "page_count": 0,
+    "has_state_table": false,
+    "sample_states": [],
+    "tables_found": [
+      "Error parsing PDF: No /Root object! - Is this really a PDF?"
+    ]
+  },
+  {
+    "period": "2019-20",
+    "title": "30.05.19_NLDC_PSP",
+    "date_field": "30-05-2019",
+    "mime_type": "attachment/pdf",
+    "url": "https://webcdn.grid-india.in/files/grdw/uploads/download-manager-files/30.05.19_NLDC_PSP.pdf",
+    "local_path": "data\\raw\\samples\\files_grdw_uploads_download-manager-files_30.05.19_NLDC_PSP.pdf",
+    "size_bytes": 1495709,
+    "sha256": "eacc5f88343b9530aa88c3b8c0d1a63e7564cf747ab2af4a422a4bef7419e0e1",
+    "status": 200,
+    "page_count": 3,
+    "has_state_table": true,
+    "sample_states": [
+      "Punjab",
+      "Haryana",
+      "Rajasthan",
+      "Delhi",
+      "Gujarat",
+      "Maharashtra",
+      "Karnataka",
+      "Tamil Nadu"
+    ],
+    "tables_found": [
+      "Page 1: \u0906\u0908\u0966\u0908\u0966\u091c\u0940\u0966\u0938\u0940\u0966-2010 \u0915\u0940 \u0927 \u0930 \u0938.-5.5.1 \u0915\u0947 \u092a\u094d\u0930 \u0935\u0927 \u0928 \u0915\u0947 \u0905\u0928 \u0938 \u0930, \u0926\u093f\u0928 \u093e\u0902\u0915 29-\u092e\u0908-2019 \u0915\u0940 \u0905\u0916\u093f\u0932",
+      "Page 2: \u092a\u0949\u0935\u0930 \u0938\u093f\u0938\u094d\u091f\u092e \u0911\u092a\u0930\u0947\u0936\u0928 \u0915\u093e\u0930\u092a\u094b\u0930\u0947\u0936\u0928 \u0938\u093f\u0938\u092e\u091f\u0947\u0921\n\u0930\u093e\u0937\u094d\u091f\u094d\u0930\u0940\u092f \u092d\u093e\u0930 \u092a\u094d\u0930\u0947\u0937\u0923 \u0915\u0947\u0902\u0926\u094d\u0930, \u0928\u0908 \u0938\u093f\u0932\u094d\u093f\u0940\nReport for previous day Date of Reporting 30",
+      "Page 2: NR | WR | SR | ER | NER | Total",
+      "Page 2: Bhutan | Nepal | Bangladesh",
+      "Page 2: NR | WR | SR | ER | NER | TOTAL"
+    ]
+  },
+  {
+    "period": "2020-21",
+    "title": "31.05.20_NLDC_PSP",
+    "date_field": "31-05-2020",
+    "mime_type": "attachment/pdf",
+    "url": "https://webcdn.grid-india.in/files/grdw/uploads/download-manager-files/30.05.20_NLDC_PSP.pdf",
+    "local_path": "data\\raw\\samples\\files_grdw_uploads_download-manager-files_30.05.20_NLDC_PSP.pdf",
+    "size_bytes": 1231655,
+    "sha256": "9b082f7c2d5cdecc6e24d369a89992ba20b800427579561b7deef6e52b31bed3",
+    "status": 200,
+    "page_count": 3,
+    "has_state_table": true,
+    "sample_states": [
+      "Punjab",
+      "Haryana",
+      "Rajasthan",
+      "Delhi",
+      "Gujarat",
+      "Maharashtra",
+      "Karnataka",
+      "Tamil Nadu"
+    ],
+    "tables_found": [
+      "Page 1: \u0906\u0908\u0966\u0908\u0966\u091c\u0940\u0966\u0938\u0940\u0966-2010 \u0915\u0940 \u0927 \u0930 \u0938.-5.5.1 \u0915\u0947 \u092a\u094d\u0930 \u0935\u0927 \u0928 \u0915\u0947 \u0905\u0928 \u0938 \u0930, \u0926\u093f\u0928 \u093e\u0902\u0915 30-\u092e\u0908-2020 \u0915\u0940 \u0905\u0916\u093f\u0932",
+      "Page 2: NR | WR | SR | ER | NER | TOTAL",
+      "Page 2: Region | FVI | < 49.7 | 49.7 - 49.8 | 49.8 - 49.9 | < 49.9 | 49.9 - 50.05 | > 50.05",
+      "Page 2: Region | States | Max.Demand\nMet during the\nday(MW) | Shortage during\nmaximum\nDemand(MW) | Energy Met\n(MU) | Drawal\nSche",
+      "Page 2: Bhutan | Nepal | Bangladesh"
+    ]
+  },
+  {
+    "period": "2020-21",
+    "title": "30.05.20_NLDC_PSP",
+    "date_field": "30-05-2020",
+    "mime_type": "attachment/pdf",
+    "url": "https://webcdn.grid-india.in/files/grdw/uploads/download-manager-files/29.05.20_NLDC_PSP.pdf",
+    "local_path": "data\\raw\\samples\\files_grdw_uploads_download-manager-files_29.05.20_NLDC_PSP.pdf",
+    "size_bytes": 1505410,
+    "sha256": "874aac7a1618cb66c96f3e06d1b352cc5cb0a23d3b4b4277679b6ef83bbe97ab",
+    "status": 200,
+    "page_count": 3,
+    "has_state_table": true,
+    "sample_states": [
+      "Punjab",
+      "Haryana",
+      "Rajasthan",
+      "Delhi",
+      "Gujarat",
+      "Maharashtra",
+      "Karnataka",
+      "Tamil Nadu"
+    ],
+    "tables_found": [
+      "Page 1: \u0906\u0908\u0966\u0908\u0966\u091c\u0940\u0966\u0938\u0940\u0966-2010 \u0915\u0940 \u0927 \u0930 \u0938.-5.5.1 \u0915\u0947 \u092a\u094d\u0930 \u0935\u0927 \u0928 \u0915\u0947 \u0905\u0928 \u0938 \u0930, \u0926\u093f\u0928 \u093e\u0902\u0915 28-\u092e\u0908-2020 \u0915\u0940 \u0905\u0916\u093f\u0932",
+      "Page 2: NR | WR | SR | ER | NER | TOTAL",
+      "Page 2: Region | FVI | < 49.7 | 49.7 - 49.8 | 49.8 - 49.9 | < 49.9 | 49.9 - 50.05 | > 50.05",
+      "Page 2: Region | States | Max.Demand\nMet during the\nday(MW) | Shortage during\nmaximum\nDemand(MW) | Energy Met\n(MU) | Drawal\nSche",
+      "Page 2: Bhutan | Nepal | Bangladesh"
+    ]
+  },
+  {
+    "period": "2021-22",
+    "title": "31.05.21_NLDC_PSP",
+    "date_field": "31-05-2021",
+    "mime_type": "attachment/pdf",
+    "url": "https://webcdn.grid-india.in/files/grdw/uploads/download-manager-files/31.05.21_NLDC_PSP.pdf",
+    "local_path": "data\\raw\\samples\\files_grdw_uploads_download-manager-files_31.05.21_NLDC_PSP.pdf",
+    "size_bytes": 1328280,
+    "sha256": "8f9c6efdf93fc6dba469959994489dd77c105f46df021d03300a34481eb3eaea",
+    "status": 200,
+    "page_count": 5,
+    "has_state_table": true,
+    "sample_states": [
+      "Punjab",
+      "Haryana",
+      "Rajasthan",
+      "Delhi",
+      "Gujarat",
+      "Maharashtra",
+      "Karnataka"
+    ],
+    "tables_found": [
+      "Page 1: \u0906\u0908\u0966\u0908\u0966\u091c\u0940\u0966 \u0940\u0966-2010 \u0915\u0940 \u0927 \u0930 .-5.5.1 \u0915\u0947 \u092a\u094d\u0930 \u0935\u0927 \u0928 \u0915\u0947 \u0905\u0928 \u0930, \u0926\u093f\u0928 \u093e\u0902\u0915 31-\u092e\u0908 -2021 \u0915\u0940 \u0905\u0916\u093f\u0932 \u092d \u0930\u0924\u0940\u0930\u094d \u092a\u094d\u0930\u0923 \u0932\u0940 \u0915\u0940",
+      "Page 2: Reportforpreviousday DateofReporting: 01-Jun-2021\nA.PowerSupplyPositionatAllIndiaandRegionallevel\nNR WR SR ER NER TOTAL\n",
+      "Page 2: NR | WR | SR | ER | NER | TOTAL",
+      "Page 2: Region | FVI | <49.7 | 49.7-49.8 | 49.8-49.9 | <49.9 | 49.9-50.05 | >50.05",
+      "Page 3: D.TransnationalExchanges(MU)-Import(+ve)/Export(-ve)\nBhutan Nepal Bangladesh\nActual(MU) 33.7 -3.7 -20.6\nDayPeak(MW) 1431"
+    ]
+  },
+  {
+    "period": "2021-22",
+    "title": "30.05.21_NLDC_PSP",
+    "date_field": "30-05-2021",
+    "mime_type": "attachment/pdf",
+    "url": "https://webcdn.grid-india.in/files/grdw/uploads/download-manager-files/30.05.21_NLDC_PSP.pdf",
+    "local_path": "data\\raw\\samples\\files_grdw_uploads_download-manager-files_30.05.21_NLDC_PSP.pdf",
+    "size_bytes": 1239332,
+    "sha256": "f182ba2479d7fa3cd5815c50523b84d30ce32a3b7e8b59bb50511ff847dbed4c",
+    "status": 200,
+    "page_count": 3,
+    "has_state_table": true,
+    "sample_states": [
+      "Punjab",
+      "Haryana",
+      "Rajasthan",
+      "Delhi",
+      "Gujarat",
+      "Maharashtra",
+      "Karnataka",
+      "Tamil Nadu"
+    ],
+    "tables_found": [
+      "Page 1: \u0906\u0908\u0966\u0908\u0966\u091c\u0940\u0966 \u0940\u0966-2010 \u0915\u0940 \u0927 \u0930 .-5.5.1 \u0915\u0947 \u092a\u094d\u0930 \u0935\u0927 \u0928 \u0915\u0947 \u0905\u0928 \u0930, \u0926\u093f\u0928 \u093e\u0902\u0915 30-\u092e\u0908 -2021 \u0915\u0940 \u0905\u0916\u093f\u0932 \u092d \u0930\u0924\u0940\u0930\u094d \u092a\u094d\u0930\u0923 \u0932\u0940 \u0915\u0940",
+      "Page 2: NR | WR | SR | ER | NER | TOTAL",
+      "Page 2: Region | FVI | < 49.7 | 49.7 - 49.8 | 49.8 - 49.9 | < 49.9 | 49.9 - 50.05 | > 50.05",
+      "Page 2: Region | States | Max.Demand\nMet during the\nday(MW) | Shortage during\nmaximum\nDemand(MW) | Energy Met\n(MU) | Drawal\nSche",
+      "Page 2: Bhutan | Nepal | Bangladesh"
+    ]
+  },
+  {
+    "period": "2022-23",
+    "title": "31.05.22_NLDC_PSP",
+    "date_field": "31-05-2022",
+    "mime_type": "attachment/pdf",
+    "url": "https://webcdn.grid-india.in/files/grdw/uploads/download-manager-files/31.05.22_NLDC_PSP.pdf",
+    "local_path": "data\\raw\\samples\\files_grdw_uploads_download-manager-files_31.05.22_NLDC_PSP.pdf",
+    "size_bytes": 315258,
+    "sha256": "86e6545e1340c2ca0822d5164dc274fea53a9dd0b70d3d7f187dce0fb0ec3dd9",
+    "status": 200,
+    "page_count": 3,
+    "has_state_table": true,
+    "sample_states": [
+      "Punjab",
+      "Haryana",
+      "Rajasthan",
+      "Delhi",
+      "Gujarat",
+      "Maharashtra",
+      "Karnataka",
+      "Tamil Nadu"
+    ],
+    "tables_found": [
+      "Page 2: NR | WR | SR | ER | NER | TOTAL",
+      "Page 2: Region | FVI | < 49.7 | 49.7 - 49.8 | 49.8 - 49.9 | < 49.9 | 49.9 - 50.05 | > 50.05",
+      "Page 2: Region | States | Max.Demand\nMet during the\nday(MW) | Shortage during\nmaximum\nDemand(MW) | Energy Met\n(MU) | Drawal\nSche",
+      "Page 2: Bhutan | Nepal | Bangladesh",
+      "Page 2: NR | WR | SR | ER | NER | TOTAL"
+    ]
+  },
+  {
+    "period": "2022-23",
+    "title": "30.05.22_NLDC_PSP",
+    "date_field": "30-05-2022",
+    "mime_type": "attachment/pdf",
+    "url": "https://webcdn.grid-india.in/files/grdw/uploads/download-manager-files/30.05.22_NLDC_PSP.pdf",
+    "local_path": "data\\raw\\samples\\files_grdw_uploads_download-manager-files_30.05.22_NLDC_PSP.pdf",
+    "size_bytes": 315145,
+    "sha256": "46de735efd9f32210cacbaebb7d585ab14cb4f0a5e3b260ec34f60f1c4360331",
+    "status": 200,
+    "page_count": 3,
+    "has_state_table": true,
+    "sample_states": [
+      "Punjab",
+      "Haryana",
+      "Rajasthan",
+      "Delhi",
+      "Gujarat",
+      "Maharashtra",
+      "Karnataka",
+      "Tamil Nadu"
+    ],
+    "tables_found": [
+      "Page 2: NR | WR | SR | ER | NER | TOTAL",
+      "Page 2: Region | FVI | < 49.7 | 49.7 - 49.8 | 49.8 - 49.9 | < 49.9 | 49.9 - 50.05 | > 50.05",
+      "Page 2: Region | States | Max.Demand\nMet during the\nday(MW) | Shortage during\nmaximum\nDemand(MW) | Energy Met\n(MU) | Drawal\nSche",
+      "Page 2: Bhutan | Nepal | Bangladesh",
+      "Page 2: NR | WR | SR | ER | NER | TOTAL"
+    ]
+  },
+  {
+    "period": "2023-24",
+    "title": "31.05.23_NLDC_PSP",
+    "date_field": "31-05-2023",
+    "mime_type": "attachment/pdf",
+    "url": "https://webcdn.grid-india.in/files/grdw/uploads/daily-reports/psp-reports/2023-2024/31.05.23_NLDC_PSP.pdf",
+    "local_path": "data\\raw\\samples\\files_grdw_uploads_daily-reports_psp-reports_2023-2024_31.05.23_NLDC_PSP.pdf",
+    "size_bytes": 335043,
+    "sha256": "e5b4909434ef05abc74249bea7693b5931e9e6d282641d26e590286b44991b20",
+    "status": 200,
+    "page_count": 3,
+    "has_state_table": true,
+    "sample_states": [
+      "Punjab",
+      "Haryana",
+      "Rajasthan",
+      "Delhi",
+      "Gujarat",
+      "Maharashtra",
+      "Karnataka",
+      "Tamil Nadu"
+    ],
+    "tables_found": [
+      "Page 1: \u0906\u0908\u0966\u0908\u0966\u091c\u0940\u0966 \u0940\u0966-2010 \u0915\u0940 \u0927 \u0930 .-5.5.1 \u0915\u0947 \u092a\u094d\u0930 \u0935\u0927 \u0928 \u0915\u0947 \u0905\u0928 \u0930, \u0926\u093f\u0928 \u093e\u0902\u0915 31- | \u092e\u0908 | -2023 \u0915\u0940 \u0905\u0916\u093f\u0932 \u092d \u0930\u0924\u0940\u0930\u094d \u092a\u094d\u0930\u0923 \u0932\u0940 \u0915\u0940",
+      "Page 2: NR | WR | SR | ER | NER | TOTAL",
+      "Page 2: Region | FVI | < 49.7 | 49.7 - 49.8 | 49.8 - 49.9 | < 49.9 | 49.9 - 50.05 | > 50.05",
+      "Page 2: Region | States | Max.Demand\nMet during the\nday (MW) | Shortage during\nmaximum\nDemand (MW) | Energy Met\n(MU) | Drawal\nSc",
+      "Page 2: Bhutan | Nepal | Bangladesh | Godda -> Bangladesh"
+    ]
+  },
+  {
+    "period": "2023-24",
+    "title": "30.05.23_NLDC_PSP",
+    "date_field": "30-05-2023",
+    "mime_type": "attachment/pdf",
+    "url": "https://webcdn.grid-india.in/files/grdw/uploads/daily-reports/psp-reports/2023-2024/30.05.23_NLDC_PSP.pdf",
+    "local_path": "data\\raw\\samples\\files_grdw_uploads_daily-reports_psp-reports_2023-2024_30.05.23_NLDC_PSP.pdf",
+    "size_bytes": 332773,
+    "sha256": "3cad05790b88be83d1bb65faa30047944b82cf28705a6596517aa4265706184a",
+    "status": 200,
+    "page_count": 3,
+    "has_state_table": true,
+    "sample_states": [
+      "Punjab",
+      "Haryana",
+      "Rajasthan",
+      "Delhi",
+      "Gujarat",
+      "Maharashtra",
+      "Karnataka",
+      "Tamil Nadu"
+    ],
+    "tables_found": [
+      "Page 1: \u0906\u0908\u0966\u0908\u0966\u091c\u0940\u0966 \u0940\u0966-2010 \u0915\u0940 \u0927 \u0930 .-5.5.1 \u0915\u0947 \u092a\u094d\u0930 \u0935\u0927 \u0928 \u0915\u0947 \u0905\u0928 \u0930, \u0926\u093f\u0928 \u093e\u0902\u0915 30- | \u092e\u0908 | -2023 \u0915\u0940 \u0905\u0916\u093f\u0932 \u092d \u0930\u0924\u0940\u0930\u094d \u092a\u094d\u0930\u0923 \u0932\u0940 \u0915\u0940",
+      "Page 2: NR | WR | SR | ER | NER | TOTAL",
+      "Page 2: Region | FVI | < 49.7 | 49.7 - 49.8 | 49.8 - 49.9 | < 49.9 | 49.9 - 50.05 | > 50.05",
+      "Page 2: Region | States | Max.Demand\nMet during the\nday (MW) | Shortage during\nmaximum\nDemand (MW) | Energy Met\n(MU) | Drawal\nSc",
+      "Page 2: Bhutan | Nepal | Bangladesh | Godda -> Bangladesh"
+    ]
+  },
+  {
+    "period": "2024-25",
+    "title": "31.05.24_NLDC_PSP",
+    "date_field": "31-05-2024",
+    "mime_type": "attachment/pdf",
+    "url": "https://webcdn.grid-india.in/files/grdw/uploads/daily-reports/psp-reports/2024-2025/31.05.24_NLDC_PSP.pdf",
+    "local_path": "data\\raw\\samples\\files_grdw_uploads_daily-reports_psp-reports_2024-2025_31.05.24_NLDC_PSP.pdf",
+    "size_bytes": 300512,
+    "sha256": "2445bdc6b6ea90d2f25f8cb1668ef661c82db904b45f778149c5ab1e25ea6e5b",
+    "status": 200,
+    "page_count": 4,
+    "has_state_table": true,
+    "sample_states": [
+      "Punjab",
+      "Haryana",
+      "Rajasthan",
+      "Delhi",
+      "Gujarat",
+      "Maharashtra",
+      "Karnataka",
+      "Tamil Nadu"
+    ],
+    "tables_found": [
+      "Page 2: NR | WR | SR | ER | NER | TOTAL",
+      "Page 2: Region | FVI | < 49.7 | 49.7 - 49.8 | 49.8 - 49.9 | < 49.9 | 49.9 - 50.05 | > 50.05",
+      "Page 2: Region | States | Max.Demand\nMet during the\nday (MW) | Shortage during\nmaximum\nDemand (MW) | Energy Met\n(MU) | Drawal\nSc",
+      "Page 2: Bhutan | Nepal | Bangladesh | Godda -> Bangladesh",
+      "Page 2: NR | WR | SR | ER | NER | TOTAL"
+    ]
+  },
+  {
+    "period": "2024-25",
+    "title": "30.05.24_NLDC_PSP",
+    "date_field": "30-05-2024",
+    "mime_type": "attachment/pdf",
+    "url": "https://webcdn.grid-india.in/files/grdw/uploads/daily-reports/psp-reports/2024-2025/30.05.24_NLDC_PSP.pdf",
+    "local_path": "data\\raw\\samples\\files_grdw_uploads_daily-reports_psp-reports_2024-2025_30.05.24_NLDC_PSP.pdf",
+    "size_bytes": 300142,
+    "sha256": "a850f8167c567b6abfad932597e36c1f564342349906495b04342c534f29d75b",
+    "status": 200,
+    "page_count": 4,
+    "has_state_table": true,
+    "sample_states": [
+      "Punjab",
+      "Haryana",
+      "Rajasthan",
+      "Delhi",
+      "Gujarat",
+      "Maharashtra",
+      "Karnataka",
+      "Tamil Nadu"
+    ],
+    "tables_found": [
+      "Page 2: NR | WR | SR | ER | NER | TOTAL",
+      "Page 2: Region | FVI | < 49.7 | 49.7 - 49.8 | 49.8 - 49.9 | < 49.9 | 49.9 - 50.05 | > 50.05",
+      "Page 2: Region | States | Max.Demand\nMet during the\nday (MW) | Shortage during\nmaximum\nDemand (MW) | Energy Met\n(MU) | Drawal\nSc",
+      "Page 2: Bhutan | Nepal | Bangladesh | Godda -> Bangladesh",
+      "Page 2: NR | WR | SR | ER | NER | TOTAL"
+    ]
+  },
+  {
+    "period": "2025-26",
+    "title": "31.05.25_NLDC_PSP",
+    "date_field": "31-05-2025",
+    "mime_type": "application/pdf",
+    "url": "https://webcdn.grid-india.in/files/grdw/2025/06/31.05.25_NLDC_PSP_336.pdf",
+    "local_path": "data\\raw\\samples\\files_grdw_2025_06_31.05.25_NLDC_PSP_336.pdf",
+    "size_bytes": 2113584,
+    "sha256": "45ecb674d4e74ad5d1e1f5ef5e613250614b039828bda532c8a25eb041a3fb5b",
+    "status": 200,
+    "page_count": 5,
+    "has_state_table": true,
+    "sample_states": [
+      "Punjab",
+      "Haryana",
+      "Rajasthan",
+      "Delhi",
+      "Gujarat",
+      "Maharashtra",
+      "Karnataka",
+      "Tamil Nadu"
+    ],
+    "tables_found": [
+      "Page 1: \u0906\u0908\u0966\u0908\u0966\u091c\u0940\u0966 \u0940\u0966-2023 \u0915\u0940 \u0927 \u0930 .-38(1) \u0915\u0947 \u092a\u094d\u0930 \u0935\u0927 \u0928 \u0915\u0947 \u0905\u0928 \u0930, \u0926\u093f\u0928 \u093e\u0902\u0915 31-\u092e\u0908-2025 \u0915\u0940 \u0905\u0916\u093f\u0932 \u092d \u0930\u0924\u0940\u0930\u094d \u092a\u094d\u0930\u0923 \u0932\u0940 \u0915\u0940",
+      "Page 2: NR | WR | SR | ER | NER | TOTAL",
+      "Page 2: Region | FVI | < 49.7 | 49.7 - 49.8 | 49.8 - 49.9 | < 49.9 | 49.9 - 50.05 | > 50.05",
+      "Page 2: Region | States | Max.Demand\nMet during the\nday (MW) | Shortage during\nmaximum\nDemand (MW) | Energy Met\n(MU) | Drawal\nSc",
+      "Page 2: Bhutan | Nepal | Bangladesh | Godda -> Bangladesh"
+    ]
+  },
+  {
+    "period": "2025-26",
+    "title": "30.05.25_NLDC_PSP",
+    "date_field": "30-05-2025",
+    "mime_type": "application/pdf",
+    "url": "https://webcdn.grid-india.in/files/grdw/2025/05/30.05.25_NLDC_PSP_667.pdf",
+    "local_path": "data\\raw\\samples\\files_grdw_2025_05_30.05.25_NLDC_PSP_667.pdf",
+    "size_bytes": 1741120,
+    "sha256": "c3eef7974dc6d2632f59aa60d01dc718a57034231061cb938e054bc3e0de7fd8",
+    "status": 200,
+    "page_count": 5,
+    "has_state_table": true,
+    "sample_states": [
+      "Punjab",
+      "Haryana",
+      "Rajasthan",
+      "Delhi",
+      "Gujarat",
+      "Maharashtra",
+      "Karnataka",
+      "Tamil Nadu"
+    ],
+    "tables_found": [
+      "Page 1: \u0906\u0908\u0966\u0908\u0966\u091c\u0940\u0966 \u0940\u0966-2023 \u0915\u0940 \u0927 \u0930 .-38(1) \u0915\u0947 \u092a\u094d\u0930 \u0935\u0927 \u0928 \u0915\u0947 \u0905\u0928 \u0930, \u0926\u093f\u0928 \u093e\u0902\u0915 30-\u092e\u0908-2025 \u0915\u0940 \u0905\u0916\u093f\u0932 \u092d \u0930\u0924\u0940\u0930\u094d \u092a\u094d\u0930\u0923 \u0932\u0940 \u0915\u0940",
+      "Page 2: NR | WR | SR | ER | NER | TOTAL",
+      "Page 2: Region | FVI | < 49.7 | 49.7 - 49.8 | 49.8 - 49.9 | < 49.9 | 49.9 - 50.05 | > 50.05",
+      "Page 2: Region | States | Max.Demand\nMet during the\nday (MW) | Shortage during\nmaximum\nDemand (MW) | Energy Met\n(MU) | Drawal\nSc",
+      "Page 2: Bhutan | Nepal | Bangladesh | Godda -> Bangladesh"
+    ]
+  }
+]

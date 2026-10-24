@@ -1,0 +1,12 @@
+# Hand-written test fixture for unit testing cleaning rules ONLY.
+# PURSUANT TO SECTION 1.1 AND PHASE 3:
+# This fixture is exclusively for unit testing in tests/ and MUST NEVER feed the production pipeline.
+record_id,state,date,max_demand_met_mw,shortage_mw,energy_met_mu,t_max_c,expected_flag,test_case_description
+1,Delhi,2024-05-15,7500.0,0.0,150.0,42.5,ok,Normal valid hot day within Delhi bounds [1200-9500]
+2,Delhi,2024-05-16,-500.0,0.0,150.0,42.0,excluded,Sign error: negative demand
+3,Delhi,2024-05-17,450.0,0.0,10.0,30.0,excluded,Unit corruption / below minimum baseload (< 1200 MW)
+4,Delhi,2024-05-18,15000.0,0.0,300.0,43.0,excluded,Above maximum physical bound (> 9500 MW)
+5,Maharashtra,2024-05-15,28000.0,50.0,580.0,38.0,ok,Normal valid peak day within Maharashtra bounds [8000-36000]
+6,Maharashtra,2024-05-16,39000.0,100.0,750.0,38.2,outlier_review,Sudden 39% jump day-over-day with identical temperature
+7,Maharashtra,2024-05-15,28000.0,50.0,580.0,38.0,duplicate_drop,Exact duplicate state-date row to test deduplication
+8,Punjab,2024-06-01,,0.0,200.0,41.0,excluded,Missing target demand met (never imputed per Integrity Contract)

@@ -1,0 +1,26 @@
+{
+  "flagType": 0,
+  "retMessage": "Operation completed successfully.",
+  "retData": [
+    {
+      "Id": 60,
+      "Source_": "GRDW",
+      "PageCode": "PG00060",
+      "UI_TYPE": "TABULAR",
+      "PageType": "CATEGORY WITH PERIOD",
+      "Title_": "Daily PSP Report",
+      "Title_hi": "\u0926\u0948\u0928\u093f\u0915 PSP \u0930\u093f\u092a\u094b\u0930\u094d\u091f",
+      "BodyText": null,
+      "BodyText_hi": null,
+      "IsEnabled": 1,
+      "MetaTitle": "Daily PSP Report",
+      "MetaKeyword": null,
+      "MetaDescription": null,
+      "WebRelPath": "/reports/daily-psp-report",
+      "FileType": "DAILY_PSP_REPORT",
+      "ModifiedOn": "29-05-2025 17:21",
+      "ModifiedBy": "cxbadmin-p"
+    }
+  ],
+  "dataLength": 1
+}

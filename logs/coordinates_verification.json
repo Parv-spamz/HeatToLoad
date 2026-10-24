@@ -1,0 +1,166 @@
+{
+  "all_valid": true,
+  "total_states": 16,
+  "checks": [
+    {
+      "state": "Delhi",
+      "city": "New Delhi",
+      "lat": 28.6139,
+      "lon": 77.209,
+      "source": "Survey of India / WGS84 Capital coordinates",
+      "lat_valid": true,
+      "lon_valid": true,
+      "overall_valid": true
+    },
+    {
+      "state": "Maharashtra",
+      "city": "Mumbai",
+      "lat": 19.076,
+      "lon": 72.8777,
+      "source": "Survey of India / WGS84 Capital coordinates",
+      "lat_valid": true,
+      "lon_valid": true,
+      "overall_valid": true
+    },
+    {
+      "state": "Gujarat",
+      "city": "Ahmedabad",
+      "lat": 23.0225,
+      "lon": 72.5714,
+      "source": "Census of India / Largest urban load centre",
+      "lat_valid": true,
+      "lon_valid": true,
+      "overall_valid": true
+    },
+    {
+      "state": "Tamil Nadu",
+      "city": "Chennai",
+      "lat": 13.0827,
+      "lon": 80.2707,
+      "source": "Survey of India / WGS84 Capital coordinates",
+      "lat_valid": true,
+      "lon_valid": true,
+      "overall_valid": true
+    },
+    {
+      "state": "Karnataka",
+      "city": "Bengaluru",
+      "lat": 12.9716,
+      "lon": 77.5946,
+      "source": "Survey of India / WGS84 Capital coordinates",
+      "lat_valid": true,
+      "lon_valid": true,
+      "overall_valid": true
+    },
+    {
+      "state": "Uttar Pradesh",
+      "city": "Lucknow",
+      "lat": 26.8467,
+      "lon": 80.9462,
+      "source": "Survey of India / WGS84 Capital coordinates",
+      "lat_valid": true,
+      "lon_valid": true,
+      "overall_valid": true
+    },
+    {
+      "state": "Rajasthan",
+      "city": "Jaipur",
+      "lat": 26.9124,
+      "lon": 75.7873,
+      "source": "Survey of India / WGS84 Capital coordinates",
+      "lat_valid": true,
+      "lon_valid": true,
+      "overall_valid": true
+    },
+    {
+      "state": "Punjab",
+      "city": "Ludhiana",
+      "lat": 30.901,
+      "lon": 75.8573,
+      "source": "Census of India / Major load centre",
+      "lat_valid": true,
+      "lon_valid": true,
+      "overall_valid": true
+    },
+    {
+      "state": "Haryana",
+      "city": "Gurugram",
+      "lat": 28.4595,
+      "lon": 77.0266,
+      "source": "Census of India / Major load centre",
+      "lat_valid": true,
+      "lon_valid": true,
+      "overall_valid": true
+    },
+    {
+      "state": "Madhya Pradesh",
+      "city": "Bhopal",
+      "lat": 23.2599,
+      "lon": 77.4126,
+      "source": "Survey of India / WGS84 Capital coordinates",
+      "lat_valid": true,
+      "lon_valid": true,
+      "overall_valid": true
+    },
+    {
+      "state": "West Bengal",
+      "city": "Kolkata",
+      "lat": 22.5726,
+      "lon": 88.3639,
+      "source": "Survey of India / WGS84 Capital coordinates",
+      "lat_valid": true,
+      "lon_valid": true,
+      "overall_valid": true
+    },
+    {
+      "state": "Telangana",
+      "city": "Hyderabad",
+      "lat": 17.385,
+      "lon": 78.4867,
+      "source": "Survey of India / WGS84 Capital coordinates",
+      "lat_valid": true,
+      "lon_valid": true,
+      "overall_valid": true
+    },
+    {
+      "state": "Andhra Pradesh",
+      "city": "Vijayawada",
+      "lat": 16.5062,
+      "lon": 80.648,
+      "source": "Survey of India / WGS84 Major centre",
+      "lat_valid": true,
+      "lon_valid": true,
+      "overall_valid": true
+    },
+    {
+      "state": "Kerala",
+      "city": "Kochi",
+      "lat": 9.9312,
+      "lon": 76.2673,
+      "source": "Census of India / Major load centre",
+      "lat_valid": true,
+      "lon_valid": true,
+      "overall_valid": true
+    },
+    {
+      "state": "Bihar",
+      "city": "Patna",
+      "lat": 25.5941,
+      "lon": 85.1376,
+      "source": "Survey of India / WGS84 Capital coordinates",
+      "lat_valid": true,
+      "lon_valid": true,
+      "overall_valid": true
+    },
+    {
+      "state": "Odisha",
+      "city": "Bhubaneswar",
+      "lat": 20.2961,
+      "lon": 85.8245,
+      "source": "Survey of India / WGS84 Capital coordinates",
+      "lat_valid": true,
+      "lon_valid": true,
+      "overall_valid": true
+    }
+  ]
+}

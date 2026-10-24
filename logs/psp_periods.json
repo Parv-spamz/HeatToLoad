@@ -1,0 +1,52 @@
+{
+  "flagType": 0,
+  "retMessage": "Operation completed successfully.",
+  "retData": [
+    {
+      "PeriodYear": "2026-27"
+    },
+    {
+      "PeriodYear": "2025-26"
+    },
+    {
+      "PeriodYear": "2024-25"
+    },
+    {
+      "PeriodYear": "2023-24"
+    },
+    {
+      "PeriodYear": "2022-23"
+    },
+    {
+      "PeriodYear": "2021-22"
+    },
+    {
+      "PeriodYear": "2020-21"
+    },
+    {
+      "PeriodYear": "2019-20"
+    },
+    {
+      "PeriodYear": "2018-19"
+    },
+    {
+      "PeriodYear": "2017-18"
+    },
+    {
+      "PeriodYear": "2016-17"
+    },
+    {
+      "PeriodYear": "2015-16"
+    },
+    {
+      "PeriodYear": "2014-15"
+    },
+    {
+      "PeriodYear": "2013-14"
+    },
+    {
+      "PeriodYear": "2010-11"
+    }
+  ],
+  "dataLength": 15
+}

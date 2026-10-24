@@ -1,0 +1,2 @@
+Period 2023-24: Total=366, Parsed=366, Failed=0, SuccessRate=100.00%
+Period 2024-25: Total=369, Parsed=367, Failed=2, SuccessRate=99.46%

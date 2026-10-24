@@ -1,0 +1,686 @@
+{
+  "_meta": {
+    "project": "Heat to Load: Temperature Sensitivity of Peak Electricity Demand Across Indian States",
+    "created_at_utc": "2026-10-23T20:20:00Z",
+    "description": "Single source of truth for all metrics, numbers, and coverage in reports and README."
+  },
+  "baseline_models": {
+    "overall_summary": {
+      "all_india_combined_mw_per_c": 2761.9,
+      "state_average_pct_per_c": 1.62,
+      "highest_sensitivity_state": "Karnataka",
+      "highest_sensitivity_pct": 3.5
+    },
+    "state_sensitivities": {
+      "Andhra Pradesh": {
+        "mean_demand_mw": 11081.1,
+        "linear_sensitivity_mw_per_c": 235.62,
+        "linear_sensitivity_pct_per_c": 2.126,
+        "cooling_slope_cdd24_mw": 216.6,
+        "temp_coefficient_pvalue": 2.8352619117713112e-42,
+        "train_r2": 0.3767,
+        "holdout_rmse_mw": 907.5,
+        "holdout_mae_mw": 731.1,
+        "holdout_mape_pct": 7.22,
+        "holdout_r2": 0.5803
+      },
+      "Bihar": {
+        "mean_demand_mw": 5587.0,
+        "linear_sensitivity_mw_per_c": 115.06,
+        "linear_sensitivity_pct_per_c": 2.06,
+        "cooling_slope_cdd24_mw": 251.72,
+        "temp_coefficient_pvalue": 2.7989569133919435e-52,
+        "train_r2": 0.5046,
+        "holdout_rmse_mw": 992.7,
+        "holdout_mae_mw": 812.5,
+        "holdout_mape_pct": 11.33,
+        "holdout_r2": -1.8998
+      },
+      "Delhi": {
+        "mean_demand_mw": 4778.4,
+        "linear_sensitivity_mw_per_c": 52.43,
+        "linear_sensitivity_pct_per_c": 1.097,
+        "cooling_slope_cdd24_mw": 325.0,
+        "temp_coefficient_pvalue": 1.2691326714334719e-11,
+        "train_r2": 0.2354,
+        "holdout_rmse_mw": 1643.9,
+        "holdout_mae_mw": 1453.5,
+        "holdout_mape_pct": 21.99,
+        "holdout_r2": -1.0737
+      },
+      "Gujarat": {
+        "mean_demand_mw": 20084.3,
+        "linear_sensitivity_mw_per_c": 125.13,
+        "linear_sensitivity_pct_per_c": 0.623,
+        "cooling_slope_cdd24_mw": 122.38,
+        "temp_coefficient_pvalue": 6.753898728540057e-07,
+        "train_r2": 0.1386,
+        "holdout_rmse_mw": 2599.2,
+        "holdout_mae_mw": 2285.3,
+        "holdout_mape_pct": 11.85,
+        "holdout_r2": 0.2515
+      },
+      "Haryana": {
+        "mean_demand_mw": 8437.3,
+        "linear_sensitivity_mw_per_c": 117.9,
+        "linear_sensitivity_pct_per_c": 1.397,
+        "cooling_slope_cdd24_mw": 552.84,
+        "temp_coefficient_pvalue": 4.975783362426397e-20,
+        "train_r2": 0.2294,
+        "holdout_rmse_mw": 2233.6,
+        "holdout_mae_mw": 1906.0,
+        "holdout_mape_pct": 16.94,
+        "holdout_r2": -0.5249
+      },
+      "Karnataka": {
+        "mean_demand_mw": 14124.8,
+        "linear_sensitivity_mw_per_c": 494.38,
+        "linear_sensitivity_pct_per_c": 3.5,
+        "cooling_slope_cdd24_mw": 811.09,
+        "temp_coefficient_pvalue": 2.219421896947964e-49,
+        "train_r2": 0.4014,
+        "holdout_rmse_mw": 2245.7,
+        "holdout_mae_mw": 1946.8,
+        "holdout_mape_pct": 16.9,
+        "holdout_r2": -0.0495
+      },
+      "Kerala": {
+        "mean_demand_mw": 4241.5,
+        "linear_sensitivity_mw_per_c": 139.73,
+        "linear_sensitivity_pct_per_c": 3.294,
+        "cooling_slope_cdd24_mw": 251.69,
+        "temp_coefficient_pvalue": 1.5779914658054126e-62,
+        "train_r2": 0.5028,
+        "holdout_rmse_mw": 423.7,
+        "holdout_mae_mw": 299.6,
+        "holdout_mape_pct": 6.36,
+        "holdout_r2": 0.5453
+      },
+      "Madhya Pradesh": {
+        "mean_demand_mw": 14005.8,
+        "linear_sensitivity_mw_per_c": -204.55,
+        "linear_sensitivity_pct_per_c": -1.46,
+        "cooling_slope_cdd24_mw": -221.17,
+        "temp_coefficient_pvalue": 3.6148955870730035e-19,
+        "train_r2": 0.471,
+        "holdout_rmse_mw": 2933.6,
+        "holdout_mae_mw": 2468.1,
+        "holdout_mape_pct": 21.73,
+        "holdout_r2": -6.8735
+      },
+      "Maharashtra": {
+        "mean_demand_mw": 26449.0,
+        "linear_sensitivity_mw_per_c": 420.65,
+        "linear_sensitivity_pct_per_c": 1.59,
+        "cooling_slope_cdd24_mw": 188.67,
+        "temp_coefficient_pvalue": 5.945146280222666e-32,
+        "train_r2": 0.3309,
+        "holdout_rmse_mw": 1721.4,
+        "holdout_mae_mw": 1452.8,
+        "holdout_mape_pct": 6.14,
+        "holdout_r2": 0.3704
+      },
+      "Odisha": {
+        "mean_demand_mw": 5416.9,
+        "linear_sensitivity_mw_per_c": 126.63,
+        "linear_sensitivity_pct_per_c": 2.338,
+        "cooling_slope_cdd24_mw": 231.88,
+        "temp_coefficient_pvalue": 1.3485386136108306e-47,
+        "train_r2": 0.455,
+        "holdout_rmse_mw": 386.2,
+        "holdout_mae_mw": 308.7,
+        "holdout_mape_pct": 5.05,
+        "holdout_r2": 0.3616
+      },
+      "Punjab": {
+        "mean_demand_mw": 9159.8,
+        "linear_sensitivity_mw_per_c": 180.98,
+        "linear_sensitivity_pct_per_c": 1.976,
+        "cooling_slope_cdd24_mw": 998.95,
+        "temp_coefficient_pvalue": 1.6033996374010297e-20,
+        "train_r2": 0.2187,
+        "holdout_rmse_mw": 3425.4,
+        "holdout_mae_mw": 3074.0,
+        "holdout_mape_pct": 23.73,
+        "holdout_r2": -0.5101
+      },
+      "Rajasthan": {
+        "mean_demand_mw": 15286.5,
+        "linear_sensitivity_mw_per_c": -116.47,
+        "linear_sensitivity_pct_per_c": -0.762,
+        "cooling_slope_cdd24_mw": 26.14,
+        "temp_coefficient_pvalue": 1.570050677254618e-14,
+        "train_r2": 0.4404,
+        "holdout_rmse_mw": 2784.4,
+        "holdout_mae_mw": 2325.9,
+        "holdout_mape_pct": 17.98,
+        "holdout_r2": -1.0073
+      },
+      "Tamil Nadu": {
+        "mean_demand_mw": 16299.3,
+        "linear_sensitivity_mw_per_c": 316.41,
+        "linear_sensitivity_pct_per_c": 1.941,
+        "cooling_slope_cdd24_mw": 444.72,
+        "temp_coefficient_pvalue": 7.63316937965121e-38,
+        "train_r2": 0.4192,
+        "holdout_rmse_mw": 1395.4,
+        "holdout_mae_mw": 1106.5,
+        "holdout_mape_pct": 6.26,
+        "holdout_r2": 0.1991
+      },
+      "Telangana": {
+        "mean_demand_mw": 12454.3,
+        "linear_sensitivity_mw_per_c": 178.19,
+        "linear_sensitivity_pct_per_c": 1.431,
+        "cooling_slope_cdd24_mw": 154.12,
+        "temp_coefficient_pvalue": 3.839879890102735e-08,
+        "train_r2": 0.1086,
+        "holdout_rmse_mw": 2376.1,
+        "holdout_mae_mw": 2028.3,
+        "holdout_mape_pct": 19.71,
+        "holdout_r2": -0.7717
+      },
+      "Uttar Pradesh": {
+        "mean_demand_mw": 20519.4,
+        "linear_sensitivity_mw_per_c": 302.63,
+        "linear_sensitivity_pct_per_c": 1.475,
+        "cooling_slope_cdd24_mw": 1017.62,
+        "temp_coefficient_pvalue": 1.3283121127661935e-29,
+        "train_r2": 0.3506,
+        "holdout_rmse_mw": 4448.0,
+        "holdout_mae_mw": 3918.7,
+        "holdout_mape_pct": 14.66,
+        "holdout_r2": -1.7235
+      },
+      "West Bengal": {
+        "mean_demand_mw": 8393.5,
+        "linear_sensitivity_mw_per_c": 277.13,
+        "linear_sensitivity_pct_per_c": 3.302,
+        "cooling_slope_cdd24_mw": 548.9,
+        "temp_coefficient_pvalue": 4.220443168218841e-89,
+        "train_r2": 0.6842,
+        "holdout_rmse_mw": 1714.1,
+        "holdout_mae_mw": 1522.4,
+        "holdout_mape_pct": 13.84,
+        "holdout_r2": -1.213
+      }
+    },
+    "cv_performance": {},
+    "holdout_performance": {
+      "aggregate_rmse_mw": 2277.6,
+      "aggregate_mae_mw": 1727.5,
+      "aggregate_mape_pct": 13.85,
+      "aggregate_r2": 0.8744,
+      "n_holdout_observations": 2928
+    }
+  },
+  "gbm_point_model": {
+    "cv_performance": [
+      {
+        "split": 1,
+        "train_days": 109,
+        "val_days": 109,
+        "val_rmse_mw": 1713.1,
+        "val_mape_pct": 9.91,
+        "val_r2": 0.9232
+      },
+      {
+        "split": 2,
+        "train_days": 218,
+        "val_days": 109,
+        "val_rmse_mw": 3113.2,
+        "val_mape_pct": 17.41,
+        "val_r2": 0.7709
+      },
+      {
+        "split": 3,
+        "train_days": 327,
+        "val_days": 109,
+        "val_rmse_mw": 1479.6,
+        "val_mape_pct": 9.53,
+        "val_r2": 0.9463
+      },
+      {
+        "split": 4,
+        "train_days": 436,
+        "val_days": 109,
+        "val_rmse_mw": 1717.3,
+        "val_mape_pct": 10.12,
+        "val_r2": 0.9407
+      }
+    ],
+    "cv_mean_mape_pct": 11.74,
+    "cv_mean_r2": 0.8953,
+    "holdout_pure_meteorological": {
+      "rmse_mw": 1352.0,
+      "mae_mw": 986.7,
+      "mape_pct": 7.72,
+      "r2": 0.9557
+    },
+    "holdout_operational_autoregressive": {
+      "rmse_mw": 619.0,
+      "mae_mw": 428.5,
+      "mape_pct": 3.46,
+      "r2": 0.9907
+    },
+    "top_features_by_gain": [
+      {
+        "feature": "state",
+        "importance_gain": 5516309633225.0
+      },
+      {
+        "feature": "temperature_2m_min",
+        "importance_gain": 80028430803.0
+      },
+      {
+        "feature": "relative_humidity_2m_mean",
+        "importance_gain": 77539010206.0
+      },
+      {
+        "feature": "heat_index",
+        "importance_gain": 63092331809.0
+      },
+      {
+        "feature": "trend_day",
+        "importance_gain": 55684299320.0
+      },
+      {
+        "feature": "cos_doy",
+        "importance_gain": 46685450637.0
+      },
+      {
+        "feature": "temperature_2m_mean",
+        "importance_gain": 46011187918.0
+      },
+      {
+        "feature": "sin_doy",
+        "importance_gain": 44184593184.0
+      },
+      {
+        "feature": "apparent_temperature_max",
+        "importance_gain": 38084730915.0
+      },
+      {
+        "feature": "temp_max_roll7",
+        "importance_gain": 36427290391.0
+      }
+    ],
+    "state_holdout_performance": {
+      "Andhra Pradesh": {
+        "holdout_rmse_mw": 855.6,
+        "holdout_mape_pct": 6.67,
+        "holdout_r2": 0.6269
+      },
+      "Bihar": {
+        "holdout_rmse_mw": 491.6,
+        "holdout_mape_pct": 6.12,
+        "holdout_r2": 0.2888
+      },
+      "Delhi": {
+        "holdout_rmse_mw": 619.6,
+        "holdout_mape_pct": 7.41,
+        "holdout_r2": 0.7054
+      },
+      "Gujarat": {
+        "holdout_rmse_mw": 2092.2,
+        "holdout_mape_pct": 8.78,
+        "holdout_r2": 0.515
+      },
+      "Haryana": {
+        "holdout_rmse_mw": 1178.4,
+        "holdout_mape_pct": 8.23,
+        "holdout_r2": 0.5755
+      },
+      "Karnataka": {
+        "holdout_rmse_mw": 1461.3,
+        "holdout_mape_pct": 9.89,
+        "holdout_r2": 0.5557
+      },
+      "Kerala": {
+        "holdout_rmse_mw": 423.4,
+        "holdout_mape_pct": 6.95,
+        "holdout_r2": 0.5458
+      },
+      "Madhya Pradesh": {
+        "holdout_rmse_mw": 778.6,
+        "holdout_mape_pct": 5.33,
+        "holdout_r2": 0.4453
+      },
+      "Maharashtra": {
+        "holdout_rmse_mw": 1322.5,
+        "holdout_mape_pct": 4.43,
+        "holdout_r2": 0.6284
+      },
+      "Odisha": {
+        "holdout_rmse_mw": 419.9,
+        "holdout_mape_pct": 5.53,
+        "holdout_r2": 0.2455
+      },
+      "Punjab": {
+        "holdout_rmse_mw": 1407.7,
+        "holdout_mape_pct": 8.83,
+        "holdout_r2": 0.745
+      },
+      "Rajasthan": {
+        "holdout_rmse_mw": 1267.9,
+        "holdout_mape_pct": 7.79,
+        "holdout_r2": 0.5838
+      },
+      "Tamil Nadu": {
+        "holdout_rmse_mw": 1073.7,
+        "holdout_mape_pct": 4.69,
+        "holdout_r2": 0.5258
+      },
+      "Telangana": {
+        "holdout_rmse_mw": 1995.8,
+        "holdout_mape_pct": 16.24,
+        "holdout_r2": -0.2499
+      },
+      "Uttar Pradesh": {
+        "holdout_rmse_mw": 2776.4,
+        "holdout_mape_pct": 9.33,
+        "holdout_r2": -0.0612
+      },
+      "West Bengal": {
+        "holdout_rmse_mw": 917.5,
+        "holdout_mape_pct": 7.3,
+        "holdout_r2": 0.3659
+      }
+    }
+  },
+  "quantile_and_shap": {
+    "pinball_losses": {
+      "pinball_loss_alpha_10": 293.23,
+      "pinball_loss_alpha_50": 548.01,
+      "pinball_loss_alpha_90": 359.84
+    },
+    "empirical_80pct_coverage": 47.58,
+    "mean_interval_width_mw": 2210.5,
+    "top_shap_features": [
+      {
+        "feature": "state",
+        "mean_abs_shap_mw": 4854.539421260209
+      },
+      {
+        "feature": "heat_index",
+        "mean_abs_shap_mw": 271.8620024999728
+      },
+      {
+        "feature": "relative_humidity_2m_mean",
+        "mean_abs_shap_mw": 253.18197509094776
+      },
+      {
+        "feature": "temperature_2m_min",
+        "mean_abs_shap_mw": 196.41770290279874
+      },
+      {
+        "feature": "apparent_temperature_max",
+        "mean_abs_shap_mw": 181.1563281954626
+      },
+      {
+        "feature": "temp_max_roll7",
+        "mean_abs_shap_mw": 174.09253596245327
+      },
+      {
+        "feature": "temperature_2m_mean",
+        "mean_abs_shap_mw": 167.6261269323248
+      },
+      {
+        "feature": "trend_day",
+        "mean_abs_shap_mw": 141.72244069577891
+      },
+      {
+        "feature": "cos_doy",
+        "mean_abs_shap_mw": 135.6168145103719
+      },
+      {
+        "feature": "sin_dow",
+        "mean_abs_shap_mw": 126.3688692092263
+      }
+    ]
+  },
+  "warming_scenarios": {
+    "plus_1c": {
+      "temperature_shift_c": 1.0,
+      "all_india_coincident_baseline_peak_mw": 223421.1,
+      "all_india_coincident_scenario_peak_mw": 227022.6,
+      "all_india_coincident_surge_mw": 3601.5,
+      "all_india_coincident_surge_pct": 1.61,
+      "state_surges": {
+        "Andhra Pradesh": {
+          "baseline_peak_mw": 13338.8,
+          "scenario_peak_mw": 13364.6,
+          "peak_increment_mw": 25.8,
+          "mean_daily_surge_mw": 216.8,
+          "mean_surge_pct": 2.08
+        },
+        "Bihar": {
+          "baseline_peak_mw": 7372.2,
+          "scenario_peak_mw": 7359.4,
+          "peak_increment_mw": -12.8,
+          "mean_daily_surge_mw": 97.6,
+          "mean_surge_pct": 1.6
+        },
+        "Delhi": {
+          "baseline_peak_mw": 7204.3,
+          "scenario_peak_mw": 7257.2,
+          "peak_increment_mw": 52.8,
+          "mean_daily_surge_mw": 183.2,
+          "mean_surge_pct": 3.43
+        },
+        "Gujarat": {
+          "baseline_peak_mw": 23145.3,
+          "scenario_peak_mw": 23965.9,
+          "peak_increment_mw": 820.6,
+          "mean_daily_surge_mw": 416.0,
+          "mean_surge_pct": 2.24
+        },
+        "Haryana": {
+          "baseline_peak_mw": 12092.7,
+          "scenario_peak_mw": 12178.7,
+          "peak_increment_mw": 85.9,
+          "mean_daily_surge_mw": 249.0,
+          "mean_surge_pct": 2.63
+        },
+        "Karnataka": {
+          "baseline_peak_mw": 18130.0,
+          "scenario_peak_mw": 18130.0,
+          "peak_increment_mw": 0.0,
+          "mean_daily_surge_mw": 427.4,
+          "mean_surge_pct": 3.67
+        },
+        "Kerala": {
+          "baseline_peak_mw": 6841.6,
+          "scenario_peak_mw": 6608.8,
+          "peak_increment_mw": -232.8,
+          "mean_daily_surge_mw": 330.2,
+          "mean_surge_pct": 7.96
+        },
+        "Madhya Pradesh": {
+          "baseline_peak_mw": 18710.4,
+          "scenario_peak_mw": 18844.9,
+          "peak_increment_mw": 134.5,
+          "mean_daily_surge_mw": 82.7,
+          "mean_surge_pct": 0.81
+        },
+        "Maharashtra": {
+          "baseline_peak_mw": 29752.4,
+          "scenario_peak_mw": 29752.4,
+          "peak_increment_mw": 0.0,
+          "mean_daily_surge_mw": 254.5,
+          "mean_surge_pct": 1.03
+        },
+        "Odisha": {
+          "baseline_peak_mw": 6767.1,
+          "scenario_peak_mw": 6883.6,
+          "peak_increment_mw": 116.5,
+          "mean_daily_surge_mw": 122.2,
+          "mean_surge_pct": 2.16
+        },
+        "Punjab": {
+          "baseline_peak_mw": 14861.3,
+          "scenario_peak_mw": 14955.3,
+          "peak_increment_mw": 94.0,
+          "mean_daily_surge_mw": 411.1,
+          "mean_surge_pct": 3.79
+        },
+        "Rajasthan": {
+          "baseline_peak_mw": 18422.3,
+          "scenario_peak_mw": 18422.3,
+          "peak_increment_mw": 0.0,
+          "mean_daily_surge_mw": 108.2,
+          "mean_surge_pct": 0.8
+        },
+        "Tamil Nadu": {
+          "baseline_peak_mw": 19231.2,
+          "scenario_peak_mw": 19080.2,
+          "peak_increment_mw": -151.0,
+          "mean_daily_surge_mw": 178.2,
+          "mean_surge_pct": 1.12
+        },
+        "Telangana": {
+          "baseline_peak_mw": 16418.3,
+          "scenario_peak_mw": 16418.3,
+          "peak_increment_mw": 0.0,
+          "mean_daily_surge_mw": 283.2,
+          "mean_surge_pct": 2.5
+        },
+        "Uttar Pradesh": {
+          "baseline_peak_mw": 27131.7,
+          "scenario_peak_mw": 27417.3,
+          "peak_increment_mw": 285.6,
+          "mean_daily_surge_mw": 341.7,
+          "mean_surge_pct": 1.61
+        },
+        "West Bengal": {
+          "baseline_peak_mw": 11533.6,
+          "scenario_peak_mw": 11813.9,
+          "peak_increment_mw": 280.3,
+          "mean_daily_surge_mw": 278.6,
+          "mean_surge_pct": 3.0
+        }
+      }
+    },
+    "plus_2c": {
+      "temperature_shift_c": 2.0,
+      "all_india_coincident_baseline_peak_mw": 223421.1,
+      "all_india_coincident_scenario_peak_mw": 229262.2,
+      "all_india_coincident_surge_mw": 5841.1,
+      "all_india_coincident_surge_pct": 2.61,
+      "state_surges": {
+        "Andhra Pradesh": {
+          "baseline_peak_mw": 13338.8,
+          "scenario_peak_mw": 13521.1,
+          "peak_increment_mw": 182.3,
+          "mean_daily_surge_mw": 429.7,
+          "mean_surge_pct": 4.17
+        },
+        "Bihar": {
+          "baseline_peak_mw": 7372.2,
+          "scenario_peak_mw": 7412.2,
+          "peak_increment_mw": 39.9,
+          "mean_daily_surge_mw": 204.0,
+          "mean_surge_pct": 3.33
+        },
+        "Delhi": {
+          "baseline_peak_mw": 7204.3,
+          "scenario_peak_mw": 7324.1,
+          "peak_increment_mw": 119.8,
+          "mean_daily_surge_mw": 355.5,
+          "mean_surge_pct": 6.79
+        },
+        "Gujarat": {
+          "baseline_peak_mw": 23145.3,
+          "scenario_peak_mw": 23929.8,
+          "peak_increment_mw": 784.5,
+          "mean_daily_surge_mw": 809.5,
+          "mean_surge_pct": 4.41
+        },
+        "Haryana": {
+          "baseline_peak_mw": 12092.7,
+          "scenario_peak_mw": 12207.6,
+          "peak_increment_mw": 114.9,
+          "mean_daily_surge_mw": 501.9,
+          "mean_surge_pct": 5.38
+        },
+        "Karnataka": {
+          "baseline_peak_mw": 18130.0,
+          "scenario_peak_mw": 18130.0,
+          "peak_increment_mw": 0.0,
+          "mean_daily_surge_mw": 778.2,
+          "mean_surge_pct": 6.7
+        },
+        "Kerala": {
+          "baseline_peak_mw": 6841.6,
+          "scenario_peak_mw": 6852.3,
+          "peak_increment_mw": 10.7,
+          "mean_daily_surge_mw": 587.7,
+          "mean_surge_pct": 13.95
+        },
+        "Madhya Pradesh": {
+          "baseline_peak_mw": 18710.4,
+          "scenario_peak_mw": 18513.7,
+          "peak_increment_mw": -196.7,
+          "mean_daily_surge_mw": 146.7,
+          "mean_surge_pct": 1.42
+        },
+        "Maharashtra": {
+          "baseline_peak_mw": 29752.4,
+          "scenario_peak_mw": 29752.4,
+          "peak_increment_mw": 0.0,
+          "mean_daily_surge_mw": 487.4,
+          "mean_surge_pct": 1.96
+        },
+        "Odisha": {
+          "baseline_peak_mw": 6767.1,
+          "scenario_peak_mw": 6951.1,
+          "peak_increment_mw": 184.0,
+          "mean_daily_surge_mw": 239.1,
+          "mean_surge_pct": 4.24
+        },
+        "Punjab": {
+          "baseline_peak_mw": 14861.3,
+          "scenario_peak_mw": 15023.9,
+          "peak_increment_mw": 162.5,
+          "mean_daily_surge_mw": 658.0,
+          "mean_surge_pct": 6.3
+        },
+        "Rajasthan": {
+          "baseline_peak_mw": 18422.3,
+          "scenario_peak_mw": 18422.3,
+          "peak_increment_mw": 0.0,
+          "mean_daily_surge_mw": 204.2,
+          "mean_surge_pct": 1.53
+        },
+        "Tamil Nadu": {
+          "baseline_peak_mw": 19231.2,
+          "scenario_peak_mw": 19383.7,
+          "peak_increment_mw": 152.5,
+          "mean_daily_surge_mw": 315.4,
+          "mean_surge_pct": 1.97
+        },
+        "Telangana": {
+          "baseline_peak_mw": 16418.3,
+          "scenario_peak_mw": 16418.3,
+          "peak_increment_mw": 0.0,
+          "mean_daily_surge_mw": 507.2,
+          "mean_surge_pct": 4.56
+        },
+        "Uttar Pradesh": {
+          "baseline_peak_mw": 27131.7,
+          "scenario_peak_mw": 26677.9,
+          "peak_increment_mw": -453.8,
+          "mean_daily_surge_mw": 631.9,
+          "mean_surge_pct": 3.03
+        },
+        "West Bengal": {
+          "baseline_peak_mw": 11533.6,
+          "scenario_peak_mw": 11704.2,
+          "peak_increment_mw": 170.6,
+          "mean_daily_surge_mw": 554.6,
+          "mean_surge_pct": 6.04
+        }
+      }
+    }
+  }
+}

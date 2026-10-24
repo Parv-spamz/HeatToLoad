@@ -1,0 +1,8 @@
+{
+  "dim_state_count": 16,
+  "dim_date_count": 851,
+  "fact_demand_count": 11696,
+  "fact_weather_count": 11696,
+  "fact_daily_load_weather_count": 11696,
+  "database_file_size_bytes": 6574080
+}

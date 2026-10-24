@@ -1,0 +1,142 @@
+{
+  "artifacts_checked": {
+    "data/MANIFEST.csv": {
+      "exists": true,
+      "size_bytes": 274438,
+      "status": "PASS"
+    },
+    "data/raw/demand/raw_demand_records.csv": {
+      "exists": true,
+      "size_bytes": 1935245,
+      "status": "PASS"
+    },
+    "data/raw/weather/raw_weather_records.csv": {
+      "exists": true,
+      "size_bytes": 5115147,
+      "status": "PASS"
+    },
+    "data/interim/cleaned_records.csv": {
+      "exists": true,
+      "size_bytes": 4255961,
+      "status": "PASS"
+    },
+    "data/processed/heat_to_load.db": {
+      "exists": true,
+      "size_bytes": 6574080,
+      "status": "PASS"
+    },
+    "data/processed/features.csv": {
+      "exists": true,
+      "size_bytes": 4992748,
+      "status": "PASS"
+    },
+    "models/lgbm_meteo_point.joblib": {
+      "exists": true,
+      "size_bytes": 1412564,
+      "status": "PASS"
+    },
+    "models/lgbm_operational_point.joblib": {
+      "exists": true,
+      "size_bytes": 1408060,
+      "status": "PASS"
+    },
+    "reports/results.json": {
+      "exists": true,
+      "size_bytes": 21321,
+      "status": "PASS"
+    },
+    "reports/FINAL_REPORT.md": {
+      "exists": true,
+      "size_bytes": 8057,
+      "status": "PASS"
+    },
+    "reports/warming_scenarios.csv": {
+      "exists": true,
+      "size_bytes": 807140,
+      "status": "PASS"
+    },
+    "tableau/tableau_daily_state_load.csv": {
+      "exists": true,
+      "size_bytes": 1931173,
+      "status": "PASS"
+    },
+    "tableau/tableau_state_sensitivity_summary.csv": {
+      "exists": true,
+      "size_bytes": 2130,
+      "status": "PASS"
+    },
+    "tableau/tableau_warming_scenarios.csv": {
+      "exists": true,
+      "size_bytes": 807140,
+      "status": "PASS"
+    },
+    "README.md": {
+      "exists": true,
+      "size_bytes": 7028,
+      "status": "PASS"
+    },
+    "CLAIMS_REGISTER.md": {
+      "exists": true,
+      "size_bytes": 2095,
+      "status": "PASS"
+    },
+    "DECISIONS.md": {
+      "exists": true,
+      "size_bytes": 5072,
+      "status": "PASS"
+    },
+    "logs/RUN_LOG.md": {
+      "exists": true,
+      "size_bytes": 1192,
+      "status": "PASS"
+    }
+  },
+  "sha256_verifications": [
+    {
+      "file": "data/raw/demand/files_grdw_uploads_daily-reports_psp-reports_2023-2024_17.01.24_NLDC_PSP.pdf",
+      "expected": "e483f9ad3506b9bf...",
+      "actual": "e483f9ad3506b9bf...",
+      "match": true
+    },
+    {
+      "file": "data/raw/demand/files_grdw_uploads_daily-reports_psp-reports_2023-2024_21.05.23_NLDC_PSP.pdf",
+      "expected": "e13b4d39af65c3ab...",
+      "actual": "e13b4d39af65c3ab...",
+      "match": true
+    },
+    {
+      "file": "data/raw/demand/files_grdw_uploads_daily-reports_psp-reports_2023-2024_07.10.23_NLDC_PSP.pdf",
+      "expected": "32e2a01e655aca06...",
+      "actual": "32e2a01e655aca06...",
+      "match": true
+    },
+    {
+      "file": "data/raw/demand/files_grdw_uploads_daily-reports_psp-reports_2023-2024_12.01.24_NLDC_PSP.pdf",
+      "expected": "922a9bcfe3454e16...",
+      "actual": "922a9bcfe3454e16...",
+      "match": true
+    },
+    {
+      "file": "data/raw/demand/files_grdw_uploads_daily-reports_psp-reports_2024-2025_02.05.24_NLDC_PSP.pdf",
+      "expected": "f519cf879c8353d5...",
+      "actual": "f519cf879c8353d5...",
+      "match": true
+    }
+  ],
+  "database_checks": {
+    "fact_demand_total_rows": 11696,
+    "unimputed_null_rows": 32,
+    "excluded_rows": 34,
+    "target_demand_never_imputed": true
+  },
+  "claims_checks": {
+    "CLM-001": true,
+    "CLM-002": true,
+    "CLM-003": true,
+    "CLM-004": true,
+    "CLM-005": true,
+    "CLM-006": true,
+    "CLM-007": true
+  },
+  "integrity_passed": true
+}
