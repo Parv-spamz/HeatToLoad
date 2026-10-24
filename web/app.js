@@ -8,21 +8,21 @@
 let appData = null;
 let charts = {};
 
-// Purpose-Driven Institutional Palette
+// Purpose-Driven Apple Light Glass Palette
 const COLORS = {
-    textMain: '#f1f5f9',
-    textMuted: '#94a3b8',
+    textMain: '#0f172a',
+    textMuted: '#475569',
     textDim: '#64748b',
-    accent: '#38bdf8',           // Crisp cobalt/sky accent
-    alertRed: '#f87171',         // Soft alert red strictly for thermal stress/risk
-    alertGreen: '#34d399',       // Soft mint strictly for accuracy / low error
-    amber: '#fbbf24',            // Subdued temperature amber
-    barSlate: '#262f3d',         // Slate bar fill
-    barSlateBorder: '#38bdf8',   // Crisp accent border edge
-    barHighRisk: '#f87171',      // Risk highlight
-    gridLines: 'rgba(255, 255, 255, 0.05)',
-    tooltipBg: '#151921',
-    tooltipBorder: 'rgba(255, 255, 255, 0.1)'
+    accent: '#0284c7',           // Apple vibrant sky / cobalt blue
+    alertRed: '#e11d48',         // Apple coral / rose red
+    alertGreen: '#059669',       // Apple deep emerald
+    amber: '#d97706',            // Apple warm golden amber
+    barSlate: '#e2e8f0',         // Slate bar fill
+    barSlateBorder: '#0284c7',   // Crisp accent border edge
+    barHighRisk: '#e11d48',      // Risk highlight
+    gridLines: 'rgba(15, 23, 42, 0.06)',
+    tooltipBg: 'rgba(255, 255, 255, 0.96)',
+    tooltipBorder: 'rgba(15, 23, 42, 0.12)'
 };
 
 // Qualitative state summaries based on empirical energy profiles
@@ -53,7 +53,9 @@ Chart.defaults.plugins.tooltip.backgroundColor = COLORS.tooltipBg;
 Chart.defaults.plugins.tooltip.borderColor = COLORS.tooltipBorder;
 Chart.defaults.plugins.tooltip.borderWidth = 1;
 Chart.defaults.plugins.tooltip.padding = 10;
-Chart.defaults.plugins.tooltip.cornerRadius = 6;
+Chart.defaults.plugins.tooltip.cornerRadius = 8;
+Chart.defaults.plugins.tooltip.titleColor = '#0f172a';
+Chart.defaults.plugins.tooltip.bodyColor = '#334155';
 Chart.defaults.plugins.tooltip.titleFont = { weight: '600', size: 12 };
 Chart.defaults.plugins.tooltip.bodyFont = { family: "'JetBrains Mono', monospace", size: 11 };
 Chart.defaults.plugins.legend.labels.usePointStyle = true;
@@ -201,7 +203,7 @@ function initResponseCurveChart(stateName) {
                     label: 'Daily Observations (SCADA)',
                     data: scatterData,
                     normalized: true,
-                    backgroundColor: 'rgba(56, 189, 248, 0.32)',
+                    backgroundColor: 'rgba(2, 132, 199, 0.45)',
                     borderColor: 'transparent',
                     pointRadius: 3,
                     order: 2
@@ -279,7 +281,7 @@ function initHeatwaveTimelineChart() {
                     label: 'Actual Coincident Demand (MW)',
                     data: actual,
                     borderColor: COLORS.accent,
-                    backgroundColor: 'rgba(56, 189, 248, 0.05)',
+                    backgroundColor: 'rgba(2, 132, 199, 0.08)',
                     borderWidth: 1.8,
                     pointRadius: 2,
                     fill: true,
@@ -355,8 +357,8 @@ function initSimulator() {
         if (deltaT <= 1.2) {
             return {
                 color: COLORS.accent,
-                borderColor: 'rgba(56, 189, 248, 0.4)',
-                bg: 'rgba(56, 189, 248, 0.08)',
+                borderColor: 'rgba(2, 132, 199, 0.35)',
+                bg: 'rgba(2, 132, 199, 0.08)',
                 thumbColor: COLORS.accent,
                 riskText: 'MODERATE STRESS',
                 riskClass: 'sim-val text-sky'
@@ -364,8 +366,8 @@ function initSimulator() {
         } else if (deltaT <= 2.1) {
             return {
                 color: COLORS.amber,
-                borderColor: 'rgba(251, 191, 36, 0.4)',
-                bg: 'rgba(251, 191, 36, 0.08)',
+                borderColor: 'rgba(217, 119, 6, 0.35)',
+                bg: 'rgba(217, 119, 6, 0.08)',
                 thumbColor: COLORS.amber,
                 riskText: 'HIGH CORRIDOR RISK',
                 riskClass: 'sim-val text-amber'
@@ -373,8 +375,8 @@ function initSimulator() {
         } else {
             return {
                 color: COLORS.alertRed,
-                borderColor: 'rgba(248, 113, 113, 0.45)',
-                bg: 'rgba(248, 113, 113, 0.08)',
+                borderColor: 'rgba(225, 29, 72, 0.40)',
+                bg: 'rgba(225, 29, 72, 0.08)',
                 thumbColor: COLORS.alertRed,
                 riskText: 'CRITICAL DEFICIT',
                 riskClass: 'sim-val text-alert'
@@ -416,8 +418,8 @@ function initSimulator() {
         const labels = ['Baseline (Observed)', `Simulated (+${deltaT.toFixed(1)}°C)`];
         const data = [base / 1000.0, scen / 1000.0];
         const colors = [
-            'rgba(56, 189, 248, 0.35)', 
-            deltaT >= 2.0 ? 'rgba(248, 113, 113, 0.85)' : 'rgba(251, 191, 36, 0.85)'
+            'rgba(2, 132, 199, 0.35)', 
+            deltaT >= 2.0 ? 'rgba(225, 29, 72, 0.85)' : 'rgba(217, 119, 6, 0.85)'
         ];
         const borderColors = [
             COLORS.accent,
