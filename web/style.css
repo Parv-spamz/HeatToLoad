@@ -142,10 +142,12 @@ body {
     user-select: none;
     z-index: 0;
     display: flex;
-    align-items: center;
+    align-items: flex-start; /* Fixed towards the top of the page */
     justify-content: center;
+    padding-top: 35px;
     overflow: hidden;
-    padding: 0 40px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .fixed-signature-watermark {
@@ -153,49 +155,52 @@ body {
     display: inline-flex;
     align-items: baseline;
     justify-content: center;
-    gap: 0.28em;
-    transform: rotate(-3.5deg) translateY(-8vh);
-    transform-origin: center center;
-    line-height: 0.92;
-    letter-spacing: -0.015em;
+    gap: 0.35em;
+    transform: rotate(-2.8deg);
+    transform-origin: center top;
+    line-height: 0.86;
+    letter-spacing: -0.02em;
     white-space: nowrap;
     text-align: center;
     /* Static: strictly no movement or floating animations */
 }
 
 .f-sig-prefix {
-    font-size: clamp(3.2rem, 6vw, 6.8rem);
+    font-size: clamp(4.2rem, 8vw, 10rem);
     font-weight: 600;
-    color: rgba(15, 23, 42, 0.78);
+    color: rgba(15, 23, 42, 0.85);
     letter-spacing: 0.01em;
     display: inline-block;
-    filter: drop-shadow(0 2px 8px rgba(15, 23, 42, 0.12));
+    filter: drop-shadow(0 4px 12px rgba(15, 23, 42, 0.16));
 }
 
 .f-sig-name {
-    font-size: clamp(6.2rem, 12.5vw, 14.5rem);
+    font-size: clamp(8.5rem, 17vw, 21rem);
     font-weight: 700;
-    /* Rich, high-contrast brand ink with flame/violet gradient */
-    background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 26%, #4338ca 56%, #e11d48 84%, #ea580c 100%);
+    /* Massive, high-contrast brand ink with flame/violet gradient */
+    background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 24%, #4338ca 52%, #e11d48 82%, #ea580c 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     color: #0f172a; /* Fallback */
     display: inline-block;
-    padding-right: 0.16em;
-    filter: drop-shadow(0 4px 22px rgba(15, 23, 42, 0.22));
+    padding-right: 0.18em;
+    filter: drop-shadow(0 6px 28px rgba(15, 23, 42, 0.28));
 }
 
 @media (max-width: 900px) {
+    .fixed-signature-layer {
+        padding-top: 20px;
+    }
     .fixed-signature-watermark {
         flex-direction: column;
         gap: 0;
-        transform: rotate(-2.5deg) translateY(-4vh);
+        transform: rotate(-2deg);
     }
     .f-sig-prefix {
-        font-size: 2.8rem;
+        font-size: 3.5rem;
     }
     .f-sig-name {
-        font-size: 5.5rem;
+        font-size: 6.8rem;
     }
 }
 
