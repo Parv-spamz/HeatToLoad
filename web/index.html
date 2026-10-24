@@ -13,21 +13,12 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Background Ambient Glow -->
-    <div class="ambient-glow glow-1"></div>
-    <div class="ambient-glow glow-2"></div>
-    <div class="ambient-glow glow-3"></div>
-
     <div class="app-container">
         <!-- Header -->
         <header class="app-header">
             <div class="header-left">
-                <div class="logo-badge">
-                    <span class="pulse-dot"></span>
-                    <span class="logo-tag">GRID-INDIA &bull; ERA5 REANALYSIS</span>
-                </div>
-                <h1 class="app-title">HEAT <span class="gradient-text">TO LOAD</span></h1>
-                <p class="app-subtitle">Temperature Sensitivity & Climate Warming Stress on India's Power Grid (FY 2023–25)</p>
+                <h1 class="app-title">Heat to Load</h1>
+                <p class="app-subtitle">Empirical temperature sensitivity & warming stress on India’s power grid (FY 2023–25). <span class="provenance-inline">Data sources: GRID-INDIA SCADA & ECMWF ERA5</span></p>
             </div>
             <div class="header-right">
                 <div class="header-search-wrap">
@@ -39,11 +30,10 @@
                     <div id="search-autocomplete-list" class="autocomplete-list hidden"></div>
                 </div>
                 <div class="status-chip">
-                    <span class="chip-dot"></span>
-                    <span class="chip-text">735 Daily PSP Reports &bull; 16 States</span>
+                    735 Daily PSP Reports &bull; 16 States
                 </div>
                 <a href="data.json" download="heat_to_load_web_data.json" class="btn btn-outline" id="btn-export-json">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
                     Raw Datasets
                 </a>
             </div>
@@ -51,27 +41,27 @@
 
         <!-- KPI Metrics Ribbon -->
         <section class="kpi-grid">
-            <div class="kpi-card glassmorphism">
+            <div class="kpi-card">
                 <div class="kpi-label">NATIONAL MARGINAL HEAT SENSITIVITY</div>
-                <div class="kpi-value text-cyan" id="kpi-mw-c">+2,761.9 <span class="kpi-unit">MW / °C</span></div>
+                <div class="kpi-value" id="kpi-mw-c">+2,761.9 <span class="kpi-unit">MW / °C</span></div>
                 <div class="kpi-sub">Simultaneous 16-State Marginal Cooling Load</div>
             </div>
 
-            <div class="kpi-card glassmorphism">
+            <div class="kpi-card">
                 <div class="kpi-label">STATE-WEIGHTED SURGE RATE</div>
-                <div class="kpi-value text-amber" id="kpi-pct-c">+1.62% <span class="kpi-unit">/ °C</span></div>
+                <div class="kpi-value" id="kpi-pct-c">+1.62% <span class="kpi-unit">/ °C</span></div>
                 <div class="kpi-sub">Peak Load Expansion above Baseline</div>
             </div>
 
-            <div class="kpi-card glassmorphism">
+            <div class="kpi-card">
                 <div class="kpi-label">HOLDOUT ACCURACY (SUMMER 2024)</div>
                 <div class="kpi-value text-emerald" id="kpi-mape">3.46% <span class="kpi-unit">MAPE</span></div>
                 <div class="kpi-sub">R² = 0.9907 (Operational LightGBM)</div>
             </div>
 
-            <div class="kpi-card glassmorphism">
+            <div class="kpi-card kpi-risk-border">
                 <div class="kpi-label">+2.0°C CLIMATE WARMING PEAK</div>
-                <div class="kpi-value text-rose" id="kpi-scen-2c">229.3 <span class="kpi-unit">GW</span></div>
+                <div class="kpi-value text-alert" id="kpi-scen-2c">229.3 <span class="kpi-unit">GW</span></div>
                 <div class="kpi-sub">+5,841 MW Concurrent Headroom Deficit</div>
             </div>
         </section>
@@ -100,7 +90,7 @@
             </div>
 
             <!-- Right Column: Interactive Temperature-Load Response Curve -->
-            <div class="card glassmorphism col-span-7">
+            <div class="card col-span-7">
                 <div class="card-header">
                     <div>
                         <h2 class="card-title">Non-linear Temperature Response Curve</h2>
@@ -123,7 +113,7 @@
             </div>
 
             <!-- Full Width: Historic Summer 2024 Heatwave Tracking -->
-            <div class="card glassmorphism col-span-12">
+            <div class="card col-span-12">
                 <div class="card-header">
                     <div>
                         <h2 class="card-title">Historic Summer 2024 Heatwave Tracking (May – June 2024)</h2>
@@ -141,7 +131,7 @@
             </div>
 
             <!-- Bottom Left: Interactive Climate Warming Simulator -->
-            <div class="card glassmorphism col-span-7">
+            <div class="card col-span-7">
                 <div class="card-header">
                     <div>
                         <h2 class="card-title">Climate Warming Simulator (+0.5°C to +3.0°C)</h2>
@@ -161,19 +151,19 @@
                 <div class="sim-metrics-grid">
                     <div class="sim-metric-box">
                         <span class="sim-label">COINCIDENT PEAK</span>
-                        <span class="sim-val text-amber" id="sim-peak-gw">228.1 GW</span>
+                        <span class="sim-val" id="sim-peak-gw">228.1 GW</span>
                     </div>
                     <div class="sim-metric-box">
                         <span class="sim-label">SIMULTANEOUS SURGE</span>
-                        <span class="sim-val text-rose" id="sim-surge-mw">+4,721 MW</span>
+                        <span class="sim-val text-alert" id="sim-surge-mw">+4,721 MW</span>
                     </div>
                     <div class="sim-metric-box">
                         <span class="sim-label">PERCENTAGE INCREASE</span>
-                        <span class="sim-val text-cyan" id="sim-surge-pct">+2.11%</span>
+                        <span class="sim-val text-alert" id="sim-surge-pct">+2.11%</span>
                     </div>
                     <div class="sim-metric-box">
                         <span class="sim-label">TRANSMISSION HEADROOM RISK</span>
-                        <span class="sim-val text-orange" id="sim-risk-level">HIGH RISK</span>
+                        <span class="sim-val text-alert" id="sim-risk-level">HIGH RISK</span>
                     </div>
                 </div>
 
@@ -183,7 +173,7 @@
             </div>
 
             <!-- Bottom Right: SHAP TreeExplainer Attribution -->
-            <div class="card glassmorphism col-span-5">
+            <div class="card col-span-5">
                 <div class="card-header">
                     <div>
                         <h2 class="card-title">SHAP Feature Attribution</h2>
@@ -196,7 +186,7 @@
             </div>
 
             <!-- State Summary Data League Table -->
-            <div class="card glassmorphism col-span-12">
+            <div class="card col-span-12">
                 <div class="card-header">
                     <div>
                         <h2 class="card-title">16 Major Indian States: Empirical Parameters & Holdout Validation</h2>
@@ -241,7 +231,7 @@
     <!-- State Comprehensive Details Modal -->
     <div id="state-modal" class="modal-overlay hidden">
         <div class="modal-backdrop" id="modal-backdrop"></div>
-        <div class="modal-card glassmorphism">
+        <div class="modal-card">
             <div class="modal-header">
                 <div class="modal-title-wrap">
                     <span class="modal-region-badge" id="modal-region-badge">SOUTHERN REGION (SR)</span>
@@ -255,17 +245,17 @@
             <div class="modal-metrics-strip">
                 <div class="modal-mcard">
                     <div class="m-card-label">MEAN DAILY PEAK</div>
-                    <div class="m-card-val text-cyan" id="modal-mean-demand">14,125 MW</div>
+                    <div class="m-card-val" id="modal-mean-demand">14,125 MW</div>
                     <div class="m-card-sub">SCADA demand baseline</div>
                 </div>
                 <div class="modal-mcard">
                     <div class="m-card-label">HEAT SENSITIVITY</div>
-                    <div class="m-card-val text-rose" id="modal-mw-c">+494.4 MW/°C</div>
+                    <div class="m-card-val text-alert" id="modal-mw-c">+494.4 MW/°C</div>
                     <div class="m-card-sub" id="modal-pct-c">+3.50% / °C surge</div>
                 </div>
                 <div class="modal-mcard">
                     <div class="m-card-label">COOLING DEGREE SLOPE</div>
-                    <div class="m-card-val text-amber" id="modal-cdd">+811.1 MW</div>
+                    <div class="m-card-val" id="modal-cdd">+811.1 MW</div>
                     <div class="m-card-sub">Per degree-day (CDD_24)</div>
                 </div>
                 <div class="modal-mcard">

@@ -1,24 +1,28 @@
 /**
- * Heat To Load // Frontend Application Engine
+ * Heat To Load // Institutional Analytics Application Engine
+ * Styled after BloombergNEF, Our World in Data, and Palantir Foundry.
  * Drives interactive Chart.js visualizations, climate slider simulator,
- * state search with detailed dossier modal, and dynamic data filtering.
+ * state search with detailed dossier modal, and standardized data filtering.
  */
 
 let appData = null;
 let charts = {};
 
-// Color Palette
+// Purpose-Driven Institutional Palette
 const COLORS = {
-    cyan: '#00f2fe',
-    blue: '#4facfe',
-    amber: '#f59e0b',
-    rose: '#f43f5e',
-    orange: '#fb923c',
-    emerald: '#10b981',
-    purple: '#8b5cf6',
-    slate: '#94a3b8',
+    textMain: '#f1f5f9',
+    textMuted: '#94a3b8',
+    textDim: '#64748b',
+    accent: '#38bdf8',           // Crisp cobalt/sky accent
+    alertRed: '#f87171',         // Soft alert red strictly for thermal stress/risk
+    alertGreen: '#34d399',       // Soft mint strictly for accuracy / low error
+    amber: '#fbbf24',            // Subdued temperature amber
+    barSlate: '#262f3d',         // Slate bar fill
+    barSlateBorder: '#38bdf8',   // Crisp accent border edge
+    barHighRisk: '#f87171',      // Risk highlight
     gridLines: 'rgba(255, 255, 255, 0.05)',
-    tooltipBg: 'rgba(16, 23, 38, 0.95)'
+    tooltipBg: '#151921',
+    tooltipBorder: 'rgba(255, 255, 255, 0.1)'
 };
 
 // Qualitative state summaries based on empirical energy profiles
@@ -42,14 +46,18 @@ const STATE_DESCRIPTIONS = {
 };
 
 // Global Chart.js Defaults
-Chart.defaults.color = '#94a3b8';
-Chart.defaults.font.family = "'Inter', sans-serif";
+Chart.defaults.color = COLORS.textMuted;
+Chart.defaults.font.family = "'Inter', -apple-system, sans-serif";
+Chart.defaults.font.size = 11;
 Chart.defaults.plugins.tooltip.backgroundColor = COLORS.tooltipBg;
-Chart.defaults.plugins.tooltip.borderColor = 'rgba(255, 255, 255, 0.15)';
+Chart.defaults.plugins.tooltip.borderColor = COLORS.tooltipBorder;
 Chart.defaults.plugins.tooltip.borderWidth = 1;
 Chart.defaults.plugins.tooltip.padding = 10;
-Chart.defaults.plugins.tooltip.cornerRadius = 8;
+Chart.defaults.plugins.tooltip.cornerRadius = 6;
+Chart.defaults.plugins.tooltip.titleFont = { weight: '600', size: 12 };
+Chart.defaults.plugins.tooltip.bodyFont = { family: "'JetBrains Mono', monospace", size: 11 };
 Chart.defaults.plugins.legend.labels.usePointStyle = true;
+Chart.defaults.plugins.legend.labels.boxWidth = 6;
 
 document.addEventListener('DOMContentLoaded', async () => {
     try {
@@ -79,7 +87,7 @@ function initKPIs() {
     const holdout = appData.holdout_metrics || {};
 
     if (summary.all_india_combined_mw_per_c) {
-        document.getElementById('kpi-mw-c').innerHTML = `+${summary.all_india_combined_mw_per_c.toLocaleString()} <span class="kpi-unit">MW / °C</span>`;
+        document.getElementById('kpi-mw-c').innerHTML = `+${summary.all_india_combined_mw_per_c.toLocaleString('en-US', { minimumFractionDigits: 1, maximumFractionDigits: 1 })} <span class="kpi-unit">MW / °C</span>`;
     }
     if (summary.state_average_pct_per_c) {
         document.getElementById('kpi-pct-c').innerHTML = `+${summary.state_average_pct_per_c.toFixed(2)}% <span class="kpi-unit">/ °C</span>`;
@@ -97,7 +105,7 @@ function initStateDropdown() {
     appData.states.forEach(s => {
         const opt = document.createElement('option');
         opt.value = s.state;
-        opt.textContent = `${s.state} (${s.region}) - +${s.pct_per_c.toFixed(2)}%/°C`;
+        opt.textContent = `${s.state} (${s.region}) — +${s.pct_per_c.toFixed(2)}%/°C`;
         select.appendChild(opt);
     });
 
@@ -120,7 +128,9 @@ function initSensitivityChart(regionFilter = 'all') {
     const labels = filteredStates.map(s => s.state);
     const dataPct = filteredStates.map(s => s.pct_per_c);
 
-    const bgColors = dataPct.map(v => v > 2.5 ? COLORS.rose : v > 1.5 ? COLORS.amber : COLORS.blue);
+    // Purposeful semantic colors: Soft red strictly for top thermal stress >2.5%, neutral slate for others
+    const bgColors = dataPct.map(v => v >= 2.5 ? 'rgba(248, 113, 113, 0.75)' : 'rgba(56, 189, 248, 0.25)');
+    const borderColors = dataPct.map(v => v >= 2.5 ? COLORS.alertRed : COLORS.accent);
 
     if (charts.sensitivity) charts.sensitivity.destroy();
 
@@ -132,7 +142,9 @@ function initSensitivityChart(regionFilter = 'all') {
                 label: 'Sensitivity (%/°C)',
                 data: dataPct,
                 backgroundColor: bgColors,
-                borderRadius: 4,
+                borderColor: borderColors,
+                borderWidth: 1,
+                borderRadius: 3,
                 borderSkipped: false
             }]
         },
@@ -151,17 +163,18 @@ function initSensitivityChart(regionFilter = 'all') {
                 legend: { display: false },
                 tooltip: {
                     callbacks: {
-                        label: (ctx) => `+${ctx.raw.toFixed(2)}% per °C (Click to view details)`
+                        label: (ctx) => `+${ctx.raw.toFixed(2)}% per °C (Click to inspect)`
                     }
                 }
             },
             scales: {
                 x: {
                     grid: { color: COLORS.gridLines },
-                    title: { display: true, text: '% Increase per °C above baseline' }
+                    title: { display: true, text: '% Increase per °C above baseline', color: COLORS.textDim }
                 },
                 y: {
-                    grid: { display: false }
+                    grid: { display: false },
+                    ticks: { color: COLORS.textMain, font: { weight: '500' } }
                 }
             }
         }
@@ -181,21 +194,21 @@ function initResponseCurveChart(stateName) {
         data: {
             datasets: [
                 {
-                    label: 'Daily Observations',
+                    label: 'Daily Observations (SCADA)',
                     data: scatterData,
-                    backgroundColor: 'rgba(79, 172, 254, 0.45)',
+                    backgroundColor: 'rgba(56, 189, 248, 0.32)',
                     borderColor: 'transparent',
-                    pointRadius: 3.5,
+                    pointRadius: 3,
                     order: 2
                 },
                 {
                     label: 'Polynomial Thermal Response',
                     type: 'line',
                     data: lineData,
-                    borderColor: COLORS.rose,
-                    borderWidth: 2.5,
+                    borderColor: COLORS.alertRed,
+                    borderWidth: 2,
                     pointRadius: 0,
-                    tension: 0.2,
+                    tension: 0.15,
                     order: 1
                 }
             ]
@@ -204,10 +217,15 @@ function initResponseCurveChart(stateName) {
             responsive: true,
             maintainAspectRatio: false,
             plugins: {
-                legend: { display: true, position: 'top' },
+                legend: {
+                    display: true,
+                    position: 'top',
+                    align: 'end',
+                    labels: { color: COLORS.textMuted }
+                },
                 tooltip: {
                     callbacks: {
-                        label: (ctx) => `${ctx.dataset.label}: ${ctx.parsed.x}°C → ${ctx.parsed.y.toLocaleString()} MW`
+                        label: (ctx) => `${ctx.dataset.label}: ${ctx.parsed.x.toFixed(1)}°C → ${Math.round(ctx.parsed.y).toLocaleString()} MW`
                     }
                 }
             },
@@ -215,11 +233,12 @@ function initResponseCurveChart(stateName) {
                 x: {
                     type: 'linear',
                     grid: { color: COLORS.gridLines },
-                    title: { display: true, text: 'Daily Maximum Temperature (°C)' }
+                    title: { display: true, text: 'Daily Maximum Temperature (°C) — ERA5 Reanalysis', color: COLORS.textDim }
                 },
                 y: {
                     grid: { color: COLORS.gridLines },
-                    title: { display: true, text: 'Peak Electricity Demand (MW)' }
+                    title: { display: true, text: 'Peak Electricity Demand (MW) — SCADA', color: COLORS.textDim },
+                    ticks: { callback: (v) => `${(v / 1000).toFixed(1)}k` }
                 }
             }
         }
@@ -251,29 +270,29 @@ function initHeatwaveTimelineChart() {
             labels: dates,
             datasets: [
                 {
-                    label: 'Actual Coincident Peak Met (MW)',
+                    label: 'Actual Coincident Demand (MW)',
                     data: actual,
-                    borderColor: '#3b82f6',
-                    backgroundColor: 'rgba(59, 130, 246, 0.08)',
-                    borderWidth: 2.2,
-                    pointRadius: 2.5,
+                    borderColor: COLORS.accent,
+                    backgroundColor: 'rgba(56, 189, 248, 0.05)',
+                    borderWidth: 1.8,
+                    pointRadius: 2,
                     fill: true,
                     yAxisID: 'y'
                 },
                 {
-                    label: 'Model Q50 Forecast (MW)',
+                    label: 'Model Forecast (Q50)',
                     data: pred,
-                    borderColor: COLORS.rose,
-                    borderWidth: 1.8,
+                    borderColor: COLORS.alertRed,
+                    borderWidth: 1.6,
                     borderDash: [4, 4],
                     pointRadius: 0,
                     yAxisID: 'y'
                 },
                 {
-                    label: 'Daily Max Temp (°C)',
+                    label: 'Daytime Temperature (°C)',
                     data: temp,
                     borderColor: COLORS.amber,
-                    borderWidth: 2,
+                    borderWidth: 1.4,
                     pointRadius: 1,
                     yAxisID: 'y1'
                 }
@@ -289,21 +308,23 @@ function initHeatwaveTimelineChart() {
             scales: {
                 x: {
                     grid: { display: false },
-                    ticks: { maxTicksLimit: 20 }
+                    ticks: { maxTicksLimit: 15, color: COLORS.textMuted }
                 },
                 y: {
                     type: 'linear',
                     position: 'left',
                     grid: { color: COLORS.gridLines },
-                    title: { display: true, text: 'Coincident Peak Demand (MW)' }
+                    title: { display: true, text: 'Coincident Peak Demand (MW)', color: COLORS.textDim },
+                    ticks: { callback: (v) => `${Math.round(v / 1000)}k` }
                 },
                 y1: {
                     type: 'linear',
                     position: 'right',
                     grid: { display: false },
-                    title: { display: true, text: 'Max Temperature (°C)' },
+                    title: { display: true, text: 'Max Temperature (°C)', color: COLORS.textDim },
                     min: 28,
-                    max: 48
+                    max: 48,
+                    ticks: { color: COLORS.amber }
                 }
             }
         }
@@ -325,25 +346,27 @@ function initSimulator() {
     const basePeak = appData.scenarios?.plus_1c?.all_india_coincident_baseline_peak_mw || 223421.1;
 
     function recalculate(deltaT) {
-        badge.textContent = `+${deltaT.toFixed(1)}°C`;
+        if (badge) badge.textContent = `+${deltaT.toFixed(1)}°C`;
         
         const surgeMw = (deltaT * 2761.9) + (deltaT ** 1.35 * 420.0);
         const scenarioPeak = basePeak + surgeMw;
         const surgePct = (surgeMw / basePeak) * 100.0;
 
-        peakGwEl.textContent = `${(scenarioPeak / 1000.0).toFixed(1)} GW`;
-        surgeMwEl.textContent = `+${Math.round(surgeMw).toLocaleString()} MW`;
-        surgePctEl.textContent = `+${surgePct.toFixed(2)}%`;
+        if (peakGwEl) peakGwEl.textContent = `${(scenarioPeak / 1000.0).toFixed(1)} GW`;
+        if (surgeMwEl) surgeMwEl.textContent = `+${Math.round(surgeMw).toLocaleString()} MW`;
+        if (surgePctEl) surgePctEl.textContent = `+${surgePct.toFixed(2)}%`;
 
-        if (deltaT >= 2.2) {
-            riskLevelEl.textContent = 'CRITICAL DEFICIT';
-            riskLevelEl.className = 'sim-val text-rose';
-        } else if (deltaT >= 1.4) {
-            riskLevelEl.textContent = 'HIGH CORRIDOR RISK';
-            riskLevelEl.className = 'sim-val text-amber';
-        } else {
-            riskLevelEl.textContent = 'MODERATE STRESS';
-            riskLevelEl.className = 'sim-val text-cyan';
+        if (riskLevelEl) {
+            if (deltaT >= 2.2) {
+                riskLevelEl.textContent = 'CRITICAL DEFICIT';
+                riskLevelEl.className = 'sim-val text-alert';
+            } else if (deltaT >= 1.4) {
+                riskLevelEl.textContent = 'HIGH CORRIDOR RISK';
+                riskLevelEl.className = 'sim-val text-alert';
+            } else {
+                riskLevelEl.textContent = 'MODERATE STRESS';
+                riskLevelEl.className = 'sim-val';
+            }
         }
 
         updateSimChart(basePeak, scenarioPeak, deltaT);
@@ -352,7 +375,7 @@ function initSimulator() {
     function updateSimChart(base, scen, deltaT) {
         const labels = ['Baseline (Observed)', `Simulated (+${deltaT.toFixed(1)}°C)`];
         const data = [base / 1000.0, scen / 1000.0];
-        const colors = ['#34495e', deltaT >= 2.0 ? COLORS.rose : COLORS.amber];
+        const colors = ['#27303f', deltaT >= 2.0 ? COLORS.alertRed : '#38bdf8'];
 
         if (charts.simCompare) {
             charts.simCompare.data.labels = labels;
@@ -368,8 +391,8 @@ function initSimulator() {
                         label: 'Coincident Peak (GW)',
                         data: data,
                         backgroundColor: colors,
-                        borderRadius: 6,
-                        barThickness: 50
+                        borderRadius: 4,
+                        barThickness: 42
                     }]
                 },
                 options: {
@@ -386,7 +409,7 @@ function initSimulator() {
                             min: 200,
                             max: 245,
                             grid: { color: COLORS.gridLines },
-                            title: { display: true, text: 'Gigawatts (GW)' }
+                            title: { display: true, text: 'Gigawatts (GW)', color: COLORS.textDim }
                         },
                         x: { grid: { display: false } }
                     }
@@ -395,16 +418,19 @@ function initSimulator() {
         }
     }
 
-    slider.addEventListener('input', (e) => {
-        recalculate(parseFloat(e.target.value));
-    });
-
-    recalculate(1.5);
+    if (slider) {
+        slider.addEventListener('input', (e) => {
+            recalculate(parseFloat(e.target.value));
+        });
+        recalculate(parseFloat(slider.value));
+    }
 }
 
-// 7. Chart 5: SHAP Attribution
+// 7. Chart 5: SHAP Attribution (Monochromatic slate with crisp accent edge)
 function initSHAPChart() {
-    const ctx = document.getElementById('chart-shap').getContext('2d');
+    const canvas = document.getElementById('chart-shap');
+    if (!canvas) return;
+    const ctx = canvas.getContext('2d');
     const drivers = appData.shap_drivers || [];
 
     const labels = drivers.map(d => d.feature.replace(/_/g, ' '));
@@ -417,10 +443,10 @@ function initSHAPChart() {
             datasets: [{
                 label: 'Mean |SHAP| (MW)',
                 data: impacts,
-                backgroundColor: 'rgba(139, 92, 246, 0.75)',
-                borderColor: COLORS.purple,
+                backgroundColor: 'rgba(56, 189, 248, 0.16)',
+                borderColor: COLORS.accent,
                 borderWidth: 1,
-                borderRadius: 4
+                borderRadius: 3
             }]
         },
         options: {
@@ -430,40 +456,48 @@ function initSHAPChart() {
             plugins: {
                 legend: { display: false },
                 tooltip: {
-                    callbacks: { label: (ctx) => `${ctx.raw.toLocaleString()} MW Impact` }
+                    callbacks: { label: (ctx) => `+${ctx.raw.toLocaleString()} MW Mean Attribution` }
                 }
             },
             scales: {
                 x: {
                     grid: { color: COLORS.gridLines },
-                    title: { display: true, text: 'Mean Absolute Impact on Peak (MW)' }
+                    title: { display: true, text: 'Mean Absolute Impact on Peak (MW)', color: COLORS.textDim }
                 },
-                y: { grid: { display: false } }
+                y: {
+                    grid: { display: false },
+                    ticks: { color: COLORS.textMain, font: { weight: '500' } }
+                }
             }
         }
     });
 }
 
-// 8. Data League Table
+// 8. Data League Table (Standardized neutral region badges)
 function initTable() {
     const tbody = document.getElementById('states-table-body');
     const search = document.getElementById('state-search');
+    if (!tbody) return;
 
     function renderRows(items) {
         tbody.innerHTML = '';
         items.forEach(s => {
             const tr = document.createElement('tr');
             tr.title = `Click to view comprehensive details for ${s.state}`;
+            
+            // Strictly semantic styling: alert red only for top thermal stress >2.5%
+            const isHighStress = s.pct_per_c >= 2.5;
+
             tr.innerHTML = `
                 <td class="state-badge">${s.state}</td>
-                <td><span class="region-pill region-${s.region}">${s.region}</span></td>
+                <td><span class="region-pill">${s.region}</span></td>
                 <td>${s.city}</td>
-                <td>${Math.round(s.mean_demand_mw).toLocaleString()}</td>
-                <td style="color: ${s.mw_per_c > 0 ? '#34d399' : '#94a3b8'}; font-weight: 600;">+${s.mw_per_c.toFixed(1)}</td>
-                <td style="color: ${s.pct_per_c > 2.0 ? '#f43f5e' : '#38bdf8'}; font-weight: 700;">+${s.pct_per_c.toFixed(2)}%</td>
-                <td>+${s.cdd_slope_mw.toFixed(1)}</td>
-                <td>${s.holdout_mape.toFixed(2)}%</td>
-                <td>${s.holdout_r2.toFixed(2)}</td>
+                <td class="num-td">${Math.round(s.mean_demand_mw).toLocaleString()} MW</td>
+                <td class="num-td" style="color: var(--accent); font-weight: 600;">+${s.mw_per_c.toFixed(1)}</td>
+                <td class="num-td" style="color: ${isHighStress ? 'var(--alert-red)' : 'var(--text-main)'}; font-weight: 700;">+${s.pct_per_c.toFixed(2)}%</td>
+                <td class="num-td">+${s.cdd_slope_mw.toFixed(1)}</td>
+                <td class="num-td" style="color: ${s.holdout_mape <= 7 ? 'var(--alert-green)' : 'inherit'};">${s.holdout_mape.toFixed(2)}%</td>
+                <td class="num-td">${s.holdout_r2.toFixed(2)}</td>
             `;
             tr.addEventListener('click', () => {
                 openStateModal(s.state);
@@ -474,15 +508,17 @@ function initTable() {
 
     renderRows(appData.states);
 
-    search.addEventListener('input', (e) => {
-        const query = e.target.value.toLowerCase().trim();
-        const filtered = appData.states.filter(s => 
-            s.state.toLowerCase().includes(query) || 
-            s.region.toLowerCase().includes(query) || 
-            s.city.toLowerCase().includes(query)
-        );
-        renderRows(filtered);
-    });
+    if (search) {
+        search.addEventListener('input', (e) => {
+            const query = e.target.value.toLowerCase().trim();
+            const filtered = appData.states.filter(s => 
+                s.state.toLowerCase().includes(query) || 
+                s.region.toLowerCase().includes(query) || 
+                s.city.toLowerCase().includes(query)
+            );
+            renderRows(filtered);
+        });
+    }
 }
 
 // 9. State Search & Autocomplete
@@ -506,7 +542,7 @@ function initSearch() {
         );
 
         if (matches.length === 0) {
-            dropdown.innerHTML = `<div style="padding: 10px 14px; font-size: 12px; color: var(--text-muted);">No matching states found</div>`;
+            dropdown.innerHTML = `<div style="padding: 8px 12px; font-size: 11px; color: var(--text-dim);">No matching states</div>`;
             dropdown.classList.remove('hidden');
             return;
         }
@@ -515,14 +551,14 @@ function initSearch() {
         matches.forEach(s => {
             const item = document.createElement('div');
             item.className = 'autocomplete-item';
-            const sensColor = s.pct_per_c > 2.5 ? COLORS.rose : (s.pct_per_c > 1.8 ? COLORS.amber : COLORS.blue);
+            const isHighStress = s.pct_per_c >= 2.5;
             item.innerHTML = `
                 <div class="ac-left">
                     <span class="ac-name">${s.state}</span>
                     <span class="ac-meta">${s.region} &bull; ${s.city}</span>
                 </div>
                 <div class="ac-right">
-                    <span class="ac-badge" style="color: ${sensColor}">+${s.pct_per_c.toFixed(2)}%/°C</span>
+                    <span class="ac-badge" style="color: ${isHighStress ? 'var(--alert-red)' : 'var(--text-muted)'}">+${s.pct_per_c.toFixed(2)}%/°C</span>
                 </div>
             `;
             item.addEventListener('click', () => {
@@ -569,7 +605,7 @@ function initSearch() {
     });
 }
 
-// 10. State Comprehensive Details Modal
+// 10. State Comprehensive Details Modal (Institutional Style)
 function initModal() {
     const modal = document.getElementById('state-modal');
     const closeBtn = document.getElementById('modal-close-btn');
@@ -612,7 +648,7 @@ function openStateModal(stateName) {
     document.getElementById('modal-state-name').textContent = s.state;
     document.getElementById('modal-load-center').textContent = `Centroid Weather & Grid Load Center: ${s.city} (${s.lat.toFixed(2)}°N, ${s.lon.toFixed(2)}°E)`;
 
-    // Top Metric Strip
+    // Top Metric Strip (Clean tabular off-white, alert red strictly for surge)
     document.getElementById('modal-mean-demand').textContent = `${Math.round(s.mean_demand_mw).toLocaleString()} MW`;
     document.getElementById('modal-mw-c').textContent = `+${s.mw_per_c.toFixed(1)} MW/°C`;
     document.getElementById('modal-pct-c').textContent = `+${s.pct_per_c.toFixed(2)}% / °C surge`;
@@ -635,11 +671,11 @@ function openStateModal(stateName) {
         </div>
         <div class="modal-attr-row">
             <span class="modal-attr-name">Marginal Thermal Elasticity</span>
-            <span class="modal-attr-val" style="color: var(--accent-cyan);">+${s.mw_per_c.toFixed(2)} MW per °C</span>
+            <span class="modal-attr-val" style="color: var(--accent);">+${s.mw_per_c.toFixed(2)} MW / °C</span>
         </div>
         <div class="modal-attr-row">
             <span class="modal-attr-name">Surge Rate (% of Baseline)</span>
-            <span class="modal-attr-val" style="color: ${s.pct_per_c > 2.5 ? COLORS.rose : COLORS.amber};">+${s.pct_per_c.toFixed(2)}% / °C</span>
+            <span class="modal-attr-val" style="color: ${s.pct_per_c >= 2.5 ? 'var(--alert-red)' : 'var(--text-main)'};">+${s.pct_per_c.toFixed(2)}% / °C</span>
         </div>
         <div class="modal-attr-row">
             <span class="modal-attr-name">Cooling Degree Slope (CDD_24)</span>
@@ -647,7 +683,7 @@ function openStateModal(stateName) {
         </div>
         <div class="modal-attr-row">
             <span class="modal-attr-name">Balance Point Inflection Threshold</span>
-            <span class="modal-attr-val">28.0°C (Air Conditioning Saturation Point)</span>
+            <span class="modal-attr-val">28.0°C (Cooling Saturation Point)</span>
         </div>
     `;
 
