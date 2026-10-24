@@ -82,37 +82,34 @@ body {
     line-height: 1;
     display: inline-flex;
     align-items: baseline;
-    gap: 7px;
+    gap: 0;
+    margin: 0;
+    padding: 0;
     user-select: none;
 }
 
 .brand-heat {
     color: #ffffff;
     font-weight: 800;
-    letter-spacing: -0.4px;
+    letter-spacing: -0.5px;
+    margin: 0;
+    padding: 0;
 }
 
 .brand-cursive {
     font-family: 'Caveat', 'Dancing Script', cursive;
-    font-size: 40px;
+    font-size: 38px;
     font-weight: 700;
     font-style: italic;
-    /* Morphs seamlessly from pure white into warm gold into amber/orange */
-    background: linear-gradient(90deg, #ffffff 15%, #fef08a 40%, #fbbf24 70%, #f97316 100%);
+    /* Morphs seamlessly from pure white where it touches HEAT into warm gold, amber, and coral fire */
+    background: linear-gradient(90deg, #ffffff 0%, #fef08a 18%, #fbbf24 42%, #f97316 72%, #ef4444 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     display: inline-block;
-    transform: rotate(-6deg) translateY(-1px);
-    padding: 0 4px;
+    margin: 0;
+    padding: 0;
     letter-spacing: -0.5px;
-}
-
-.brand-load {
-    background: linear-gradient(90deg, #f97316 0%, #ef4444 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-weight: 800;
-    letter-spacing: -0.4px;
+    line-height: 1;
 }
 
 .header-right {
