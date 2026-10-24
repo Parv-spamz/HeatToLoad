@@ -30,11 +30,19 @@
                 <p class="app-subtitle">Temperature Sensitivity & Climate Warming Stress on India's Power Grid (FY 2023–25)</p>
             </div>
             <div class="header-right">
+                <div class="header-search-wrap">
+                    <div class="search-bar-input">
+                        <svg class="search-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                        <input type="text" id="state-search-global" placeholder="Search state (e.g. Maharashtra)..." autocomplete="off">
+                        <span class="search-shortcut">/</span>
+                    </div>
+                    <div id="search-autocomplete-list" class="autocomplete-list hidden"></div>
+                </div>
                 <div class="status-chip">
                     <span class="chip-dot"></span>
                     <span class="chip-text">735 Daily PSP Reports &bull; 16 States</span>
                 </div>
-                <a href="https://github.com" target="_blank" class="btn btn-outline" id="btn-export-json">
+                <a href="data.json" download="heat_to_load_web_data.json" class="btn btn-outline" id="btn-export-json">
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
                     Raw Datasets
                 </a>
@@ -103,6 +111,10 @@
                         <select id="state-select" class="dropdown-select">
                             <!-- Populated dynamically via JS -->
                         </select>
+                        <button id="btn-open-state-modal" class="btn-inspect-state" title="View all empirical details for selected state">
+                            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+                            View Details
+                        </button>
                     </div>
                 </div>
                 <div class="chart-container" style="height: 340px;">
@@ -222,8 +234,70 @@
         <!-- Footer -->
         <footer class="app-footer">
             <p><strong>Heat to Load Portfolio Research</strong> &bull; Electricity Data: <em>Grid Controller of India Limited (Grid-India Daily PSP)</em> &bull; Weather Data: <em>Open-Meteo ERA5 Reanalysis</em></p>
-            <p class="footer-sub">All findings registered and cryptographically verified in <a href="../CLAIMS_REGISTER.md" class="footer-link">CLAIMS_REGISTER.md</a> and <a href="../reports/results.json" class="footer-link">results.json</a>.</p>
+            <p class="footer-sub">All findings registered and cryptographically verified in <a href="CLAIMS_REGISTER.md" class="footer-link">CLAIMS_REGISTER.md</a> and <a href="reports/results.json" class="footer-link">results.json</a>.</p>
         </footer>
+    </div>
+
+    <!-- State Comprehensive Details Modal -->
+    <div id="state-modal" class="modal-overlay hidden">
+        <div class="modal-backdrop" id="modal-backdrop"></div>
+        <div class="modal-card glassmorphism">
+            <div class="modal-header">
+                <div class="modal-title-wrap">
+                    <span class="modal-region-badge" id="modal-region-badge">SOUTHERN REGION (SR)</span>
+                    <h2 class="modal-state-title" id="modal-state-name">Karnataka</h2>
+                    <p class="modal-subtitle" id="modal-load-center">Centroid Weather & Grid Load Center: Bengaluru (12.97°N, 77.59°E)</p>
+                </div>
+                <button id="modal-close-btn" class="modal-close-btn" aria-label="Close modal">&times;</button>
+            </div>
+
+            <!-- Modal Metric Cards Strip -->
+            <div class="modal-metrics-strip">
+                <div class="modal-mcard">
+                    <div class="m-card-label">MEAN DAILY PEAK</div>
+                    <div class="m-card-val text-cyan" id="modal-mean-demand">14,125 MW</div>
+                    <div class="m-card-sub">SCADA demand baseline</div>
+                </div>
+                <div class="modal-mcard">
+                    <div class="m-card-label">HEAT SENSITIVITY</div>
+                    <div class="m-card-val text-rose" id="modal-mw-c">+494.4 MW/°C</div>
+                    <div class="m-card-sub" id="modal-pct-c">+3.50% / °C surge</div>
+                </div>
+                <div class="modal-mcard">
+                    <div class="m-card-label">COOLING DEGREE SLOPE</div>
+                    <div class="m-card-val text-amber" id="modal-cdd">+811.1 MW</div>
+                    <div class="m-card-sub">Per degree-day (CDD_24)</div>
+                </div>
+                <div class="modal-mcard">
+                    <div class="m-card-label">SUMMER 2024 HOLDOUT</div>
+                    <div class="m-card-val text-emerald" id="modal-mape">16.90% MAPE</div>
+                    <div class="m-card-sub" id="modal-r2">Holdout R² = 0.55</div>
+                </div>
+            </div>
+
+            <!-- Modal Detailed Sections Grid -->
+            <div class="modal-grid">
+                <div class="modal-col">
+                    <h3 class="modal-section-heading">Thermal Elasticity & Grid Mechanics</h3>
+                    <p class="modal-editorial-desc" id="modal-state-desc"></p>
+                    <div class="modal-attributes-list" id="modal-attributes-list">
+                        <!-- Populated dynamically via JS -->
+                    </div>
+                </div>
+                <div class="modal-col">
+                    <h3 class="modal-section-heading">Meteorological Driver Profile</h3>
+                    <div class="modal-mechanics-card" id="modal-mechanics-card">
+                        <!-- Populated dynamically via JS -->
+                    </div>
+                    <div class="modal-footer-actions">
+                        <button id="modal-btn-view-curve" class="btn btn-action-focus">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+                            Focus in Response Curve Chart &darr;
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- Scripts -->
