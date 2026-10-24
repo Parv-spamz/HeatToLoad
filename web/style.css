@@ -97,10 +97,10 @@ body {
 }
 
 .brand-cursive {
-    font-family: 'Dancing Script', 'Satisfy', cursive;
+    font-family: 'Caveat', cursive;
     font-size: 40px;
     font-weight: 700;
-    margin-left: -7px;
+    margin-left: -5px;
     margin-right: 0;
     padding: 0;
     /* Morphs seamlessly from pure white where it touches HEAT into warm gold, amber, and coral fire */
