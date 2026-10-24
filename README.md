@@ -10,7 +10,6 @@
 </p>
 
 <p align="center">
-  <a href="#interactive-glassmorphic-cockpit"><img src="https://img.shields.io/badge/Interface-Apple%20Glassmorphism-0284c7?style=for-the-badge&logo=apple&logoColor=white" alt="Apple Glassmorphism UI" /></a>
   <a href="#core-quantitative-findings"><img src="https://img.shields.io/badge/Sensitivity-%2B2%2C761.9%20MW%20%2F%20%C2%B0C-ea580c?style=for-the-badge&logo=fire&logoColor=white" alt="National Heat Sensitivity" /></a>
   <a href="#machine-learning-performance"><img src="https://img.shields.io/badge/Holdout%20MAPE-3.46%25-10b981?style=for-the-badge&logo=speedtest&logoColor=white" alt="Holdout Accuracy" /></a>
   <a href="#reproducibility--pipeline-execution"><img src="https://img.shields.io/badge/Pipeline-Verified%2010%2F10-6366f1?style=for-the-badge&logo=pytest&logoColor=white" alt="Pipeline Verified" /></a>
