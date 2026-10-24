@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 210" width="840" height="210">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&amp;family=Outfit:wght@800&amp;family=Inter:wght@600&amp;display=swap');
+      
+      .heat-text {
+        font-family: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        font-weight: 800;
+        font-size: 92px;
+        letter-spacing: -2px;
+        fill: #0f172a;
+      }
+      
+      .toload-text {
+        font-family: 'Caveat', cursive;
+        font-weight: 700;
+        font-size: 122px;
+        letter-spacing: -1.5px;
+        fill: url(#fireGradient);
+      }
+      
+      .tagline-text {
+        font-family: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
+        font-weight: 700;
+        font-size: 14px;
+        letter-spacing: 2px;
+        fill: #64748b;
+        text-transform: uppercase;
+        text-anchor: middle;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        .heat-text { fill: #f8fafc; }
+        .tagline-text { fill: #94a3b8; }
+      }
+    </style>
+    
+    <linearGradient id="fireGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ea580c" />
+      <stop offset="35%" stop-color="#f59e0b" />
+      <stop offset="75%" stop-color="#e11d48" />
+      <stop offset="100%" stop-color="#b91c1c" />
+    </linearGradient>
+  </defs>
+
+  <!-- Centered Logo Group -->
+  <g transform="translate(130, 115)">
+    <!-- Primary Brand Mark -->
+    <text x="0" y="0" class="heat-text">HEAT</text>
+    <text x="240" y="6" class="toload-text">toLOAD</text>
+  </g>
+  
+  <!-- Centered Tagline -->
+  <text x="420" y="165" class="tagline-text">India Electricity Peak Demand Thermal Sensitivity Cockpit</text>
+</svg>
