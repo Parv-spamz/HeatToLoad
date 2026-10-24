@@ -64,6 +64,10 @@ Across 11,696 state-day observations evaluated:
 | **Madhya Pradesh** | WR | 14,005.8 | +-204.6 | **+-1.46%** | 21.73% | -6.87 |
 
 
+![State Temperature Sensitivity Comparison](figures/fig1_state_sensitivity_comparison.png)
+
+![Non-linear Response Curves](figures/fig2_temperature_response_curves.png)
+
 ### Regional Synthesis:
 1. **Southern Region (SR):** Karnataka (+3.50%/°C), Kerala (+3.29%/°C), and Tamil Nadu (+1.94%/°C) demonstrate high thermal sensitivity driven by rapid residential air-conditioner uptake and high baseline humidity that suppresses human evaporative cooling.
 2. **Northern Region (NR):** Uttar Pradesh (+302.6 MW/°C), Punjab (+181.0 MW/°C), and Haryana (+117.9 MW/°C) combine massive residential cooling demand with agricultural tube-well irrigation pumping load during paddy cultivation seasons.
@@ -82,11 +86,15 @@ To prevent data leakage, model validation followed an expanding-window rolling-o
 | **LightGBM Meteorological** | Degree days (CDD_24), Heat Index, Lags (1-3d), Rolling (3-7d), Cyclical DOW/Month | **7.72%** | **1352.0 MW** | **0.9557** |
 | **LightGBM Operational** | Meteorological features + Demand Lag-1d, Lag-7d, Roll-7d | **3.46%** | **619.0 MW** | **0.9907** |
 
+![Summer 2024 Heatwave Tracking](figures/fig3_heatwave_2024_holdout_tracking.png)
+
 ### 4.2 SHAP Interpretability
 TreeExplainer analysis on the holdout partition reveals that outside of base state scale:
 1. **Heat Index (NOAA combined temperature-humidity)** is the single most influential weather driver (average impact: ~272 MW).
 2. **Relative Humidity** acts as a powerful non-linear amplifier during pre-monsoon sultry periods.
 3. **Minimum Nighttime Temperature (`temperature_2m_min`)** exerts substantial upward pressure on cooling load by preventing diurnal building thermal discharge.
+
+![SHAP Feature Importance](figures/fig4_shap_feature_importance.png)
 
 ---
 
@@ -101,6 +109,8 @@ Under uniform climate warming across the FY 2024–25 baseline:
 - **Scenario +2.0°C:**
   - Peak: 229,262.2 MW
   - Simultaneous Increment: **+5,841.1 MW (+2.61%)**
+
+![Climate Warming Scenarios](figures/fig5_climate_warming_scenarios.png)
 
 ### Grid Reliability Implications:
 A concurrent multi-state demand spike of ~5.8 GW under +2°C warming poses severe transmission corridor loading challenges, particularly along inter-regional ties transferring power from Eastern thermal generation to Northern and Western load centres. System operators require enhanced dynamic line rating (DLR) and battery energy storage systems (BESS) to absorb 3–4 hour evening peak ramps when solar generation drops off before temperatures subside.

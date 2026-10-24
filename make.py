@@ -55,6 +55,7 @@ def target_export():
     run_cmd([str(VENV_PY), "src/export_tableau.py"], "Export Tableau-ready CSVs")
 
 def target_report():
+    run_cmd([str(VENV_PY), "src/generate_figures.py"], "Generate High-Resolution Figures")
     run_cmd([str(VENV_PY), "src/render_reports.py"], "Render Reports and README from results.json")
 
 def target_test():

@@ -47,7 +47,7 @@
     },
     "reports/FINAL_REPORT.md": {
       "exists": true,
-      "size_bytes": 8057,
+      "size_bytes": 8463,
       "status": "PASS"
     },
     "reports/warming_scenarios.csv": {
@@ -72,7 +72,7 @@
     },
     "README.md": {
       "exists": true,
-      "size_bytes": 7028,
+      "size_bytes": 7901,
       "status": "PASS"
     },
     "CLAIMS_REGISTER.md": {
@@ -87,7 +87,7 @@
     },
     "logs/RUN_LOG.md": {
       "exists": true,
-      "size_bytes": 1192,
+      "size_bytes": 2611,
       "status": "PASS"
     }
   },

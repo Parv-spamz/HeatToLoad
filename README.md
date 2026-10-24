@@ -28,6 +28,16 @@ All claims below are mapped directly to [`reports/results.json`](reports/results
 
 ---
 
+## Key Visualizations & Empirical Findings
+
+### 1. State Temperature Sensitivity Comparison
+![State Temperature Sensitivity Comparison](reports/figures/fig1_state_sensitivity_comparison.png)
+
+### 2. Non-linear Load-Temperature Response Curves
+![Non-linear Response Curves](reports/figures/fig2_temperature_response_curves.png)
+
+---
+
 ## State-by-State Temperature Sensitivity League Table
 
 | State | Region | Mean Demand (MW) | Sensitivity (MW/°C) | Sensitivity (%/°C) | Summer Holdout MAPE | R² |
@@ -49,6 +59,23 @@ All claims below are mapped directly to [`reports/results.json`](reports/results
 | **Rajasthan** | NR | 15,286.5 | +-116.5 | **+-0.76%** | 17.98% | -1.01 |
 | **Madhya Pradesh** | WR | 14,005.8 | +-204.6 | **+-1.46%** | 21.73% | -6.87 |
 
+
+---
+
+## Predictive Modeling & Extreme Heatwave Tracking
+
+### 3. Tracking the Historic Summer 2024 Heatwave
+![Summer 2024 Heatwave Tracking](reports/figures/fig3_heatwave_2024_holdout_tracking.png)
+
+### 4. SHAP TreeExplainer Feature Importance
+![SHAP Feature Importance](reports/figures/fig4_shap_feature_importance.png)
+
+---
+
+## Climate Warming Counterfactuals (+1°C and +2°C)
+
+### 5. Coincident Peak Surge under Climate Warming
+![Climate Warming Scenarios](reports/figures/fig5_climate_warming_scenarios.png)
 
 ---
 
