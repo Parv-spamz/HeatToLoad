@@ -36,3 +36,21 @@ def test_analytical_table_not_empty():
     cnt = cursor.execute("SELECT COUNT(*) FROM fact_daily_load_weather;").fetchone()[0]
     conn.close()
     assert cnt > 10000, f"Analytical table has unexpectedly low row count: {cnt}"
+
+
+def test_analytical_queries_execute():
+    sql_path = ROOT / "sql" / "analytical_queries.sql"
+    assert sql_path.exists(), "sql/analytical_queries.sql is missing"
+    sql_text = sql_path.read_text(encoding="utf-8")
+    queries = [q.strip() for q in sql_text.split(";") if q.strip()]
+    assert len(queries) >= 5, f"Expected >= 5 analytical queries, found {len(queries)}"
+
+    conn = sqlite3.connect(DB_PATH)
+    try:
+        for q in queries:
+            cursor = conn.cursor()
+            cursor.execute(q)
+            rows = cursor.fetchall()
+            assert len(rows) > 0, "Analytical query returned zero rows"
+    finally:
+        conn.close()

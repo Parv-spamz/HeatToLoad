@@ -70,6 +70,21 @@
       "size_bytes": 807140,
       "status": "PASS"
     },
+    "sql/schema.sql": {
+      "exists": true,
+      "size_bytes": 3636,
+      "status": "PASS"
+    },
+    "sql/analytical_queries.sql": {
+      "exists": true,
+      "size_bytes": 5536,
+      "status": "PASS"
+    },
+    "notebooks/01_exploratory_and_modeling_walkthrough.ipynb": {
+      "exists": true,
+      "size_bytes": 9742,
+      "status": "PASS"
+    },
     "README.md": {
       "exists": true,
       "size_bytes": 7901,
