@@ -11,3 +11,4 @@ build/
 data/raw/demand/*.pdf
 data/raw/samples/*.pdf
 data/processed/*.db
+.agents/
