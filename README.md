@@ -1,7 +1,7 @@
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/banner_dark.png">
-    <img src="assets/banner.png" alt="HEATtoLOAD Logo" width="780">
+    <source media="(prefers-color-scheme: dark)" srcset="assets/banner_v2_dark.png">
+    <img src="assets/banner_v2.png" alt="HEATtoLOAD Logo" width="880">
   </picture>
 </p>
 
