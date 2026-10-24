@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 180" width="880" height="180">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&amp;family=Outfit:wght@800;900&amp;family=Inter:wght@500;600&amp;family=JetBrains+Mono:wght@500&amp;display=swap');
+      
+      .heat-text {
+        font-family: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        font-weight: 900;
+        font-size: 82px;
+        letter-spacing: -2px;
+        fill: #0f172a;
+      }
+      
+      .toload-text {
+        font-family: 'Caveat', cursive;
+        font-weight: 700;
+        font-size: 104px;
+        letter-spacing: -1.5px;
+        fill: url(#fireGradient);
+      }
+      
+      .tagline-text {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+        font-weight: 600;
+        font-size: 13px;
+        letter-spacing: 2.2px;
+        fill: #64748b;
+        text-transform: uppercase;
+      }
+      
+      .signature-text {
+        font-family: 'Caveat', cursive;
+        font-weight: 700;
+        font-size: 26px;
+        fill: #ea580c;
+      }
+
+      .badge-bg {
+        fill: rgba(2, 132, 199, 0.08);
+        stroke: rgba(2, 132, 199, 0.25);
+        stroke-width: 1;
+        rx: 12;
+      }
+
+      .badge-text {
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 11px;
+        font-weight: 500;
+        fill: #0284c7;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        .heat-text { fill: #f8fafc; }
+        .tagline-text { fill: #94a3b8; }
+        .badge-bg { fill: rgba(56, 189, 248, 0.12); stroke: rgba(56, 189, 248, 0.35); }
+        .badge-text { fill: #38bdf8; }
+      }
+    </style>
+    
+    <linearGradient id="fireGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ea580c" />
+      <stop offset="35%" stop-color="#f59e0b" />
+      <stop offset="75%" stop-color="#e11d48" />
+      <stop offset="100%" stop-color="#b91c1c" />
+    </linearGradient>
+
+    <filter id="subtleGlow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="12" flood-color="#ea580c" flood-opacity="0.25" />
+    </filter>
+  </defs>
+
+  <!-- Clean Background Aura Layer -->
+  <g transform="translate(30, 95)">
+    <!-- Primary Brand Mark -->
+    <text x="0" y="0" class="heat-text">HEAT</text>
+    <text x="214" y="5" class="toload-text" filter="url(#subtleGlow)">toLOAD</text>
+    
+    <!-- Subtitle Tagline -->
+    <text x="4" y="38" class="tagline-text">India Electricity Peak Demand Thermal Sensitivity Cockpit</text>
+    
+    <!-- Verified Badge -->
+    <rect x="620" y="-38" width="210" height="26" class="badge-bg" />
+    <text x="632" y="-21" class="badge-text">735 PSP Reports &bull; 16 States</text>
+    
+    <!-- Playful Watermark Signature Flourish -->
+    <text x="620" y="38" class="signature-text">made by parv arora :)</text>
+  </g>
+</svg>
