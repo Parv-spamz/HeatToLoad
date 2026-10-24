@@ -525,7 +525,7 @@ body {
    4. Simulator Controls & Metrics
    ============================================================================== */
 .slider-badge {
-    background: linear-gradient(135deg, #f43f5e, #f59e0b);
+    background: linear-gradient(135deg, #0284c7, #38bdf8);
     color: #ffffff;
     border: none;
     padding: 5px 14px;
@@ -533,7 +533,8 @@ body {
     font-weight: 700;
     border-radius: 20px;
     font-family: var(--font-mono);
-    box-shadow: 0 0 15px rgba(244, 63, 94, 0.4);
+    box-shadow: 0 0 14px rgba(56, 189, 248, 0.4);
+    transition: background 0.3s ease, box-shadow 0.3s ease;
 }
 
 .simulator-controls {
@@ -556,23 +557,24 @@ body {
 .custom-slider {
     flex: 1;
     -webkit-appearance: none;
-    height: 8px;
+    height: 7px;
     border-radius: 4px;
-    background: linear-gradient(90deg, #4facfe 0%, #f59e0b 50%, #f43f5e 100%);
+    /* Harmonized temperature palette matching the dashboard theme */
+    background: linear-gradient(90deg, #38bdf8 0%, #2dd4bf 22%, #fbbf24 50%, #f97316 78%, #ef4444 100%);
     outline: none;
     cursor: pointer;
 }
 
 .custom-slider::-webkit-slider-thumb {
     -webkit-appearance: none;
-    width: 22px;
-    height: 22px;
+    width: 20px;
+    height: 20px;
     border-radius: 50%;
     background: #ffffff;
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.8), 0 2px 6px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 12px var(--slider-thumb-color, rgba(56, 189, 248, 0.5)), 0 2px 6px rgba(0, 0, 0, 0.4);
     cursor: pointer;
-    border: 2px solid #f43f5e;
-    transition: transform 0.15s ease;
+    border: 2.5px solid var(--slider-thumb-color, #38bdf8);
+    transition: transform 0.12s ease, border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
 .custom-slider::-webkit-slider-thumb:hover {
@@ -580,14 +582,14 @@ body {
 }
 
 .custom-slider::-moz-range-thumb {
-    width: 22px;
-    height: 22px;
+    width: 20px;
+    height: 20px;
     border-radius: 50%;
     background: #ffffff;
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.8), 0 2px 6px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 12px var(--slider-thumb-color, rgba(56, 189, 248, 0.5)), 0 2px 6px rgba(0, 0, 0, 0.4);
     cursor: pointer;
-    border: 2px solid #f43f5e;
-    transition: transform 0.15s ease;
+    border: 2.5px solid var(--slider-thumb-color, #38bdf8);
+    transition: transform 0.12s ease, border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
 .custom-slider::-moz-range-thumb:hover {
@@ -597,34 +599,44 @@ body {
 .sim-metrics-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
-    margin-top: 14px;
+    gap: 12px;
+    margin-top: 16px;
 }
 
 .sim-metric-box {
-    background: var(--bg-card-subtle);
-    border: 1px solid var(--border-card);
+    background: rgba(22, 27, 34, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.08);
     border-radius: var(--radius-sm);
-    padding: 10px 12px;
+    padding: 12px 14px;
     display: flex;
     flex-direction: column;
 }
 
 .sim-label {
-    font-family: var(--font-mono);
-    font-size: 9px;
+    font-family: var(--font-sans);
+    font-size: 11px;
     font-weight: 600;
-    color: var(--text-dim);
-    letter-spacing: 0.4px;
-    margin-bottom: 4px;
+    color: #cbd5e1; /* Crisp, easily readable silver-zinc heading */
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-bottom: 6px;
 }
 
 .sim-val {
     font-family: var(--font-mono);
-    font-size: 16px;
+    font-size: 17px;
     font-weight: 700;
     color: var(--text-main);
     font-variant-numeric: tabular-nums;
+    line-height: 1.2;
+}
+
+.sim-val-white {
+    color: #ffffff !important;
+}
+
+.sim-val-slate {
+    color: #cbd5e1 !important;
 }
 
 /* ==============================================================================

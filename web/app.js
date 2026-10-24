@@ -345,8 +345,54 @@ function initSimulator() {
 
     const basePeak = appData.scenarios?.plus_1c?.all_india_coincident_baseline_peak_mw || 223421.1;
 
+    function getTempStage(deltaT) {
+        if (deltaT <= 0.9) {
+            return {
+                bg: 'linear-gradient(135deg, #0284c7, #38bdf8)',
+                glow: 'rgba(56, 189, 248, 0.45)',
+                thumbColor: '#38bdf8',
+                riskText: 'MODERATE STRESS',
+                riskClass: 'sim-val text-cyan'
+            };
+        } else if (deltaT <= 1.6) {
+            return {
+                bg: 'linear-gradient(135deg, #0d9488, #fbbf24)',
+                glow: 'rgba(251, 191, 36, 0.45)',
+                thumbColor: '#fbbf24',
+                riskText: 'ELEVATED STRESS',
+                riskClass: 'sim-val text-amber'
+            };
+        } else if (deltaT <= 2.3) {
+            return {
+                bg: 'linear-gradient(135deg, #ea580c, #f97316)',
+                glow: 'rgba(249, 115, 22, 0.45)',
+                thumbColor: '#f97316',
+                riskText: 'HIGH CORRIDOR RISK',
+                riskClass: 'sim-val text-orange'
+            };
+        } else {
+            return {
+                bg: 'linear-gradient(135deg, #b91c1c, #ef4444)',
+                glow: 'rgba(239, 68, 68, 0.5)',
+                thumbColor: '#ef4444',
+                riskText: 'CRITICAL DEFICIT',
+                riskClass: 'sim-val text-rose'
+            };
+        }
+    }
+
     function recalculate(deltaT) {
-        if (badge) badge.textContent = `+${deltaT.toFixed(1)}°C`;
+        const stage = getTempStage(deltaT);
+
+        if (badge) {
+            badge.textContent = `+${deltaT.toFixed(1)}°C`;
+            badge.style.background = stage.bg;
+            badge.style.boxShadow = `0 0 14px ${stage.glow}`;
+        }
+        
+        if (slider) {
+            slider.style.setProperty('--slider-thumb-color', stage.thumbColor);
+        }
         
         const surgeMw = (deltaT * 2761.9) + (deltaT ** 1.35 * 420.0);
         const scenarioPeak = basePeak + surgeMw;
@@ -357,16 +403,8 @@ function initSimulator() {
         if (surgePctEl) surgePctEl.textContent = `+${surgePct.toFixed(2)}%`;
 
         if (riskLevelEl) {
-            if (deltaT >= 2.2) {
-                riskLevelEl.textContent = 'CRITICAL DEFICIT';
-                riskLevelEl.className = 'sim-val text-rose';
-            } else if (deltaT >= 1.4) {
-                riskLevelEl.textContent = 'HIGH CORRIDOR RISK';
-                riskLevelEl.className = 'sim-val text-amber';
-            } else {
-                riskLevelEl.textContent = 'MODERATE STRESS';
-                riskLevelEl.className = 'sim-val text-cyan';
-            }
+            riskLevelEl.textContent = stage.riskText;
+            riskLevelEl.className = stage.riskClass;
         }
 
         updateSimChart(basePeak, scenarioPeak, deltaT);
