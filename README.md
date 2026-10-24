@@ -18,9 +18,9 @@
 </p>
 
 <p align="center">
-  <a href="#interactive-glassmorphic-cockpit">Cockpit UI</a> &bull;
   <a href="#core-quantitative-findings">Key Findings</a> &bull;
   <a href="#empirical-visualizations">Visualizations</a> &bull;
+  <a href="#interactive-glassmorphic-cockpit">Cockpit UI</a> &bull;
   <a href="#state-by-state-sensitivity-table">State League Table</a> &bull;
   <a href="#reproducibility--pipeline-execution">Quickstart</a> &bull;
   <a href="#data-provenance--integrity">Provenance</a>
@@ -35,39 +35,6 @@
 Covering **735 consecutive days** across FY 2023–24 and FY 2024–25 (April 1, 2023 through March 31, 2025), this study pairs official SCADA demand telemetry from the **Grid Controller of India Limited (Grid-India)** with high-resolution hourly reanalysis from the **European Centre for Medium-Range Weather Forecasts (ECMWF ERA5 / Open-Meteo)** to isolate the true weather-driven cooling component of electricity demand.
 
 All findings are cryptographically hashed, registered in [`CLAIMS_REGISTER.md`](CLAIMS_REGISTER.md), and serialized in [`reports/results.json`](reports/results.json).
-
----
-
-## Interactive Glassmorphic Cockpit
-
-The project includes an **Apple-grade, institutional analytics cockpit** designed with physical optical materials, fluid micro-interactions, and real-time scenario simulation.
-
-```
-                    [ 1px Specular Highlight: rgba(255, 255, 255, 0.95) ]
-                    ┌───────────────────────────────────────────────────┐
-  Light Source ↘   │  Frosted Acrylic: blur(28px) saturate(180%)       │
-                    │  Dual Elevation: 0 4px 6px + 0 20px 48px ambient  │
-                    │  Sub-Surface Cursive Watermark: made by parv arora│
-                    └───────────────────────────────────────────────────┘
-```
-
-### Key Interface Capabilities:
-- **Next-Gen Physical Glassmorphism**: Cards feature 1px directional specular rims, sub-surface optical bevels, and an authentic 180% saturation boost that refracts the atmospheric multi-bloom pastel aura.
-- **The Obsidian Contrast Anchor**: A deep space-gray card (`#181c24`) commands executive focus for the +2.0°C Climate Warming Peak Risk metric.
-- **Direct-Manipulation Scenario Simulator**: A 60 FPS temperature slider scrubbing from -3.0°C to +5.0°C, computing national and state-level load additions with 0ms lag.
-- **Ambient Cursive Watermark**: Features a fixed, massive calligraphic signature (`made by parv arora :)`) anchored behind the glass bubbles in the brand's exact handwriting (`Caveat` 700).
-- **Comprehensive State Dossier**: Detailed modal dossiers for all 16 states with thermal elasticity metrics, holdout validation scores, and meteorological load profiles.
-
-#### Launching the Cockpit Locally:
-```bash
-# Clone the repository
-git clone https://github.com/Parv-spamz/HeatToLoad.git
-cd HeatToLoad
-
-# Start the zero-dependency cockpit server
-python server.py
-# Open http://localhost:8000/ in any modern browser
-```
 
 ---
 
@@ -115,6 +82,39 @@ Counterfactual simulations evaluating grid stress under +1.0°C and +2.0°C unif
 <p align="center">
   <img src="reports/figures/fig5_climate_warming_scenarios.png" alt="Climate Warming Scenarios" width="900" />
 </p>
+
+---
+
+## Interactive Glassmorphic Cockpit
+
+The project includes an **Apple-grade, institutional analytics cockpit** designed with physical optical materials, fluid micro-interactions, and real-time scenario simulation.
+
+```
+                    [ 1px Specular Highlight: rgba(255, 255, 255, 0.95) ]
+                    ┌───────────────────────────────────────────────────┐
+  Light Source ↘   │  Frosted Acrylic: blur(28px) saturate(180%)       │
+                    │  Dual Elevation: 0 4px 6px + 0 20px 48px ambient  │
+                    │  Sub-Surface Cursive Watermark: made by parv arora│
+                    └───────────────────────────────────────────────────┘
+```
+
+### Key Interface Capabilities:
+- **Next-Gen Physical Glassmorphism**: Cards feature 1px directional specular rims, sub-surface optical bevels, and an authentic 180% saturation boost that refracts the atmospheric multi-bloom pastel aura.
+- **The Obsidian Contrast Anchor**: A deep space-gray card (`#181c24`) commands executive focus for the +2.0°C Climate Warming Peak Risk metric.
+- **Direct-Manipulation Scenario Simulator**: A 60 FPS temperature slider scrubbing from -3.0°C to +5.0°C, computing national and state-level load additions with 0ms lag.
+- **Ambient Cursive Watermark**: Features a fixed, massive calligraphic signature (`made by parv arora :)`) anchored behind the glass bubbles in the brand's exact handwriting (`Caveat` 700).
+- **Comprehensive State Dossier**: Detailed modal dossiers for all 16 states with thermal elasticity metrics, holdout validation scores, and meteorological load profiles.
+
+#### Launching the Cockpit Locally:
+```bash
+# Clone the repository
+git clone https://github.com/Parv-spamz/HeatToLoad.git
+cd HeatToLoad
+
+# Start the zero-dependency cockpit server
+python server.py
+# Open http://localhost:8000/ in any modern browser
+```
 
 ---
 
