@@ -359,13 +359,13 @@ function initSimulator() {
         if (riskLevelEl) {
             if (deltaT >= 2.2) {
                 riskLevelEl.textContent = 'CRITICAL DEFICIT';
-                riskLevelEl.className = 'sim-val text-alert';
+                riskLevelEl.className = 'sim-val text-rose';
             } else if (deltaT >= 1.4) {
                 riskLevelEl.textContent = 'HIGH CORRIDOR RISK';
-                riskLevelEl.className = 'sim-val text-alert';
+                riskLevelEl.className = 'sim-val text-amber';
             } else {
                 riskLevelEl.textContent = 'MODERATE STRESS';
-                riskLevelEl.className = 'sim-val';
+                riskLevelEl.className = 'sim-val text-cyan';
             }
         }
 
@@ -375,7 +375,7 @@ function initSimulator() {
     function updateSimChart(base, scen, deltaT) {
         const labels = ['Baseline (Observed)', `Simulated (+${deltaT.toFixed(1)}°C)`];
         const data = [base / 1000.0, scen / 1000.0];
-        const colors = ['#27303f', deltaT >= 2.0 ? COLORS.alertRed : '#38bdf8'];
+        const colors = ['#34495e', deltaT >= 2.0 ? '#f43f5e' : '#f59e0b'];
 
         if (charts.simCompare) {
             charts.simCompare.data.labels = labels;
@@ -391,8 +391,8 @@ function initSimulator() {
                         label: 'Coincident Peak (GW)',
                         data: data,
                         backgroundColor: colors,
-                        borderRadius: 4,
-                        barThickness: 42
+                        borderRadius: 6,
+                        barThickness: 50
                     }]
                 },
                 options: {
@@ -426,7 +426,7 @@ function initSimulator() {
     }
 }
 
-// 7. Chart 5: SHAP Attribution (Monochromatic slate with crisp accent edge)
+// 7. Chart 5: SHAP Attribution (High-fidelity purple attribution bars)
 function initSHAPChart() {
     const canvas = document.getElementById('chart-shap');
     if (!canvas) return;
@@ -443,10 +443,10 @@ function initSHAPChart() {
             datasets: [{
                 label: 'Mean |SHAP| (MW)',
                 data: impacts,
-                backgroundColor: 'rgba(56, 189, 248, 0.16)',
-                borderColor: COLORS.accent,
+                backgroundColor: 'rgba(139, 92, 246, 0.85)',
+                borderColor: '#8b5cf6',
                 borderWidth: 1,
-                borderRadius: 3
+                borderRadius: 4
             }]
         },
         options: {

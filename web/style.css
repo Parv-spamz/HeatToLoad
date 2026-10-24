@@ -333,13 +333,29 @@ body {
     color: var(--text-muted);
 }
 
-/* Semantic Value Highlights (Zero glowing text shadows) */
+/* Semantic Value Highlights */
 .text-emerald {
     color: var(--alert-green) !important;
 }
 
 .text-alert {
     color: var(--alert-red) !important;
+}
+
+.text-amber {
+    color: #f59e0b !important;
+}
+
+.text-rose {
+    color: #f43f5e !important;
+}
+
+.text-cyan {
+    color: #00f2fe !important;
+}
+
+.text-orange {
+    color: #fb923c !important;
 }
 
 /* ==============================================================================
@@ -509,14 +525,15 @@ body {
    4. Simulator Controls & Metrics
    ============================================================================== */
 .slider-badge {
-    background: #232936;
-    color: var(--text-main);
-    border: 1px solid var(--border-card);
-    padding: 4px 10px;
-    font-size: 12px;
-    font-weight: 600;
-    border-radius: var(--radius-sm);
+    background: linear-gradient(135deg, #f43f5e, #f59e0b);
+    color: #ffffff;
+    border: none;
+    padding: 5px 14px;
+    font-size: 13px;
+    font-weight: 700;
+    border-radius: 20px;
     font-family: var(--font-mono);
+    box-shadow: 0 0 15px rgba(244, 63, 94, 0.4);
 }
 
 .simulator-controls {
@@ -526,34 +543,55 @@ body {
 .slider-track-wrap {
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 15px;
 }
 
 .slider-min, .slider-max {
     font-family: var(--font-mono);
-    font-size: 11px;
-    color: var(--text-dim);
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--text-muted);
 }
 
 .custom-slider {
     flex: 1;
     -webkit-appearance: none;
-    height: 5px;
-    border-radius: 3px;
-    background: #232936;
+    height: 8px;
+    border-radius: 4px;
+    background: linear-gradient(90deg, #4facfe 0%, #f59e0b 50%, #f43f5e 100%);
     outline: none;
     cursor: pointer;
 }
 
 .custom-slider::-webkit-slider-thumb {
     -webkit-appearance: none;
-    width: 16px;
-    height: 16px;
+    width: 22px;
+    height: 22px;
     border-radius: 50%;
-    background: var(--text-main);
-    border: 2px solid #38bdf8;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+    background: #ffffff;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.8), 0 2px 6px rgba(0, 0, 0, 0.4);
     cursor: pointer;
+    border: 2px solid #f43f5e;
+    transition: transform 0.15s ease;
+}
+
+.custom-slider::-webkit-slider-thumb:hover {
+    transform: scale(1.15);
+}
+
+.custom-slider::-moz-range-thumb {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: #ffffff;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.8), 0 2px 6px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    border: 2px solid #f43f5e;
+    transition: transform 0.15s ease;
+}
+
+.custom-slider::-moz-range-thumb:hover {
+    transform: scale(1.15);
 }
 
 .sim-metrics-grid {
