@@ -32,7 +32,7 @@
     --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
     --font-mono: 'JetBrains Mono', monospace;
     
-    --transition-smooth: all 0.18s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-smooth: border-color 0.15s ease, background-color 0.15s ease, box-shadow 0.15s ease, transform 0.15s ease;
 }
 
 * {
@@ -374,6 +374,7 @@ body {
     padding: 20px 22px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
     transition: var(--transition-smooth);
+    contain: layout style;
 }
 
 .card:hover {
@@ -405,6 +406,7 @@ body {
 .chart-container {
     width: 100%;
     position: relative;
+    contain: layout paint;
 }
 
 /* Segmented Control / Filters */
@@ -570,6 +572,7 @@ body {
     cursor: pointer;
     border: 2px solid var(--slider-thumb-color, var(--accent));
     transition: transform 0.12s ease, border-color 0.18s ease;
+    will-change: transform;
 }
 
 .custom-slider::-webkit-slider-thumb:hover {

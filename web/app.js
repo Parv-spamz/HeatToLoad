@@ -131,7 +131,13 @@ function initSensitivityChart(regionFilter = 'all') {
     // Solid color fill using the accent and alert colors with no outline
     const barColors = dataPct.map(v => v >= 2.5 ? COLORS.alertRed : COLORS.accent);
 
-    if (charts.sensitivity) charts.sensitivity.destroy();
+    if (charts.sensitivity) {
+        charts.sensitivity.data.labels = labels;
+        charts.sensitivity.data.datasets[0].data = dataPct;
+        charts.sensitivity.data.datasets[0].backgroundColor = barColors;
+        charts.sensitivity.update();
+        return;
+    }
 
     charts.sensitivity = new Chart(ctx, {
         type: 'bar',
@@ -194,6 +200,7 @@ function initResponseCurveChart(stateName) {
                 {
                     label: 'Daily Observations (SCADA)',
                     data: scatterData,
+                    normalized: true,
                     backgroundColor: 'rgba(56, 189, 248, 0.32)',
                     borderColor: 'transparent',
                     pointRadius: 3,
@@ -203,6 +210,7 @@ function initResponseCurveChart(stateName) {
                     label: 'Polynomial Thermal Response',
                     type: 'line',
                     data: lineData,
+                    normalized: true,
                     borderColor: COLORS.alertRed,
                     borderWidth: 2,
                     pointRadius: 0,
@@ -249,7 +257,7 @@ function updateResponseCurve(stateName) {
 
     charts.responseCurve.data.datasets[0].data = stateData.points.map(p => ({ x: p.t, y: p.mw }));
     charts.responseCurve.data.datasets[1].data = stateData.fit_line.map(p => ({ x: p.t, y: p.mw }));
-    charts.responseCurve.update();
+    charts.responseCurve.update('none');
 }
 
 // 5. Chart 3: Heatwave Timeline Tracking
@@ -421,7 +429,7 @@ function initSimulator() {
             charts.simCompare.data.datasets[0].data = data;
             charts.simCompare.data.datasets[0].backgroundColor = colors;
             charts.simCompare.data.datasets[0].borderColor = borderColors;
-            charts.simCompare.update();
+            charts.simCompare.update('none'); // Real-time 60fps instant redraw with no animation queueing
         } else {
             charts.simCompare = new Chart(ctx, {
                 type: 'bar',
@@ -440,6 +448,7 @@ function initSimulator() {
                 options: {
                     responsive: true,
                     maintainAspectRatio: false,
+                    animation: { duration: 0 },
                     plugins: {
                         legend: { display: false },
                         tooltip: {
@@ -460,9 +469,14 @@ function initSimulator() {
         }
     }
 
+    let simRaf = null;
     if (slider) {
         slider.addEventListener('input', (e) => {
-            recalculate(parseFloat(e.target.value));
+            const val = parseFloat(e.target.value);
+            if (simRaf) cancelAnimationFrame(simRaf);
+            simRaf = requestAnimationFrame(() => {
+                recalculate(val);
+            });
         });
         recalculate(parseFloat(slider.value));
     }
@@ -520,44 +534,42 @@ function initTable() {
     const search = document.getElementById('state-search');
     if (!tbody) return;
 
-    function renderRows(items) {
-        tbody.innerHTML = '';
-        items.forEach(s => {
-            const tr = document.createElement('tr');
-            tr.title = `Click to view comprehensive details for ${s.state}`;
-            
-            // Strictly semantic styling: alert red only for top thermal stress >2.5%
-            const isHighStress = s.pct_per_c >= 2.5;
+    const rowCache = [];
+    tbody.innerHTML = '';
+    
+    appData.states.forEach(s => {
+        const tr = document.createElement('tr');
+        tr.title = `Click to view comprehensive details for ${s.state}`;
+        const isHighStress = s.pct_per_c >= 2.5;
 
-            tr.innerHTML = `
-                <td class="state-badge">${s.state}</td>
-                <td><span class="region-pill">${s.region}</span></td>
-                <td>${s.city}</td>
-                <td class="num-td">${Math.round(s.mean_demand_mw).toLocaleString()} MW</td>
-                <td class="num-td" style="color: var(--accent); font-weight: 600;">+${s.mw_per_c.toFixed(1)}</td>
-                <td class="num-td" style="color: ${isHighStress ? 'var(--alert-red)' : 'var(--text-main)'}; font-weight: 700;">+${s.pct_per_c.toFixed(2)}%</td>
-                <td class="num-td">+${s.cdd_slope_mw.toFixed(1)}</td>
-                <td class="num-td" style="color: ${s.holdout_mape <= 7 ? 'var(--alert-green)' : 'inherit'};">${s.holdout_mape.toFixed(2)}%</td>
-                <td class="num-td">${s.holdout_r2.toFixed(2)}</td>
-            `;
-            tr.addEventListener('click', () => {
-                openStateModal(s.state);
-            });
-            tbody.appendChild(tr);
+        tr.innerHTML = `
+            <td class="state-badge">${s.state}</td>
+            <td><span class="region-pill">${s.region}</span></td>
+            <td>${s.city}</td>
+            <td class="num-td">${Math.round(s.mean_demand_mw).toLocaleString()} MW</td>
+            <td class="num-td" style="color: var(--accent); font-weight: 600;">+${s.mw_per_c.toFixed(1)}</td>
+            <td class="num-td" style="color: ${isHighStress ? 'var(--alert-red)' : 'var(--text-main)'}; font-weight: 700;">+${s.pct_per_c.toFixed(2)}%</td>
+            <td class="num-td">+${s.cdd_slope_mw.toFixed(1)}</td>
+            <td class="num-td" style="color: ${s.holdout_mape <= 7 ? 'var(--alert-green)' : 'inherit'};">${s.holdout_mape.toFixed(2)}%</td>
+            <td class="num-td">${s.holdout_r2.toFixed(2)}</td>
+        `;
+        tr.addEventListener('click', () => {
+            openStateModal(s.state);
         });
-    }
-
-    renderRows(appData.states);
+        tbody.appendChild(tr);
+        rowCache.push({
+            el: tr,
+            searchKey: `${s.state} ${s.region} ${s.city} ${s.code}`.toLowerCase()
+        });
+    });
 
     if (search) {
         search.addEventListener('input', (e) => {
             const query = e.target.value.toLowerCase().trim();
-            const filtered = appData.states.filter(s => 
-                s.state.toLowerCase().includes(query) || 
-                s.region.toLowerCase().includes(query) || 
-                s.city.toLowerCase().includes(query)
-            );
-            renderRows(filtered);
+            for (let i = 0; i < rowCache.length; i++) {
+                const item = rowCache[i];
+                item.el.style.display = (!query || item.searchKey.includes(query)) ? '' : 'none';
+            }
         });
     }
 }
