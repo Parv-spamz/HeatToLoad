@@ -10,25 +10,25 @@
 </p>
 
 <p align="center">
-  <a href="#-interactive-glassmorphic-cockpit"><img src="https://img.shields.io/badge/Interface-Apple%20Glassmorphism-0284c7?style=for-the-badge&logo=apple&logoColor=white" alt="Apple Glassmorphism UI" /></a>
-  <a href="#-core-quantitative-findings"><img src="https://img.shields.io/badge/Sensitivity-%2B2%2C761.9%20MW%20%2F%20%C2%B0C-ea580c?style=for-the-badge&logo=fire&logoColor=white" alt="National Heat Sensitivity" /></a>
-  <a href="#-machine-learning-performance"><img src="https://img.shields.io/badge/Holdout%20MAPE-3.46%25-10b981?style=for-the-badge&logo=speedtest&logoColor=white" alt="Holdout Accuracy" /></a>
-  <a href="#-reproducibility--pipeline-execution"><img src="https://img.shields.io/badge/Pipeline-Verified%2010%2F10-6366f1?style=for-the-badge&logo=pytest&logoColor=white" alt="Pipeline Verified" /></a>
+  <a href="#interactive-glassmorphic-cockpit"><img src="https://img.shields.io/badge/Interface-Apple%20Glassmorphism-0284c7?style=for-the-badge&logo=apple&logoColor=white" alt="Apple Glassmorphism UI" /></a>
+  <a href="#core-quantitative-findings"><img src="https://img.shields.io/badge/Sensitivity-%2B2%2C761.9%20MW%20%2F%20%C2%B0C-ea580c?style=for-the-badge&logo=fire&logoColor=white" alt="National Heat Sensitivity" /></a>
+  <a href="#machine-learning-performance"><img src="https://img.shields.io/badge/Holdout%20MAPE-3.46%25-10b981?style=for-the-badge&logo=speedtest&logoColor=white" alt="Holdout Accuracy" /></a>
+  <a href="#reproducibility--pipeline-execution"><img src="https://img.shields.io/badge/Pipeline-Verified%2010%2F10-6366f1?style=for-the-badge&logo=pytest&logoColor=white" alt="Pipeline Verified" /></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-0f172a?style=for-the-badge" alt="License MIT" /></a>
 </p>
 
 <p align="center">
-  <a href="#-interactive-glassmorphic-cockpit">Cockpit UI</a> &bull;
-  <a href="#-core-quantitative-findings">Key Findings</a> &bull;
-  <a href="#-empirical-visualizations">Visualizations</a> &bull;
-  <a href="#-state-by-state-sensitivity-table">State League Table</a> &bull;
-  <a href="#-reproducibility--pipeline-execution">Quickstart</a> &bull;
-  <a href="#-data-provenance--integrity">Provenance</a>
+  <a href="#interactive-glassmorphic-cockpit">Cockpit UI</a> &bull;
+  <a href="#core-quantitative-findings">Key Findings</a> &bull;
+  <a href="#empirical-visualizations">Visualizations</a> &bull;
+  <a href="#state-by-state-sensitivity-table">State League Table</a> &bull;
+  <a href="#reproducibility--pipeline-execution">Quickstart</a> &bull;
+  <a href="#data-provenance--integrity">Provenance</a>
 </p>
 
 ---
 
-## ⚡ Overview
+## Overview
 
 **HEATtoLOAD** is an end-to-end, reproducible empirical research investigation quantifying the non-linear relationship between ambient air temperature, relative humidity, and daily peak electricity demand across **16 major Indian states** (representing **>85% of total national electricity consumption**).
 
@@ -38,7 +38,7 @@ All findings are cryptographically hashed, registered in [`CLAIMS_REGISTER.md`](
 
 ---
 
-## 💎 Interactive Glassmorphic Cockpit
+## Interactive Glassmorphic Cockpit
 
 The project includes an **Apple-grade, institutional analytics cockpit** designed with physical optical materials, fluid micro-interactions, and real-time scenario simulation.
 
@@ -71,7 +71,7 @@ python server.py
 
 ---
 
-## 📊 Core Quantitative Findings
+## Core Quantitative Findings
 
 | Metric | Empirical Result | Grid & Policy Implication |
 | :--- | :--- | :--- |
@@ -84,7 +84,7 @@ python server.py
 
 ---
 
-## 📈 Empirical Visualizations
+## Empirical Visualizations
 
 ### 1. State-Level Temperature Sensitivity Comparison
 Shows the division between coastal/urban states with high percentage sensitivity versus large industrial giants adding massive absolute megawatts:
@@ -118,7 +118,7 @@ Counterfactual simulations evaluating grid stress under +1.0°C and +2.0°C unif
 
 ---
 
-## 🗺️ State-by-State Sensitivity Table
+## State-by-State Sensitivity Table
 
 Ranked by percentage cooling elasticity (% increase in demand per 1.0°C temperature rise):
 
@@ -145,7 +145,7 @@ Ranked by percentage cooling elasticity (% increase in demand per 1.0°C tempera
 
 ---
 
-## 🏗️ Repository Architecture
+## Repository Architecture
 
 ```text
 HeatToDemand/
@@ -184,7 +184,7 @@ HeatToDemand/
 
 ---
 
-## 🚀 Reproducibility & Pipeline Execution
+## Reproducibility & Pipeline Execution
 
 The entire data pipeline—from raw PDF parsing through model training and web dashboard export—is automated via `make.py`:
 
@@ -224,7 +224,7 @@ python make.py all
 
 ---
 
-## 🔒 Data Provenance & Integrity
+## Data Provenance & Integrity
 
 - **Electricity Demand Telemetry**: Sourced from official daily **Power Supply Position (PSP)** operational reports published by the **Grid Controller of India Limited (Grid-India)**.
 - **Meteorological Data**: Extracted via **Open-Meteo ERA5 Reanalysis API**, mapped to state electricity load centroids based on population-weighted coordinates.
@@ -233,7 +233,7 @@ python make.py all
 
 ---
 
-## 📜 License & Citation
+## License & Citation
 
 - **Code & Design**: Released under the [MIT License](LICENSE).
 - **Electricity Data**: Public operational data from Grid-India under fair academic use.
