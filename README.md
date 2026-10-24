@@ -29,11 +29,9 @@
 
 ## Overview
 
-**HEATtoLOAD** is an end-to-end, reproducible empirical research investigation quantifying the non-linear relationship between ambient air temperature, relative humidity, and daily peak electricity demand across **16 major Indian states** (representing **>85% of total national electricity consumption**).
+**HEATtoLOAD** quantifies the non-linear relationship between temperature, humidity, and daily peak electricity demand across **16 major Indian states** (>85% of national consumption).
 
-Covering **735 consecutive days** across FY 2023–24 and FY 2024–25 (April 1, 2023 through March 31, 2025), this study pairs official SCADA demand telemetry from the **Grid Controller of India Limited (Grid-India)** with high-resolution hourly reanalysis from the **European Centre for Medium-Range Weather Forecasts (ECMWF ERA5 / Open-Meteo)** to isolate the true weather-driven cooling component of electricity demand.
-
-All findings are cryptographically hashed, registered in [`CLAIMS_REGISTER.md`](CLAIMS_REGISTER.md), and serialized in [`reports/results.json`](reports/results.json).
+Covering **735 consecutive days** across FY 2023–25, this study pairs official **Grid-India SCADA telemetry** with **ECMWF ERA5 hourly reanalysis** to isolate India's weather-driven cooling demand. All empirical findings are cryptographically registered in [`CLAIMS_REGISTER.md`](CLAIMS_REGISTER.md) and serialized in [`reports/results.json`](reports/results.json).
 
 ---
 
