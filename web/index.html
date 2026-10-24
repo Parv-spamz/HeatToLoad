@@ -3,338 +3,230 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Heat-to-Load Project // Empirical Thermal Sensitivity of Indian Peak Electricity Demand</title>
-    <!-- Editorial Fonts: Newsreader (Editorial Serif) + Inter (Precision UI) + JetBrains Mono (Tabular Data) -->
+    <title>Heat To Load // India Electricity Peak Demand Thermal Sensitivity Cockpit</title>
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <!-- Chart.js -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="app-layout">
-        <!-- Top Editorial Masthead -->
-        <header class="masthead">
-            <div class="masthead-top">
-                <div class="masthead-meta">
-                    <span class="meta-label">INVESTIGATIVE BRIEFING</span>
-                    <span class="meta-divider">&bull;</span>
-                    <span class="meta-date">NATIONAL GRID THERMAL AUDIT &bull; FY 2023–2025</span>
-                    <span class="meta-divider">&bull;</span>
-                    <span class="meta-source">SOURCES: GRID-INDIA SCADA &bull; COPERNICUS ERA5 REANALYSIS</span>
+    <!-- Background Ambient Glow -->
+    <div class="ambient-glow glow-1"></div>
+    <div class="ambient-glow glow-2"></div>
+    <div class="ambient-glow glow-3"></div>
+
+    <div class="app-container">
+        <!-- Header -->
+        <header class="app-header">
+            <div class="header-left">
+                <div class="logo-badge">
+                    <span class="pulse-dot"></span>
+                    <span class="logo-tag">GRID-INDIA &bull; ERA5 REANALYSIS</span>
                 </div>
-                <div class="masthead-actions">
-                    <span class="provenance-tag">
-                        <span class="tag-status"></span>
-                        11,696 Audited State-Days &bull; Zero Imputed Demand
-                    </span>
-                    <a href="data.json" download="heat_to_load_web_data.json" class="btn-text">
-                        Download Dataset (JSON) &darr;
-                    </a>
-                </div>
+                <h1 class="app-title">HEAT <span class="gradient-text">TO LOAD</span></h1>
+                <p class="app-subtitle">Temperature Sensitivity & Climate Warming Stress on India's Power Grid (FY 2023–25)</p>
             </div>
-
-            <div class="masthead-content">
-                <h1 class="headline">Temperature Sensitivity of Peak Electricity Demand Across Indian States</h1>
-                <p class="dek">
-                    An empirical evaluation of non-linear cooling load, atmospheric humidity amplification, and transmission stress across 16 major Indian states (representing >85% of national power consumption) during the record-breaking 2023–2025 seasonal cycles.
-                </p>
-            </div>
-
-            <!-- Unified Editorial Metric Strip -->
-            <div class="metric-strip">
-                <div class="metric-cell">
-                    <span class="metric-label">16-STATE COMBINED HEAT SENSITIVITY</span>
-                    <div class="metric-number-row">
-                        <span class="metric-val" id="metric-mw-c">+2,761.9</span>
-                        <span class="metric-unit">MW / °C</span>
-                    </div>
-                    <span class="metric-caption">Concurrent marginal cooling demand across all target states</span>
+            <div class="header-right">
+                <div class="status-chip">
+                    <span class="chip-dot"></span>
+                    <span class="chip-text">735 Daily PSP Reports &bull; 16 States</span>
                 </div>
-
-                <div class="metric-cell">
-                    <span class="metric-label">STATE-WEIGHTED SURGE RATE</span>
-                    <div class="metric-number-row">
-                        <span class="metric-val" id="metric-pct-c">+1.62%</span>
-                        <span class="metric-unit">/ °C</span>
-                    </div>
-                    <span class="metric-caption">Average state peak expansion relative to baseline demand</span>
-                </div>
-
-                <div class="metric-cell">
-                    <span class="metric-label">HOLDOUT ACCURACY (SUMMER 2024)</span>
-                    <div class="metric-number-row">
-                        <span class="metric-val" id="metric-mape">3.46%</span>
-                        <span class="metric-unit">MAPE</span>
-                    </div>
-                    <span class="metric-caption">R² = 0.9907 on unobserved May–June 2024 heatwave</span>
-                </div>
-
-                <div class="metric-cell highlight-cell">
-                    <span class="metric-label">+2.0°C WARMING COINCIDENT PEAK</span>
-                    <div class="metric-number-row">
-                        <span class="metric-val text-alert" id="metric-scen-2c">229.3</span>
-                        <span class="metric-unit">GW</span>
-                    </div>
-                    <span class="metric-caption">+5,841 MW simultaneous capacity addition required</span>
-                </div>
+                <a href="https://github.com" target="_blank" class="btn btn-outline" id="btn-export-json">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                    Raw Datasets
+                </a>
             </div>
         </header>
 
-        <!-- Main Workspace Two-Column Grid -->
-        <main class="main-body">
+        <!-- KPI Metrics Ribbon -->
+        <section class="kpi-grid">
+            <div class="kpi-card glassmorphism">
+                <div class="kpi-label">NATIONAL MARGINAL HEAT SENSITIVITY</div>
+                <div class="kpi-value text-cyan" id="kpi-mw-c">+2,761.9 <span class="kpi-unit">MW / °C</span></div>
+                <div class="kpi-sub">Simultaneous 16-State Marginal Cooling Load</div>
+            </div>
+
+            <div class="kpi-card glassmorphism">
+                <div class="kpi-label">STATE-WEIGHTED SURGE RATE</div>
+                <div class="kpi-value text-amber" id="kpi-pct-c">+1.62% <span class="kpi-unit">/ °C</span></div>
+                <div class="kpi-sub">Peak Load Expansion above Baseline</div>
+            </div>
+
+            <div class="kpi-card glassmorphism">
+                <div class="kpi-label">HOLDOUT ACCURACY (SUMMER 2024)</div>
+                <div class="kpi-value text-emerald" id="kpi-mape">3.46% <span class="kpi-unit">MAPE</span></div>
+                <div class="kpi-sub">R² = 0.9907 (Operational LightGBM)</div>
+            </div>
+
+            <div class="kpi-card glassmorphism">
+                <div class="kpi-label">+2.0°C CLIMATE WARMING PEAK</div>
+                <div class="kpi-value text-rose" id="kpi-scen-2c">229.3 <span class="kpi-unit">GW</span></div>
+                <div class="kpi-sub">+5,841 MW Concurrent Headroom Deficit</div>
+            </div>
+        </section>
+
+        <!-- Main Dashboard Content Grid -->
+        <div class="dashboard-grid">
             
-            <!-- Left Column: State Selection Index & League Table -->
-            <aside class="sidebar-index">
-                <div class="sidebar-header">
-                    <div class="section-heading-row">
-                        <h2 class="section-title">State Sensitivity Index</h2>
-                        <span class="badge-count" id="state-count-badge">16 States</span>
+            <!-- Left Column: Thermal Sensitivity League Table -->
+            <div class="card glassmorphism col-span-5">
+                <div class="card-header">
+                    <div>
+                        <h2 class="card-title">State Thermal Sensitivity Ranking</h2>
+                        <p class="card-subtitle">% Expansion in Peak Electricity Demand per °C</p>
                     </div>
-                    <p class="section-sub">Select state to inspect thermal curve and empirical parameters.</p>
-                    
-                    <!-- Region Filter Tabs -->
-                    <div class="segmented-control" id="region-filter-tabs">
-                        <button class="seg-btn active" data-region="all">All</button>
-                        <button class="seg-btn" data-region="NR">North</button>
-                        <button class="seg-btn" data-region="WR">West</button>
-                        <button class="seg-btn" data-region="SR">South</button>
-                        <button class="seg-btn" data-region="ER">East</button>
+                    <div class="filter-group">
+                        <button class="filter-btn active" data-filter="all">All (16)</button>
+                        <button class="filter-btn" data-filter="NR">NR</button>
+                        <button class="filter-btn" data-filter="WR">WR</button>
+                        <button class="filter-btn" data-filter="SR">SR</button>
+                        <button class="filter-btn" data-filter="ER">ER</button>
                     </div>
                 </div>
-
-                <!-- State Item List -->
-                <div class="state-list-scroll" id="state-list-container">
-                    <!-- Populated dynamically via JS -->
-                </div>
-            </aside>
-
-            <!-- Right Column: Primary Analytical Inspection Canvas -->
-            <section class="content-canvas">
-
-                <!-- Panel 1: Selected State Deep-Dive -->
-                <article class="panel">
-                    <div class="panel-header">
-                        <div>
-                            <div class="sub-eyebrow" id="inspector-region-tag">SOUTHERN REGION &bull; BENGALURU</div>
-                            <h2 class="panel-title" id="inspector-state-name">Karnataka</h2>
-                            <p class="panel-sub" id="inspector-state-summary">
-                                High cooling elasticity driven by commercial IT infrastructure and urban air conditioning penetration.
-                            </p>
-                        </div>
-                        <div class="inspector-stat-cluster">
-                            <div class="stat-pill">
-                                <span class="stat-pill-label">SENSITIVITY</span>
-                                <span class="stat-pill-val" id="inspector-pct-c">+3.50% / °C</span>
-                            </div>
-                            <div class="stat-pill">
-                                <span class="stat-pill-label">MARGINAL MW</span>
-                                <span class="stat-pill-val" id="inspector-mw-c">+494.4 MW</span>
-                            </div>
-                            <div class="stat-pill">
-                                <span class="stat-pill-label">COOLING SLOPE</span>
-                                <span class="stat-pill-val" id="inspector-cdd">+224.2 MW</span>
-                            </div>
-                            <div class="stat-pill">
-                                <span class="stat-pill-label">HOLDOUT MAPE</span>
-                                <span class="stat-pill-val" id="inspector-mape">16.90%</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="chart-box" style="height: 380px;">
-                        <canvas id="chart-state-curve"></canvas>
-                    </div>
-                    <div class="chart-annotation-footnote">
-                        <span class="footnote-mark">&Dagger;</span>
-                        Points denote daily peak demand observations (SCADA). Red curve illustrates fitted non-linear response. Dashed vertical line indicates the <strong>28°C balance point</strong> where air-conditioning demand sharply accelerates.
-                    </div>
-                </article>
-
-                <!-- Panel 2: Historic May-June 2024 Heatwave Tracking -->
-                <article class="panel">
-                    <div class="panel-header">
-                        <div>
-                            <div class="sub-eyebrow">GRID SYSTEM STRESS AUDIT</div>
-                            <h2 class="panel-title">Historic Summer 2024 Heatwave Tracking</h2>
-                            <p class="panel-sub">Coincident 16-state peak demand met vs. LightGBM operational forecast and daytime temperatures (May 1 – June 30, 2024).</p>
-                        </div>
-                        <div class="chart-legend-row">
-                            <span class="legend-item"><span class="legend-swatch swatch-actual"></span> SCADA Demand Met (MW)</span>
-                            <span class="legend-item"><span class="legend-swatch swatch-pred"></span> Model Forecast (Q50)</span>
-                            <span class="legend-item"><span class="legend-swatch swatch-temp"></span> Maximum Temperature (°C)</span>
-                        </div>
-                    </div>
-
-                    <div class="chart-box" style="height: 320px;">
-                        <canvas id="chart-heatwave"></canvas>
-                    </div>
-                    <div class="chart-annotation-footnote">
-                        During the unprecedented Northern heatwave peak (May 28–June 1, 2024), daytime temperatures exceeded 45°C across 5 states, driving national peak demand beyond 250 GW. The operational LightGBM model tracked this surge with an out-of-sample MAPE of 3.46%.
-                    </div>
-                </article>
-
-                <!-- Panel 3: Interactive Climate Warming Simulator -->
-                <article class="panel">
-                    <div class="panel-header">
-                        <div>
-                            <div class="sub-eyebrow">COUNTERFACTUAL CLIMATE SCENARIOS</div>
-                            <h2 class="panel-title">Simultaneous Grid Warming Stress Simulator</h2>
-                            <p class="panel-sub">Simulate uniform warming shifts (+0.5°C to +3.0°C) across FY 2024–25 to evaluate coincident peak surge and reserve margin risk.</p>
-                        </div>
-                        <div class="dial-readout" id="dial-readout-badge">
-                            Shift: <strong id="slider-temp-text">+1.5°C</strong>
-                        </div>
-                    </div>
-
-                    <!-- Simulator Controls -->
-                    <div class="simulator-slider-container">
-                        <div class="slider-labels">
-                            <span>+0.5°C</span>
-                            <span>+1.0°C</span>
-                            <span>+1.5°C</span>
-                            <span>+2.0°C</span>
-                            <span>+2.5°C</span>
-                            <span>+3.0°C</span>
-                        </div>
-                        <input type="range" id="climate-slider" min="0.5" max="3.0" step="0.1" value="1.5" class="precision-slider">
-                    </div>
-
-                    <!-- Simulator Impact Output Grid -->
-                    <div class="sim-output-strip">
-                        <div class="sim-cell">
-                            <span class="sim-cell-title">SIMULATED COINCIDENT PEAK</span>
-                            <span class="sim-cell-number" id="sim-peak-gw">228.1 GW</span>
-                            <span class="sim-cell-sub">Baseline: 223.4 GW</span>
-                        </div>
-                        <div class="sim-cell">
-                            <span class="sim-cell-title">CONCURRENT SURGE</span>
-                            <span class="sim-cell-number text-alert" id="sim-surge-mw">+4,721 MW</span>
-                            <span class="sim-cell-sub" id="sim-surge-pct">+2.11% expansion</span>
-                        </div>
-                        <div class="sim-cell">
-                            <span class="sim-cell-title">INTER-REGIONAL CORRIDOR RISK</span>
-                            <span class="sim-cell-number text-alert" id="sim-risk-rating">HIGH CORRIDOR RISK</span>
-                            <span class="sim-cell-sub" id="sim-risk-note">ER-to-NR / WR transmission choke</span>
-                        </div>
-                    </div>
-
-                    <div class="chart-box" style="height: 240px; margin-top: 15px;">
-                        <canvas id="chart-sim-bars"></canvas>
-                    </div>
-                </article>
-
-                <!-- Panel 4: SHAP Attribution & Empirical League Table -->
-                <div class="panel-split-row">
-                    <!-- SHAP Chart -->
-                    <article class="panel split-panel">
-                        <div class="panel-header">
-                            <div>
-                                <div class="sub-eyebrow">METEOROLOGICAL MECHANICS</div>
-                                <h2 class="panel-title">SHAP Feature Attribution</h2>
-                                <p class="panel-sub">Mean absolute marginal contribution to daily peak load (MW).</p>
-                            </div>
-                        </div>
-                        <div class="chart-box" style="height: 320px;">
-                            <canvas id="chart-shap-bars"></canvas>
-                        </div>
-                    </article>
-
-                    <!-- Key Insights Box -->
-                    <article class="panel split-panel">
-                        <div class="panel-header">
-                            <div>
-                                <div class="sub-eyebrow">RESEARCH SYNTHESIS</div>
-                                <h2 class="panel-title">Key Grid Takeaways</h2>
-                                <p class="panel-sub">Empirical findings from the 16-state econometric analysis.</p>
-                            </div>
-                        </div>
-                        <div class="editorial-notes-list">
-                            <div class="note-item">
-                                <span class="note-bullet">01</span>
-                                <div class="note-text">
-                                    <strong>Humidity acts as an explosive multiplier.</strong> The NOAA Heat Index is the dominant weather driver in SHAP rankings (~272 MW average impact), as sultry coastal pre-monsoon conditions cripple natural human sweating and force sustained air conditioner usage.
-                                </div>
-                            </div>
-                            <div class="note-item">
-                                <span class="note-bullet">02</span>
-                                <div class="note-text">
-                                    <strong>Nighttime cooling failure drives peak baseload.</strong> Minimum daily temperatures (`temperature_2m_min`) rank among top drivers, as hot nights prevent building thermal dissipation, keeping baseline loads elevated through 2:00 AM.
-                                </div>
-                            </div>
-                            <div class="note-item">
-                                <span class="note-bullet">03</span>
-                                <div class="note-text">
-                                    <strong>+2°C warming consumes existing regional reserve margins.</strong> An additional ~5.8 GW of simultaneous peak load requires enhanced dynamic line rating (DLR) and battery storage (BESS) during the 7:00–10:00 PM evening solar fade window.
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-
-                <!-- Panel 5: Full Empirical League Table -->
-                <article class="panel">
-                    <div class="panel-header">
-                        <div>
-                            <div class="sub-eyebrow">REPRODUCIBLE RESEARCH ARCHIVE</div>
-                            <h2 class="panel-title">16-State Parametric Ledger</h2>
-                            <p class="panel-sub">Standardized parameters from Grid-India Daily PSP reports and Open-Meteo ERA5 reanalysis.</p>
-                        </div>
-                        <div class="search-wrap">
-                            <input type="text" id="filter-table-input" placeholder="Filter states or regions..." class="editorial-search">
-                        </div>
-                    </div>
-
-                    <div class="table-container">
-                        <table class="editorial-table" id="master-table">
-                            <thead>
-                                <tr>
-                                    <th>State</th>
-                                    <th>Region</th>
-                                    <th>Centroid Load Center</th>
-                                    <th class="num-col">Mean Demand</th>
-                                    <th class="num-col">Sensitivity (MW/°C)</th>
-                                    <th class="num-col">Sensitivity (%/°C)</th>
-                                    <th class="num-col">CDD Slope (MW)</th>
-                                    <th class="num-col">Holdout MAPE</th>
-                                    <th class="num-col">Holdout R²</th>
-                                </tr>
-                            </thead>
-                            <tbody id="master-table-body">
-                                <!-- Populated dynamically -->
-                            </tbody>
-                        </table>
-                    </div>
-                </article>
-
-            </section>
-        </main>
-
-        <!-- Editorial Colophon / Footer -->
-        <footer class="colophon">
-            <div class="colophon-grid">
-                <div>
-                    <span class="colophon-title">METHODOLOGY & INTEGRITY</span>
-                    <p class="colophon-desc">
-                        Strictly adheres to the Project Integrity Contract. Demand figures are directly extracted from official Grid-India Power Supply Position daily reports. Missing demand values are never synthetically imputed. All 735 raw PDF reports are verified with SHA-256 cryptographic hashes registered in <code>data/MANIFEST.csv</code>.
-                    </p>
-                </div>
-                <div>
-                    <span class="colophon-title">METRIC VERIFICATION</span>
-                    <p class="colophon-desc">
-                        Every factual and quantitative figure displayed in this cockpit is programmatically verified and cross-referenced in <a href="file:///c:/Users/aropa/OneDrive/Desktop/larp%20projects/HeatToDemand/CLAIMS_REGISTER.md" class="colophon-link">CLAIMS_REGISTER.md</a> and <a href="file:///c:/Users/aropa/OneDrive/Desktop/larp%20projects/HeatToDemand/reports/results.json" class="colophon-link">results.json</a>.
-                    </p>
+                <div class="chart-container" style="height: 340px;">
+                    <canvas id="chart-sensitivity"></canvas>
                 </div>
             </div>
-            <div class="colophon-bottom">
-                <span>The Heat-to-Load Project &bull; Academic Energy Modeling & Data Science Portfolio</span>
-                <span>Open Data: Grid-India &bull; Open-Meteo ERA5 Reanalysis</span>
+
+            <!-- Right Column: Interactive Temperature-Load Response Curve -->
+            <div class="card glassmorphism col-span-7">
+                <div class="card-header">
+                    <div>
+                        <h2 class="card-title">Non-linear Temperature Response Curve</h2>
+                        <p class="card-subtitle">Inflection & Thermal Inertia above 28°C Balance Point</p>
+                    </div>
+                    <div class="state-select-wrapper">
+                        <label for="state-select" class="control-label">State Load Center:</label>
+                        <select id="state-select" class="dropdown-select">
+                            <!-- Populated dynamically via JS -->
+                        </select>
+                    </div>
+                </div>
+                <div class="chart-container" style="height: 340px;">
+                    <canvas id="chart-response-curve"></canvas>
+                </div>
             </div>
+
+            <!-- Full Width: Historic Summer 2024 Heatwave Tracking -->
+            <div class="card glassmorphism col-span-12">
+                <div class="card-header">
+                    <div>
+                        <h2 class="card-title">Historic Summer 2024 Heatwave Tracking (May – June 2024)</h2>
+                        <p class="card-subtitle">Actual Grid-India SCADA Demand Met vs. LightGBM Predictions & Temperature Surge</p>
+                    </div>
+                    <div class="legend-pills">
+                        <span class="pill pill-actual">Actual Demand Met</span>
+                        <span class="pill pill-pred">Model Q50 Forecast</span>
+                        <span class="pill pill-temp">Daily Max Temp (°C)</span>
+                    </div>
+                </div>
+                <div class="chart-container" style="height: 300px;">
+                    <canvas id="chart-heatwave-timeline"></canvas>
+                </div>
+            </div>
+
+            <!-- Bottom Left: Interactive Climate Warming Simulator -->
+            <div class="card glassmorphism col-span-7">
+                <div class="card-header">
+                    <div>
+                        <h2 class="card-title">Climate Warming Simulator (+0.5°C to +3.0°C)</h2>
+                        <p class="card-subtitle">Dial temperature shift to evaluate simultaneous 16-state grid stress</p>
+                    </div>
+                    <div class="slider-badge" id="slider-badge">+1.5°C</div>
+                </div>
+
+                <div class="simulator-controls">
+                    <div class="slider-track-wrap">
+                        <span class="slider-min">+0.5°C</span>
+                        <input type="range" id="temp-slider" min="0.5" max="3.0" step="0.1" value="1.5" class="custom-slider">
+                        <span class="slider-max">+3.0°C</span>
+                    </div>
+                </div>
+
+                <div class="sim-metrics-grid">
+                    <div class="sim-metric-box">
+                        <span class="sim-label">COINCIDENT PEAK</span>
+                        <span class="sim-val text-amber" id="sim-peak-gw">228.1 GW</span>
+                    </div>
+                    <div class="sim-metric-box">
+                        <span class="sim-label">SIMULTANEOUS SURGE</span>
+                        <span class="sim-val text-rose" id="sim-surge-mw">+4,721 MW</span>
+                    </div>
+                    <div class="sim-metric-box">
+                        <span class="sim-label">PERCENTAGE INCREASE</span>
+                        <span class="sim-val text-cyan" id="sim-surge-pct">+2.11%</span>
+                    </div>
+                    <div class="sim-metric-box">
+                        <span class="sim-label">TRANSMISSION HEADROOM RISK</span>
+                        <span class="sim-val text-orange" id="sim-risk-level">HIGH RISK</span>
+                    </div>
+                </div>
+
+                <div class="chart-container" style="height: 220px; margin-top: 15px;">
+                    <canvas id="chart-simulator-compare"></canvas>
+                </div>
+            </div>
+
+            <!-- Bottom Right: SHAP TreeExplainer Attribution -->
+            <div class="card glassmorphism col-span-5">
+                <div class="card-header">
+                    <div>
+                        <h2 class="card-title">SHAP Feature Attribution</h2>
+                        <p class="card-subtitle">TreeExplainer Mean Absolute Impact on Peak Load (MW)</p>
+                    </div>
+                </div>
+                <div class="chart-container" style="height: 310px;">
+                    <canvas id="chart-shap"></canvas>
+                </div>
+            </div>
+
+            <!-- State Summary Data League Table -->
+            <div class="card glassmorphism col-span-12">
+                <div class="card-header">
+                    <div>
+                        <h2 class="card-title">16 Major Indian States: Empirical Parameters & Holdout Validation</h2>
+                        <p class="card-subtitle">Standardized SCADA electricity metrics and Open-Meteo ERA5 continuous reanalysis</p>
+                    </div>
+                    <div class="search-box">
+                        <input type="text" id="state-search" placeholder="Search state or region..." class="table-search-input">
+                    </div>
+                </div>
+
+                <div class="table-responsive">
+                    <table class="styled-table" id="states-table">
+                        <thead>
+                            <tr>
+                                <th>State</th>
+                                <th>Region</th>
+                                <th>Capital Load Center</th>
+                                <th>Mean Peak Demand (MW)</th>
+                                <th>Sensitivity (MW/°C)</th>
+                                <th>Sensitivity (%/°C)</th>
+                                <th>Cooling Slope (CDD_24)</th>
+                                <th>Holdout MAPE</th>
+                                <th>Holdout R²</th>
+                            </tr>
+                        </thead>
+                        <tbody id="states-table-body">
+                            <!-- Populated dynamically -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Footer -->
+        <footer class="app-footer">
+            <p><strong>Heat to Load Portfolio Research</strong> &bull; Electricity Data: <em>Grid Controller of India Limited (Grid-India Daily PSP)</em> &bull; Weather Data: <em>Open-Meteo ERA5 Reanalysis</em></p>
+            <p class="footer-sub">All findings registered and cryptographically verified in <a href="../CLAIMS_REGISTER.md" class="footer-link">CLAIMS_REGISTER.md</a> and <a href="../reports/results.json" class="footer-link">results.json</a>.</p>
         </footer>
     </div>
 
-    <!-- Application Script -->
+    <!-- Scripts -->
     <script src="app.js"></script>
 </body>
 </html>
