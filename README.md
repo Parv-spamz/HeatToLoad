@@ -48,6 +48,12 @@ Covering **735 consecutive days** across FY 2023–25, this study pairs official
 
 ---
 
+##Demo Video 
+
+https://github.com/Parv-spamz/HeatToLoad/blob/master/demo.mp4
+
+---
+
 ## Empirical Visualizations
 
 ### 1. State-Level Temperature Sensitivity Comparison
